@@ -1,0 +1,40 @@
+companies - podatki o trgovinah, izdajatelji računov
+	id - INT  PRIMARY KEY
+	name VARCHAR(155) NOT NULL
+	full_name VARCHAR(255)
+	address VARCHAR(255)
+	postal_code VARCHAR(10)
+	city VARCHAR(155)
+	url VARCHAR(155)
+	company_logo VARCHAR(URL)
+	country VARCHAR(255)
+
+items - podatki o kupljenih izdelkih storitvah...
+	id INT PRIMARY KEY 
+	name VARCHAR(255)
+	unit_id FOREIGN_KEY - povezava na units 
+	quantity float
+	unit_price float
+	invoice_id INT FOREIGN KEY
+
+units
+	id INT PRIMARY KEY
+	name VARCHAR(255) NOT NULL
+	label VRCHAR(255) NOT NULL
+
+invoices - podatki o računih 
+	id
+	invoice_nr VARCHAR(255)
+	date DATE
+	company_id INT FOREIGN KEY
+	payment_instrument_id INT FOREIGN KEY 
+	total FLOAT 
+
+categories 
+	id INT PRIMARY KEY
+	name VARCHAR(255)
+
+categories_items
+	id INT PRIMARY KEY
+	category_id INT FOREIGN KEY 
+	item_id INT FOREIGN KEY
