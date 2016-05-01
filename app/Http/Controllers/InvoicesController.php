@@ -25,6 +25,7 @@ class InvoicesController extends Controller
     public function invoices()
     {
         $invoices = Invoice::all();
+        $invoices = $invoices->sortByDesc('invoice_date');
         
         foreach ($invoices as $invoice)
         {
@@ -61,7 +62,7 @@ class InvoicesController extends Controller
 
         $invoice->save();
 
-        return redirect(route('invoices'));
+        return redirect(route('invoice_details', ['id' => $invoice->id]));
     }
 
     // podrobnosti o racunu postavke
@@ -72,6 +73,27 @@ class InvoicesController extends Controller
         
         $items = Item::where('invoice_id', '=', $id)->get();
         return view('pages.invoice_details', ['invoice' => $invoice, 'items' => $items]);
+    }
+    
+    // urejanje podatkov racuna
+    public function editInvoiceDetails($id)
+    {
+        $invoice = Invoice::find($id);
+        
+        return view('pages.edit_invoice', ['invoice' => $invoice]);
+    }
 
+    // shrani spremembe na racunu
+    public function updateInvoiceDetails(SaveInvoiceRequest $request, $id)
+    {
+        $invoice = Invoice::find($id);
+
+        $invoice->invoice_nr = $request->get('invoice_nr');
+        $invoice->invoice_date = $request->get('invoice_date');
+        $invoice->total = $request->get('total');
+
+        $invoice->save();
+
+        return redirect(route('invoice_details', ['id' => $invoice->id]));
     }
 }

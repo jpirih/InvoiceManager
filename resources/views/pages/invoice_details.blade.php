@@ -17,6 +17,17 @@
                     {{ $invoice->company->full_name }} <br>
                     {{ $invoice->company->address }}, {{ $invoice->company->postal_code }} {{ $invoice->company->city }}<br>
                     {{ $invoice->company->country }}
+                <hr>
+                <p>
+                    <a href="{{route('edit_company', ['id'=> $invoice->company->id])}}" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                        Uredi podatke
+                    </a>
+                    <a href="{{ route('company_details', ['id'=> $invoice->company->id]) }}" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        Podrobnosti
+                    </a>
+                </p>
             </div>
         </div>
         <div class="col-sm-6">
@@ -27,6 +38,13 @@
                <span class="krepko">Datum: </span> {{ $invoice->invoice_date->format('d.m.Y') }}<br>
                <span class="krepko">Kraj: </span> {{ $invoice->company->city }}<br>
                <br>
+               <a href="{{ route('edit_invoice', ['id' => $invoice->id]) }}" class="btn btn-primary">
+                   <span class="glyphicon glyphicon-pencil"></span>
+                   Uredi podatke
+               </a>
+               <hr>
+               <h3>Znesek: {{ $invoice->total }} €</h3>
+               <br>
            </div>
 
         </div>
@@ -34,6 +52,10 @@
     <br>
     <div class="row">
         <div class="col-sm-12">
+            <a href="{{ route('invoices') }}" class="btn btn-danger">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                Nazaj
+            </a>
             <a href="{{ route('new_item', ['id' => $invoice->id]) }}" class="btn btn-primary">
                 <span class="glyphicon glyphicon-plus"></span>
                 Dodaj izdelek
@@ -57,7 +79,6 @@
                 <table class="table table-responsive table-bordered table condensed table-striped">
                     <thead>
                         <tr class="glava-tabele">
-                            <th># id</th>
                             <th>Naziv</th>
                             <th>Količina</th>
                             <th>Enota Mere</th>
@@ -68,7 +89,6 @@
                     <tbody>
                         @foreach($items as $item)
                             <tr>
-                                <td>{{ $item->id }}</td>
                                 <td>{{ $item->name }}</td>
                                 <td>{{ $item->quantity }}</td>
                                 <td>{{ $item->unit->label }}</td>

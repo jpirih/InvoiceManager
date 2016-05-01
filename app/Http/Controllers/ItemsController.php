@@ -7,6 +7,7 @@ use App\Http\Requests;
 use App\Invoice;
 use App\Item;
 use App\Unit;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Request;
 
 class ItemsController extends Controller
@@ -65,7 +66,18 @@ class ItemsController extends Controller
         $category = Category::find($categoryId);
         $categories = Category::all();
         $categories->sortBy('name');
-        return view('pages.category_items', ['category' => $category, 'categories' => $categories]);
+
+        $categoryTotal = 0;
+
+        // odbelava podatkov
+        foreach ($category->items as $item)
+        {
+            $item->invoice->invoice_date = Carbon::createFromTimestamp(strtotime($item->invoice->invoice_date))->format('d.m.Y');
+            $categoryTotal = $categoryTotal + $item->unit_price;
+
+        }
+
+        return view('pages.category_items', ['category' => $category, 'categories' => $categories, 'categoryTotal' => $categoryTotal]);
     }
     
     

@@ -23,7 +23,7 @@
                     @foreach($companies as $company)
                         <div class="media">
                             <div class="media-left media-middle">
-                                <a href="#">
+                                <a href="{{route('company_details', ['id' => $company->id])}}">
                                     <img src="{{$company->company_logo }}" alt="logo" class="media-object img img-rounded logo">
                                 </a>
                             </div>
@@ -38,6 +38,10 @@
                                 <p>
                                     <a href="{{$company->url}}" target="_blank" class="btn btn-success">
                                         <span class="glyphicon glyphicon-log-in"></span> Obišči trgovino
+                                    </a>
+                                    <a href="{{route('company_details', ['id' => $company->id])}}" class="btn btn-primary">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        Podrobnosti
                                     </a>
                                 </p>
                                 <hr>
