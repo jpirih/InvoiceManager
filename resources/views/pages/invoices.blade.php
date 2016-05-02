@@ -5,7 +5,7 @@
 @endsection
 
 @section('page-heading')
-    Invoice Manager Pregled Računov
+    Seznam vseh računov 
 @endsection
 
 @section('content')
