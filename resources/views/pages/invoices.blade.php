@@ -5,7 +5,7 @@
 @endsection
 
 @section('page-heading')
-    Seznam vseh računov 
+    Seznam vseh računov
 @endsection
 
 @section('content')
