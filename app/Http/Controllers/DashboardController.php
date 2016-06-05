@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Attachment;
 use App\Category;
 use App\Http\Requests\SaveCategoryRequest;
 use App\Http\Requests\SavePaymentInstrumentRequest;
@@ -23,10 +24,14 @@ class DashboardController extends Controller
     {
         $categories = Category::all();
         $paymentInstruments = PaymentInstrument::all();
+
         $units = Unit::all();
         $units = $units->sortBy('name');
 
-        return view('pages.dashboard', ['categories' => $categories, 'paymentInstruments' => $paymentInstruments, 'units' => $units]);
+        $attachments = Attachment::all();
+
+
+        return view('pages.dashboard', ['categories' => $categories, 'paymentInstruments' => $paymentInstruments, 'units' => $units, 'attachments' => $attachments]);
     }
     
     // add new category
@@ -58,6 +63,20 @@ class DashboardController extends Controller
         $unit->name = Request::get('unit_name');
         $unit->save();
         
+        return redirect(route('dashboard'));
+    }
+
+    // add attachment type - vrste dokumentov - vezano na upload files
+    public function saveAttachment()
+    {
+        $label = Request::get('label');
+        $label = strtoupper($label);
+
+        $attachment = new Attachment;
+        $attachment->name = Request::get('attachment_name');
+        $attachment->label = $label;
+        $attachment->save();
+
         return redirect(route('dashboard'));
     }
     

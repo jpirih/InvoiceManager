@@ -46,6 +46,21 @@
                <h3>Znesek: {{ $invoice->total }} €</h3>
                <br>
            </div>
+            <br>
+            <div class="bg-success">
+                <h2>
+                    Priponke <span class="glyphicon glyphicon-paperclip"></span>
+                    <a href="{{ route('add_file', ['id' => $invoice->id]) }}" class="pull-right btn btn-primary">
+                        <span class=" glyphicon glyphicon-plus"></span> Dodaj priponko
+                    </a>
+                </h2>
+
+                <div class="list-group">
+                    @foreach($invoice->files as $file)
+                        <a href="{{route('get_file', ['id' => $file->id])}}" class="list-group-item list-group-item-success"> {{ $file->file_name }}</a>
+                    @endforeach
+                </div>
+            </div>
 
         </div>
     </div>

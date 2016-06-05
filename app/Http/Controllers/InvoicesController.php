@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Attachment;
 use App\Category;
 use App\Company;
+use App\File;
 use App\Http\Requests\SaveInvoiceRequest;
 use App\Invoice;
 use App\Item;
@@ -48,12 +50,15 @@ class InvoicesController extends Controller
     public function saveInvoice( SaveInvoiceRequest $request)
     {
         $invoice = new Invoice;
-
+        
+        // podatki iz obrazca
         $company = $request->get('companies');
         $company = $company[0];
         $instrument = $request->get('instruments');
         $instrument = $instrument[0];
 
+        
+        // shranjevanje podatkov v tabelo invoices
         $invoice->company_id = $company;
         $invoice->invoice_nr = $request->get('invoice_nr');
         $invoice->invoice_date = $request->get('invoice_date');
@@ -61,6 +66,7 @@ class InvoicesController extends Controller
         $invoice->total = $request->get('total');
 
         $invoice->save();
+        
 
         return redirect(route('invoice_details', ['id' => $invoice->id]));
     }
@@ -70,7 +76,6 @@ class InvoicesController extends Controller
     {
         $invoice = Invoice::find($id);
         $invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice_date));
-        
         $items = Item::where('invoice_id', '=', $id)->get();
         return view('pages.invoice_details', ['invoice' => $invoice, 'items' => $items]);
     }
@@ -96,4 +101,6 @@ class InvoicesController extends Controller
 
         return redirect(route('invoice_details', ['id' => $invoice->id]));
     }
+
+    
 }

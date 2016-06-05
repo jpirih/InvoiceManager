@@ -123,8 +123,13 @@
                     Izdelki/Storitve
                 </a>
             </div>
+            <h3>Hitri Skok</h3>
+            <div class="list-group">
+                <a href="{{ route('files_list') }}" class="list-group-item">Seznam priponk</a>
+            </div>
         </div>
     </div>
+    <!-- Dodajanje novih merskih enot   -->
     <div class="row">
         <div class="col-sm-9">
             <div class="col-sm-6">
@@ -180,6 +185,52 @@
 
             </div>
         </div>
-        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <!-- prostor na desni poleg enot mere  -->
+        </div>
+        <!-- vrste dokumentov -->
+        <div class="row">
+            <div class="col-sm-9">
+                <!-- obrazec za vnos vrst dokumentov   -->
+                <div class="col-sm-6">
+                    <h3>Vrsta dokumenta</h3>
+                    <form action="{{ route('attachment_type') }}" method="post" class="form-inline">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <div class="from-group">
+                            <input type="text" name="attachment_name" placeholder="Račun" required class="form-control">
+                            <input type="text" name="label" placeholder="RAC" class="form-control">
+                            <button type="submit" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                Dodaj
+                            </button>
+                        </div>
+                    </form>
+                    <br>
+                    <table class="table-bordered table-responsive table-striped table-condensed">
+                        <thead>
+                        <tr class="glava-tabele">
+                            <th>#</th>
+                            <th>Oznaka</th>
+                            <th>Vrsta Dokumenta</th>
+                        </tr>
+                        </thead>
+                        <tbody class="bg-info">
+                            @foreach($attachments as $attachment)
+                                <tr>
+                                    <td>{{ $attachment->id }}</td>
+                                    <td>{{ $attachment->label }}</td>
+                                    <td>{{ $attachment->name }}</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+                <!-- szenam vseh vnesenih vrst dokumentov -->
+                <div class="col-sm-6"></div>
+            </div>
+            <div class="col-sm-3">
+                <!-- Prazen prostor na desni poleg tabele vrste dokumentrov -->
+            </div>
+        </div>
     </div>
 @endsection

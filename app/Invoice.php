@@ -25,4 +25,11 @@ class Invoice extends Model
     {
         return $this->hasMany('App\Item');
     }
+    
+    //povezava many-to-many s tabelo files 
+    public function files()
+    {
+        return $this->belongsToMany('App\File', 'files_invoices');
+    }
+    
 }
