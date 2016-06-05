@@ -15,7 +15,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.index');
+        return redirect('invoices');
     }
     
     public function instructions()
