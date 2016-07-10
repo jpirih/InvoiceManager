@@ -18,6 +18,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/', ['uses' => 'HomeController@index', 'as' => 'home']);
     Route::get('instructions', ['uses' => 'HomeController@instructions', 'as' => 'instructions']);
     Route::get('files/get/{id}', ['uses' =>'FilesController@getFile', 'as' => 'get_file']);
+    Route::get('files/open/{id}', ['uses' => 'FilesController@openFile', 'as' => 'open_file']);
     Route::get('files', ['uses' => 'FilesController@filesList', 'as' => 'files_list']);
     Route::get('invoices', ['uses' => 'InvoicesController@invoices', 'as' => 'invoices']);
     Route::get('invoices/new', ['uses' => 'InvoicesController@addInvoice', 'as' => 'new_invoice']);

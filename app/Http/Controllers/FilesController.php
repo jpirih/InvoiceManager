@@ -12,6 +12,7 @@ use Carbon\Carbon;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Response;
 
 class FilesController extends Controller
 {
@@ -19,8 +20,15 @@ class FilesController extends Controller
     public function filesList()
     {
         $files = File::all();
-        $files = $files->sortBy('created_at');
-        
+        $files = $files->sortByDesc('created_at');
+
+        foreach ($files as $file)
+        {
+            foreach ($file->invoices as $invoice)
+            {
+                $invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice_date));
+            }
+        }
         return view('pages.files', ['files' => $files]);
     }
     
@@ -60,11 +68,11 @@ class FilesController extends Controller
         //shranjevanje podatkov v povezovalno tabelo files_invoices
         $f->invoices()->attach($invoice->id);
 
-        return redirect(route('invoice_details', ['id' => $invoice->id]));
+        return redirect(route('invoice_details', ['id' => $invoice->id]))->with('status', 'Priponka dodana');
         
     }
 
-    //odpiranje in shranjevanje PDF priponk
+    //prenos in shranjevanje PDF priponk
     public function getFile($fileId)
     {
         $data = File::find($fileId);
@@ -76,5 +84,17 @@ class FilesController extends Controller
 
         return response()->download($file, $data->file_name.'.pdf', $headers);
 
+    }
+
+    // odpiranje datotek
+    public function  openFile($fileID)
+    {
+        $data = File::find($fileID);
+        $file = public_path().'/uploads/'.$data->file_name;
+
+        return Response::make(file_get_contents($file), 200, [
+            'Content-Type' => 'application/pdf',
+            'Content-Disposition' => 'inline; filename="'.$data->file_name.'"'
+        ]);
     }
 }

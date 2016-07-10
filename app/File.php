@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-/**
+        /**
  * @property mixed attachment
  */
 class File extends Model

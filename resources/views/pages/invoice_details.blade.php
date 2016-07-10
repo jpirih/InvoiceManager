@@ -3,11 +3,22 @@
 @section('title')
     Podrobnosti računa
 @endsection
-
+<!-- main title -->
 @section('page-heading')
     Račun številka {{ $invoice->invoice_nr }}
 @endsection
 @section('content')
+    @if(session('status'))
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="alert alert-success">
+                    <span class="glyphicon glyphicon-ok"></span> {{ session('status') }}
+                </div>
+            </div>
+        </div>
+        </div>
+    @endif
+    <!-- company data -->
     <div class="row">
         <div class="col-sm-6">
             <div class="bg-info">
@@ -30,6 +41,7 @@
                 </p>
             </div>
         </div>
+        <!-- invoice data -->
         <div class="col-sm-6">
            <div class="data-bg">
                <h2>Podatki o računu</h2>
@@ -47,7 +59,8 @@
                <br>
            </div>
             <br>
-            <div class="bg-success">
+            <!-- attachments -->
+            <div class="well">
                 <h2>
                     Priponke <span class="glyphicon glyphicon-paperclip"></span>
                     <a href="{{ route('add_file', ['id' => $invoice->id]) }}" class="pull-right btn btn-primary">
@@ -55,9 +68,27 @@
                     </a>
                 </h2>
 
-                <div class="list-group">
+                <div class="panel-group">
                     @foreach($invoice->files as $file)
-                        <a href="{{route('get_file', ['id' => $file->id])}}" class="list-group-item list-group-item-success"> {{ $file->file_name }}</a>
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                               <h3 class="panel-title">
+                                   <a href="#{{ $file->id }}" data-toggle="collapse">{{ $file->file_name }}</a>
+                               </h3>
+                            </div>
+                            <div id="{{ $file->id }}" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <a href="{{route('open_file', ['id' => $file->id])}}" class="btn btn-primary">
+                                        <span class="glyphicon glyphicon-open"></span>
+                                        Odpri
+                                    </a>
+                                    <a href="{{route('get_file', ['id' => $file->id])}}" class="btn btn-success">
+                                        <span class="glyphicon glyphicon-save"></span>
+                                        Shrani
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     @endforeach
                 </div>
             </div>
