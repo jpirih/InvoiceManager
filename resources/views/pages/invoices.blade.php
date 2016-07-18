@@ -29,6 +29,7 @@
                             <th>Izdajatelj</th>
                             <th>Način plačila</th>
                             <th>Znesek</th>
+                            <th> <span class="glyphicon glyphicon-cog"></span></th>
                         </tr>
                     </thead>
                     <tbody class="bg-info">
@@ -39,6 +40,7 @@
                                 <td>{{ $invoice->company->name }}</td>
                                 <td>{{ $invoice->payment_instrument->name }}</td>
                                 <td>{{ $invoice->total }}</td>
+                                <td><a href="#" role="button" data-toggle="modal" data-target="#delModal{{ $invoice->id }}" class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span></a></td>
                             </tr>
                         @endforeach
                     </tbody>
@@ -61,3 +63,33 @@
         </div>
     </div>
 @endsection
+
+@foreach($invoices as $invoice)
+    <!--  delete modal -->
+    <div class="modal fade" id="delModal{{ $invoice->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="myModalLabel">Potrditev brisanja računa</h3>
+                </div>
+                <div class="modal-body">
+                    <h4>številka {{ $invoice->invoice_nr }}</h4>
+                    <p>
+                        <span class="krepko">Datum računa: </span> {{ $invoice->invoice_date->format('d.m.y')}} <br>
+                        <span class="krepko"> Izdajaltelj: </span> {{ $invoice->company->name }} <br>
+                        <span class="krepko">Znesek: </span> {{ $invoice->total }}
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <form action="{{ route('delete_invoice', ['id' => $invoice->id]) }}" method="post">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <button type="submit" class="btn btn-success">Da</button>
+                    </form>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Ne</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+@endforeach

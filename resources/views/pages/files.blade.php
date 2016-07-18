@@ -9,10 +9,11 @@
 @endsection
 
 @section('content')
+    <!-- list of all uploaded files -->
     <div class="row">
 
         <div class="col-sm-9">
-            <table class="table table-responsive table-bordered table-striped">
+            <table class="table table-responsive table-bordered table-striped table-condensed">
                 <thead>
                     <tr class="glava-tabele">
                         <th>Naziv Datoteke</th>
@@ -23,7 +24,7 @@
                         <th>Datum Prenosa</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="bg-info">
                     @foreach($files as $file)
                         <tr>
                             <td><a href="{{ route('open_file', ['id' => $file->id]) }}" target="_blank">{{ $file->file_name }}</a></td>

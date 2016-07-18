@@ -7,6 +7,7 @@
 @section('page-heading')
     Račun številka {{ $invoice->invoice_nr }}
 @endsection
+<!-- session messages - ni v uporabi -->
 @section('content')
     @if(session('status'))
         <div class="row">
@@ -78,7 +79,14 @@
                             </div>
                             <div id="{{ $file->id }}" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    <a href="{{route('open_file', ['id' => $file->id])}}" class="btn btn-primary">
+                                    <h4>Podrobnosti</h4>
+                                    <span class="krepko">Vrsta dokumenta: </span> {{ $file->attachment->name }} <br>
+                                    <span class="krepko">Tip datoteke: </span> {{ $file->file_type }} <br>
+                                    <span class="krepko">Velikost: </span> {{ (float)$file->file_size /1000 }} kB
+
+                                </div>
+                                <div class="panel-footer">
+                                    <a href="{{route('open_file', ['id' => $file->id])}}" target="_blank" class="btn btn-primary">
                                         <span class="glyphicon glyphicon-open"></span>
                                         Odpri
                                     </a>
@@ -96,6 +104,7 @@
         </div>
     </div>
     <br>
+    <!-- navigation buttons row  -->
     <div class="row">
         <div class="col-sm-12">
             <a href="{{ route('invoices') }}" class="btn btn-danger">
@@ -109,6 +118,7 @@
         </div>
     </div>
     <br>
+    <!-- invoice items  -->
     <div class="row">
         @if(count($items) == 0)
             <div class="col-sm-6 col-sm-offset-3">

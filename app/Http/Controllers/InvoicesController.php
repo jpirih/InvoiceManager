@@ -26,7 +26,7 @@ class InvoicesController extends Controller
     // seznam vseh racunov
     public function invoices()
     {
-        $invoices = Invoice::all();
+        $invoices = Invoice::where('deleted', '=', false)->get();
         $invoices = $invoices->sortByDesc('invoice_date');
         
         foreach ($invoices as $invoice)
@@ -74,9 +74,10 @@ class InvoicesController extends Controller
     // podrobnosti o racunu postavke
     public  function invoiceDetails($id)
     {
+        $items = Item::where('invoice_id', '=', $id)->get();
         $invoice = Invoice::find($id);
         $invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice_date));
-        $items = Item::where('invoice_id', '=', $id)->get();
+
         return view('pages.invoice_details', ['invoice' => $invoice, 'items' => $items]);
     }
     
@@ -100,6 +101,17 @@ class InvoicesController extends Controller
         $invoice->save();
 
         return redirect(route('invoice_details', ['id' => $invoice->id]));
+    }
+
+    // brisanje racuna - soft delete
+    public function deleteInvoice($invoiceId)
+    {
+        $invoice = Invoice::find($invoiceId);
+
+        $invoice->deleted = true;
+        $invoice->save();
+
+        return redirect(route('invoices'));
     }
 
     
