@@ -82,12 +82,11 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <form action="{{ route('delete_invoice', ['id' => $invoice->id]) }}" method="post">
+                    <form action="{{ route('invoice_to_trash', ['id' => $invoice->id]) }}" method="post">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <button type="submit" class="btn btn-success">Da</button>
                     </form>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Ne</button>
-
                 </div>
             </div>
         </div>

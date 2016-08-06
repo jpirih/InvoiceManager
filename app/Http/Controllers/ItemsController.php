@@ -22,8 +22,12 @@ class ItemsController extends Controller
     public function items()
     {
         $items = Item::all();
-        $items = $items->sortBy('name');
         $categories = Category::all();
+
+        foreach ($items as $item)
+        {
+            $item->invoice->invoice_date =Carbon::createFromTimestamp(strtotime($item->invoice->invoice_date));
+        }
         return view('pages.items', ['items' => $items, 'categories' => $categories]);
     }
     

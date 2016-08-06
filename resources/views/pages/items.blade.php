@@ -34,7 +34,7 @@
                             <tr>
                                 <td>{{ $item->name }}</td>
                                 <td>{{ $item->unit->label }}</td>
-                                <td>{{ $item->invoice->invoice_date }}</td>
+                                <td>{{ $item->invoice->invoice_date->format('d.m.Y') }}</td>
                                 <td>{{ $item->unit_price }}</td>
                                 @foreach($item->categories as $category)
                                     <td>{{ $category->name }}</td>

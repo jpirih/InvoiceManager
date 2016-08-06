@@ -108,6 +108,7 @@
                 @endif
             </div>
         </div>
+        <!-- glavna navigacija desno zgoraj -->
         <div class="col-sm-3">
             <div class="list-group">
                 <a href="{{route('companies')}}" class="list-group-item list-group-item-success">
@@ -123,9 +124,11 @@
                     Izdelki/Storitve
                 </a>
             </div>
+            <!-- hitri skok linki desni stolpec pod navigacijo -->
             <h3>Hitri Skok</h3>
             <div class="list-group">
                 <a href="{{ route('files_list') }}" class="list-group-item">Seznam priponk</a>
+                <a href="{{ route('deleted_items') }}" class="list-group-item">Smetnjak </a>
             </div>
         </div>
     </div>

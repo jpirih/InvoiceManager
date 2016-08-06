@@ -27,7 +27,9 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('invoices/{id}/add-file', ['uses' => 'FilesController@addFile', 'as' => 'add_file']);
     Route::post('invoices/{id}/add-file', ['uses' => 'FilesController@saveFile']);
     Route::get('invoices/{id}/edit', ['uses' => 'InvoicesController@editInvoiceDetails', 'as' => 'edit_invoice']);
-    Route::post('invoices/{id}/delete', ['uses' => 'InvoicesController@deleteInvoice', 'as' => 'delete_invoice']);
+    Route::post('invoices/{id}/to-trash', ['uses' => 'InvoicesController@deleteInvoice', 'as' => 'invoice_to_trash']);
+    Route::post('invoice/{id}/delete', ['uses' => 'RecycleBinController@deleteInvoice', 'as' => 'delete_invoice']);
+    Route::post('invoices/{id}/restore', ['uses' => 'RecycleBinController@restoreInvoice', 'as' => 'restore_invoice']);
     Route::post('invoices/{id}/edit', ['uses' => 'InvoicesController@updateInvoiceDetails']);
     Route::get('invoices/{id}/new-item', ['uses' => 'ItemsController@addItemToInvoice', 'as' => 'new_item']);
     Route::post('invoices/{id}/new-item', ['uses' => 'ItemsController@saveItem']);
@@ -40,6 +42,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('companies/{id}/edit', ['uses' => 'CompaniesController@editCompanyDetails', 'as' => 'edit_company']);
     Route::post('companies/{id}/edit', ['uses' => 'CompaniesController@updateCompanyDetails']);
     Route::get('dashboard', ['uses' => 'DashboardController@dashboard', 'as' => 'dashboard']);
+    Route::get('dashboard/deleted-items', ['uses' => 'RecycleBinController@overview', 'as' => 'deleted_items']);
     Route::post('categories/new', ['uses' => 'DashboardController@saveCategory', 'as' => 'new_category']);
     Route::post('pay-instruments/new', ['uses' => 'DashboardController@savePayInstrument', 'as' => 'new_instrument']);
     Route::post('packing-unit/new', ['uses' => 'DashboardController@savePackingUnit', 'as' => 'packing_unit']);

@@ -54,12 +54,12 @@ class CompaniesController extends Controller
     public function companyDetails($company_id)
     {
         $company = Company::find($company_id);
-        $company->invoices->sortByDesc('invoice_date');
 
         foreach ($company->invoices as $invoice)
         {
             $invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice_date));
         }
+        $company->invoices->sortByDesc('invoice_date');
         return view('pages.company_details', ['company' => $company]);
         
     }
