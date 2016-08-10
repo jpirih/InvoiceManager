@@ -31,6 +31,9 @@
                 <!-- dodajanje kategorj in seznam -->
                 <h2>Kategorije</h2>
                 <p>
+                <br>
+                <div id="category_msg"></div>
+                <br>
                 <form action="{{route('new_category')}}" method="post" id="categoryForm" class="form-inline">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <input type="text" name="category_name" id="category_name"  class="form-control" placeholder="Naziv kategorije">
@@ -49,7 +52,7 @@
                         </p>
                     </div>
                 @else
-                    <table class="table table-responsive table-striped table-bordered table-condensed">
+                    <table class="table table-responsive table-striped table-bordered table-condensed" id="categories">
                         <thead>
                             <tr class="glava-tabele">
                                 <th>#</th>
@@ -237,9 +240,13 @@
         </div>
     </div>
 @endsection
+
+<!-- javascript -->
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>
     $(document).ready(function () {
+
+        var name = $('#category_name').val();
         $('#categoryForm').on('submit', function (e) {
             e.preventDefault();
 
@@ -252,7 +259,13 @@
                     category_name: $('input[name=category_name]').val()
                 },
                 success: function (response) {
-                    alert(response['msg']);
+                   $('#category_msg').addClass('alert').addClass('alert-success').append(response['msg']);
+                    $('#categories').append(
+                            '<tr>'
+                            +'<td>' + response['category_id'] +'</td>'
+                            +'<td>'+ $('input[name=category_name]').val() + '</td>'
+                            +'</tr>'
+                    )
                 }
             });
         });

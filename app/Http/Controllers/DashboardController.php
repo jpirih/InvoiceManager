@@ -32,7 +32,6 @@ class DashboardController extends Controller
 
         $attachments = Attachment::all();
 
-
         return view('pages.dashboard', ['categories' => $categories, 'paymentInstruments' => $paymentInstruments, 'units' => $units, 'attachments' => $attachments]);
     }
     
@@ -43,13 +42,15 @@ class DashboardController extends Controller
         if(Request::ajax())
         {
             $name = Request::input('category_name');
-
             $category->name = $name;
             $category->save();
 
+            $newestCategory = count(Category::all());
+
             $response = array(
                 'stauts' => 'success',
-                'msg' => 'New Category added successfully!'
+                'msg' => 'New Category added successfully!',
+                'category_id' => $newestCategory
             );
             return Response::json($response);
         }
