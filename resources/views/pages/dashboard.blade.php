@@ -31,9 +31,9 @@
                 <!-- dodajanje kategorj in seznam -->
                 <h2>Kategorije</h2>
                 <p>
-                <form action="{{route('new_category')}}" method="post" class="form-inline">
+                <form action="{{route('new_category')}}" method="post" id="categoryForm" class="form-inline">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    <input type="text" name="category_name" class="form-control" placeholder="Naziv kategorije">
+                    <input type="text" name="category_name" id="category_name"  class="form-control" placeholder="Naziv kategorije">
                     <button type="submit" class="btn btn-primary">
                         <span class=" glyphicon glyphicon-plus"></span>
                         Dodaj
@@ -237,3 +237,27 @@
         </div>
     </div>
 @endsection
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#categoryForm').on('submit', function (e) {
+            e.preventDefault();
+
+            $.ajax({
+                type: 'POST',
+                url: '{{route('new_category')}}',
+                dataType: 'JSON',
+                data: {
+                    _token: $('input[name=_token]').val(),
+                    category_name: $('input[name=category_name]').val()
+                },
+                success: function (response) {
+                    alert(response['msg']);
+                }
+            });
+        });
+
+
+    });
+
+</script>

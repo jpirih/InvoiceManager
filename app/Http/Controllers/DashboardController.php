@@ -10,7 +10,9 @@ use App\PaymentInstrument;
 use App\Unit;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Response;
 
 class DashboardController extends Controller
 {
@@ -35,13 +37,28 @@ class DashboardController extends Controller
     }
     
     // add new category
-    public function saveCategory(SaveCategoryRequest $request)
+    public function saveCategory()
     {
         $category = new Category();
-        $category->name = $request->get('category_name');
-        
-        $category->save();
-        return redirect(route('dashboard'))->with('status', 'Kategorija shranjena OK');
+        if(Request::ajax())
+        {
+            $name = Request::input('category_name');
+
+            $category->name = $name;
+            $category->save();
+
+            $response = array(
+                'stauts' => 'success',
+                'msg' => 'New Category added successfully!'
+            );
+            return Response::json($response);
+        }
+        else
+        {
+            return 'NO';
+        }
+
+
     }
 
     // add payment instrumnet
