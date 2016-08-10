@@ -4,13 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Attachment;
 use App\Category;
-use App\Http\Requests\SaveCategoryRequest;
 use App\Http\Requests\SavePaymentInstrumentRequest;
 use App\PaymentInstrument;
 use App\Unit;
 
-use App\Http\Requests;
-use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Response;
 
@@ -56,7 +53,7 @@ class DashboardController extends Controller
         }
         else
         {
-            return 'NO';
+            return 'Error';
         }
 
 

@@ -9,22 +9,6 @@
 @endsection
 
 @section('content')
-    @if (count($errors) > 0)
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>
-                                <span class="glyphicon glyphicon-exclamation-sign"></span>
-                                {{ $error }}
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
-        </div>
-    @endif
     <div class="row">
         <div class="col-sm-9">
             <div class="col-sm-6">
@@ -212,10 +196,9 @@
                         </div>
                     </form>
                     <br>
-                    <table class="table-bordered table-responsive table-striped table-condensed">
+                    <table class="table table-bordered table-responsive table-striped table-condensed">
                         <thead>
                         <tr class="glava-tabele">
-                            <th>#</th>
                             <th>Oznaka</th>
                             <th>Vrsta Dokumenta</th>
                         </tr>
@@ -223,7 +206,6 @@
                         <tbody class="bg-info">
                             @foreach($attachments as $attachment)
                                 <tr>
-                                    <td>{{ $attachment->id }}</td>
                                     <td>{{ $attachment->label }}</td>
                                     <td>{{ $attachment->name }}</td>
                                 </tr>
@@ -243,6 +225,4 @@
 
 <!-- javascript -->
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="/js/dashboard_logic.js" type="text/javascript">
-
-</script>
+<script src="/js/dashboard_logic.js" type="text/javascript"></script>
