@@ -92,6 +92,11 @@
                     <span class="krepko">Znesek:</span>  Vpiši celoten znesek računa skupaj z DDV.
                     <span class="krepko">Obvezno</span> vnesi decimalno piko ne vejice.
                 </p>
+                <hr>
+                <a href="{{route('invoices')}}" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    Nazaj
+                </a>
             </div>
         </div>
     </div>

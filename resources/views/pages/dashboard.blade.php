@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col-sm-9">
             <div class="col-sm-6">
-                <!-- dodajanje kategorj in seznam -->
+                <!-- dodajanje       kategorj in seznam -->
                 <h2>Kategorije</h2>
                 <p>
                 <br>
