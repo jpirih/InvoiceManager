@@ -18,7 +18,7 @@
                 </div>
 
             @else
-                <table class="table-responsive table-condensed table-bordered table-striped">
+                <table class=" table table-responsive table-condensed table-bordered table-striped">
                     <thead>
                     <tr class="glava-tabele">
                         <th>Naziv</th>

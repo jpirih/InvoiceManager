@@ -60,39 +60,82 @@ class DashboardController extends Controller
     }
 
     // add payment instrumnet
-    public function savePayInstrument(SavePaymentInstrumentRequest $request)
+    public function savePayInstrument()
     {
-        $instrument = new PaymentInstrument;
-        $instrument->name = $request->get('instrument_name');
+        if(Request::ajax())
+        {
+            $instrumentName = Request::input('instrument_name');
 
-        $instrument->save();
-        return redirect(route('dashboard'));
+            $instrument = new PaymentInstrument;
+            $instrument->name = $instrumentName;
+
+            $instrument->save();
+
+            $response = array(
+                'msg' => 'Payment instrument added successfully!'
+            );
+            return Response::json($response);
+        }
+        else
+        {
+            return 'Error';
+        }
+
 
     }
     
     // add packing unit 
     public function savePackingUnit()
     {
-        $unit = new Unit;
-        $unit->label = Request::get('label');
-        $unit->name = Request::get('unit_name');
-        $unit->save();
-        
-        return redirect(route('dashboard'));
+        if(Request::ajax())
+        {
+            $unitLabel = Request::input('label');
+            $unitName = Request::input('unit_name');
+
+            $unit = new Unit;
+            $unit->label = $unitLabel;
+            $unit->name = $unitName;
+            $unit->save();
+
+            $response = array(
+                'msg' => 'New packing unit added successfully!'
+            );
+
+            return Response::json($response);
+        }
+        else
+        {
+            return 'Error';
+        }
+
     }
 
     // add attachment type - vrste dokumentov - vezano na upload files
     public function saveAttachment()
     {
-        $label = Request::get('label');
-        $label = strtoupper($label);
+        if(Request::ajax())
+        {
+            $label = Request::input('attachment_label');
+            $attachmentName = Request::input('attachment_name');
+            $label = strtoupper($label);
 
-        $attachment = new Attachment;
-        $attachment->name = Request::get('attachment_name');
-        $attachment->label = $label;
-        $attachment->save();
 
-        return redirect(route('dashboard'));
+            $attachment = new Attachment;
+            $attachment->name = $attachmentName;
+            $attachment->label = $label;
+            $attachment->save();
+
+            $response = array(
+                'msg' => 'New document type added successfully'
+            );
+
+            return Response::json($response);
+        }
+        else
+        {
+            return 'Error';
+        }
+
     }
     
 }

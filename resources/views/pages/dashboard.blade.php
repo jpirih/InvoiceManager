@@ -58,7 +58,9 @@
                 <!-- dodajanje instrumentov placila in seznam  -->
                 <h2>Orodja za plačevanje</h2>
                 <p>
-                <form action="{{ route('new_instrument') }}" method="post" class="form-inline">
+                <div id="pay_instrument_msg"></div>
+                <br>
+                <form action="{{ route('new_instrument') }}" method="post" class="form-inline" id="payInstrumentForm">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <input type="text" placeholder="predračun, Kreditna kartica ..." name="instrument_name" class="form-control">
                     <button type="submit" class="btn btn-primary">
@@ -76,17 +78,15 @@
                         </p>
                     </div>
                 @else
-                    <table class="table table-responsive table-bordered table-striped table-condensed">
+                    <table class="table table-responsive table-bordered table-striped table-condensed" id="instruments">
                         <thead>
                         <tr class="glava-tabele">
-                            <th>#</th>
                             <th>Plačilno sredstvo</th>
                         </tr>
                         </thead>
                         <tbody class="bg-info">
                             @foreach($paymentInstruments as $instrument)
                                 <tr>
-                                    <td>{{ $instrument->id }}</td>
                                     <td>{{ $instrument->name }}</td>
                                 </tr>
                             @endforeach
@@ -124,18 +124,18 @@
         <div class="col-sm-9">
             <div class="col-sm-6">
                 <h3>Enote mere</h3>
-                <form action="{{ route('packing_unit') }}" method="post" class="form-horizontal">
+                <form action="{{ route('packing_unit') }}" method="post" class="form-horizontal" id="packingUnitForm">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="form-group">
                         <label for="label" class="control-label col-sm-4">Oznaka</label>
                         <div class="col-sm-8">
-                            <input type="text" name="label" id="label" required placeholder="kos, kg" class="form-control">
+                            <input type="text" name="label" id="label"  placeholder="kos, kg" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="unit_name" class="control-label col-sm-4">Naziv</label>
                         <div class="col-sm-8">
-                            <input type="text" name="unit_name" id="unit_name" placeholder="kilogram" required class="form-control">
+                            <input type="text" name="unit_name" id="unit_name" placeholder="kilogram"  class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
@@ -149,13 +149,16 @@
                 </form>
             </div>
             <div class="col-sm-6">
+                <br>
+                <div id="packingUnitMsg"></div>
+                <br>
                 @if(count($units) == 0)
                     <div class="alert alert-info">
                         <span class="glyphicon glyphicon-info-sign"></span>
                         Trenutno ni shranjenih podatkov o enotah mere
                     </div>
                 @else
-                    <table class="table table-responsive table-bordered table-condensed table-striped">
+                    <table class="table table-responsive table-bordered table-condensed table-striped" id="packing_units">
                         <thead>
                         <tr class="glava-tabele">
                             <th>Oznaka</th>
@@ -184,11 +187,14 @@
                 <!-- obrazec za vnos vrst dokumentov   -->
                 <div class="col-sm-6">
                     <h3>Vrsta dokumenta</h3>
-                    <form action="{{ route('attachment_type') }}" method="post" class="form-inline">
+                    <br>
+                    <div id="atachmentTypeMsg"></div>
+                    <br>
+                    <form action="{{ route('attachment_type') }}" method="post" class="form-inline" id="attachmentTypeForm">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="from-group">
-                            <input type="text" name="attachment_name" placeholder="Račun" required class="form-control">
-                            <input type="text" name="label" placeholder="RAC" class="form-control">
+                            <input type="text" name="attachment_name" placeholder="Račun"  class="form-control">
+                            <input type="text" name="attachment_label" placeholder="RAC" class="form-control">
                             <button type="submit" class="btn btn-primary">
                                 <span class="glyphicon glyphicon-plus"></span>
                                 Dodaj
@@ -196,7 +202,7 @@
                         </div>
                     </form>
                     <br>
-                    <table class="table table-bordered table-responsive table-striped table-condensed">
+                    <table class="table table-bordered table-responsive table-striped table-condensed" id="attachmentTypes">
                         <thead>
                         <tr class="glava-tabele">
                             <th>Oznaka</th>
