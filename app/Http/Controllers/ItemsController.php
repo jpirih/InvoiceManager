@@ -63,7 +63,36 @@ class ItemsController extends Controller
         
         return redirect(route('invoice_details', ['id' => $invoiceId]));
     }
-    
+
+    // uredi podrobnosti izdelka / storitve
+    public function editItem($itemId)
+    {
+        $item = Item::find($itemId);
+        $categories = Category::all();
+        $units = Unit::all();
+        return view('pages.edit_item', ['item' => $item, 'categories' => $categories, 'units' => $units]);
+    }
+
+    // shrani spremembe urejanja
+    public function updateItem($itemId)
+    {
+        $item = Item::find($itemId);
+        $itemName = Request::get('item_name');
+        $units = Request::get('units');
+        $itemUnit = $units[0];
+        $itemQuantity = Request::get('quantity');
+        $itemPrice = Request::get('unit_price');
+
+        $item->name = $itemName;
+        $item->unit_id = $itemUnit;
+        $item->quantity = $itemQuantity;
+        $item->unit_price = $itemPrice;
+        $item->save();
+
+        return redirect(route('items'));
+
+    }
+
     // izdelki in storitve po kategorijah 
     public function showCategoryItems($categoryId)
     {
@@ -80,9 +109,7 @@ class ItemsController extends Controller
             $categoryTotal = $categoryTotal + $item->unit_price;
 
         }
-
         return view('pages.category_items', ['category' => $category, 'categories' => $categories, 'categoryTotal' => $categoryTotal]);
     }
-    
-    
+
 }

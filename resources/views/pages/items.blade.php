@@ -32,7 +32,7 @@
                     <tbody class="bg-info">
                         @foreach($items as $item)
                             <tr>
-                                <td>{{ $item->name }}</td>
+                                <td><a href="{{ route('edit_item', ['id' => $item->id]) }}">{{ $item->name }}</a></td>
                                 <td>{{ $item->unit->label }}</td>
                                 <td>{{ $item->invoice->invoice_date->format('d.m.Y') }}</td>
                                 <td>{{ $item->unit_price }}</td>

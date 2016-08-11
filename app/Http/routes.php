@@ -33,6 +33,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('invoices/{id}/edit', ['uses' => 'InvoicesController@updateInvoiceDetails']);
     Route::get('invoices/{id}/new-item', ['uses' => 'ItemsController@addItemToInvoice', 'as' => 'new_item']);
     Route::post('invoices/{id}/new-item', ['uses' => 'ItemsController@saveItem']);
+    Route::get('items/{id}/edit', ['uses' => 'ItemsController@editItem', 'as' => 'edit_item']);
+    Route::post('items/{id}/edit', ['uses' => 'ItemsController@updateItem']);
     Route::get('items', ['uses' => 'ItemsController@items', 'as' => 'items']);
     Route::get('categories/{id}/items', ['uses' => 'ItemsController@showCategoryItems', 'as' => 'category_items']);
     Route::get('companies', ['uses' => 'CompaniesController@companies', 'as' => 'companies']);

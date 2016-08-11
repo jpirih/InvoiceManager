@@ -36,7 +36,7 @@
                     </tr>info">
                         @foreach($category->items as $item)
                             <tr>
-                                <td>{{ $item->name }}</td>
+                                <td><a href="{{ route('edit_item', ['id' => $item->id]) }}">{{ $item->name }}</a></td>
                                 <td>{{ $item->quantity }}</td>
                                 <td>{{ $item->unit->name }}</td>
                                 <td>{{ $item->unit_price }}</td>
