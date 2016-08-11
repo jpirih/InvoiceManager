@@ -22,7 +22,7 @@
     <!-- company data -->
     <div class="row">
         <div class="col-sm-6">
-            <div class="bg-info">
+            <div class="form-bg">
                 <h2>Podatki o Izdajatelju</h2>
                 <hr>
                 <h3>{{$invoice->company->name}}</h3>

@@ -11,8 +11,9 @@
 @section('content')
     <div class="row">
         <div class="col-sm-6">
-           <div class="bg-info">
+           <div class="form-bg">
                <h2>Dodaj priponko</h2>
+               <br>
                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                    <div class="form-group">

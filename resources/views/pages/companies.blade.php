@@ -19,7 +19,7 @@
                     </p>
                 </div>
             @else
-                <div class="bg-info">
+                <div class="form-bg">
                     @foreach($companies as $company)
                         <div class="media">
                             <div class="media-left media-middle">

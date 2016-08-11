@@ -22,4 +22,9 @@ body{
 }
 .data-bg{
     background-color: #99cb84;
+    padding: 15px;
+}
+.form-bg{
+    background-color: skyblue;
+    padding: 15px;
 }
