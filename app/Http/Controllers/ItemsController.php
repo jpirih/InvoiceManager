@@ -106,7 +106,7 @@ class ItemsController extends Controller
         foreach ($category->items as $item)
         {
             $item->invoice->invoice_date = Carbon::createFromTimestamp(strtotime($item->invoice->invoice_date))->format('d.m.Y');
-            $categoryTotal = $categoryTotal + $item->unit_price;
+            $categoryTotal = $categoryTotal + ($item->quantity * $item->unit_price);
 
         }
         return view('pages.category_items', ['category' => $category, 'categories' => $categories, 'categoryTotal' => $categoryTotal]);
