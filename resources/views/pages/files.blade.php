@@ -45,7 +45,6 @@
                                 </td>
                             @endif
                             <td>{{ $file->created_at->format('d.m.Y H:i:s') }}</td>
-
                         </tr>
                     @endforeach
                 </tbody>
