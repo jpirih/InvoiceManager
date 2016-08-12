@@ -3,9 +3,9 @@
  */
 
 $(document).ready(function () {
-   $('#invoice_date').datepicker({
-       dateFormat: 'dd.mm.yy',
-       showOtherMonths: true,
-       showOhterYears: true
-   });
+    $('#invoice_date').datepicker({
+        dateFormat: 'dd.mm.yy',
+        showOtherMonths: true,
+        showOhterYears: true
+    });
 });
