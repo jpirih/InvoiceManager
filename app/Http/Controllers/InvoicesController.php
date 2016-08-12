@@ -90,6 +90,9 @@ class InvoicesController extends Controller
     public function editInvoiceDetails($id)
     {
         $invoice = Invoice::find($id);
+        // slovenian date format for nicer look
+        // slovenian date format for nicer look 
+        $invoice->invoice_date = date('d.m.Y', strtotime($invoice->invoice_date));
         
         return view('pages.edit_invoice', ['invoice' => $invoice]);
     }
@@ -101,7 +104,7 @@ class InvoicesController extends Controller
         $dateString = $request->get('invoice_date');
         $date = strtotime($dateString);
         $invoiceDate = date('Y-m-d', $date);
-        
+
         $invoice = Invoice::find($id);
 
         $invoice->invoice_nr = $request->get('invoice_nr');

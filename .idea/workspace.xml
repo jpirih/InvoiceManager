@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1be083a0-0251-46c0-97ad-f0be2c649674" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/edit_invoice_logic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/new_invoice_logic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/postal_codes.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/FilesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/FilesController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/SaveCompanyRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/SaveCompanyRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/base.blade.php" afterPath="$PROJECT_DIR$/resources/views/base.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/edit_invoice.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/edit_invoice.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/edit_item.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/edit_item.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/new_company.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/new_company.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/new_invoice.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/new_invoice.blade.php" />
     </list>
     <ignored path="Invoice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,8 +71,8 @@
       <file leaf-file-name="InvoicesController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+            <state relative-caret-position="451">
+              <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -458,12 +444,12 @@
       <workItem from="1470934023112" duration="5603000" />
       <workItem from="1470977097233" duration="2955000" />
       <workItem from="1470983662755" duration="2373000" />
-      <workItem from="1470986045788" duration="2144000" />
+      <workItem from="1470986045788" duration="2953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286290000" />
+    <option name="totallyTimeSpent" value="287099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1672" y="-8" width="1696" height="1026" extended-state="6" />
@@ -804,7 +790,7 @@
         <state relative-caret-position="34">
           <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
           <folding>
-            <element signature="e#7#392#0#PHP" expanded="true" />
+            <element signature="e#7#392#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -897,8 +883,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+        <state relative-caret-position="451">
+          <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
           <folding />
         </state>
       </provider>
