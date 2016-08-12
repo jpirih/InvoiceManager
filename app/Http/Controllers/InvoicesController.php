@@ -54,6 +54,11 @@ class InvoicesController extends Controller
         // podatki iz obrazca
         $company = $request->get('companies');
         $company = $company[0];
+
+        $dateString = $request->get('invoice_date');
+        $date = strtotime($dateString);
+        $invoiceDate = date('Y-m-d', $date);
+
         $instrument = $request->get('instruments');
         $instrument = $instrument[0];
 
@@ -61,7 +66,7 @@ class InvoicesController extends Controller
         // shranjevanje podatkov v tabelo invoices
         $invoice->company_id = $company;
         $invoice->invoice_nr = $request->get('invoice_nr');
-        $invoice->invoice_date = $request->get('invoice_date');
+        $invoice->invoice_date = $invoiceDate;
         $invoice->payment_instrument_id = $instrument;
         $invoice->total = $request->get('total');
 
@@ -92,10 +97,15 @@ class InvoicesController extends Controller
     // shrani spremembe na racunu
     public function updateInvoiceDetails(SaveInvoiceRequest $request, $id)
     {
+
+        $dateString = $request->get('invoice_date');
+        $date = strtotime($dateString);
+        $invoiceDate = date('Y-m-d', $date);
+        
         $invoice = Invoice::find($id);
 
         $invoice->invoice_nr = $request->get('invoice_nr');
-        $invoice->invoice_date = $request->get('invoice_date');
+        $invoice->invoice_date = $invoiceDate;
         $invoice->total = $request->get('total');
 
         $invoice->save();

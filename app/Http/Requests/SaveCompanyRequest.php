@@ -27,7 +27,6 @@ class SaveCompanyRequest extends Request
             'name' => 'required',
             'full_name' => 'required',
             'address' => 'required',
-            'postal_code' => 'required',
             'city' => 'required',
             'country' => 'required'
         ];

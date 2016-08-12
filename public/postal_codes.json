@@ -1,0 +1,2767 @@
+[
+ {
+  "city": "Adle\u0161i\u010di", 
+  "company": "", 
+  "postal_code": 8341.0
+ }, 
+ {
+  "city": "Ajdov\u0161\u010dina", 
+  "company": "", 
+  "postal_code": 5270.0
+ }, 
+ {
+  "city": "Ankaran/Ancarano", 
+  "company": "", 
+  "postal_code": 6280.0
+ }, 
+ {
+  "city": "Apa\u010de", 
+  "company": "", 
+  "postal_code": 9253.0
+ }, 
+ {
+  "city": "Arti\u010de", 
+  "company": "", 
+  "postal_code": 8253.0
+ }, 
+ {
+  "city": "Begunje na Gorenjskem", 
+  "company": "", 
+  "postal_code": 4275.0
+ }, 
+ {
+  "city": "Begunje pri Cerknici", 
+  "company": "", 
+  "postal_code": 1382.0
+ }, 
+ {
+  "city": "Beltinci", 
+  "company": "", 
+  "postal_code": 9231.0
+ }, 
+ {
+  "city": "Benedikt", 
+  "company": "", 
+  "postal_code": 2234.0
+ }, 
+ {
+  "city": "Bistrica ob Dravi", 
+  "company": "", 
+  "postal_code": 2345.0
+ }, 
+ {
+  "city": "Bistrica ob Sotli", 
+  "company": "", 
+  "postal_code": 3256.0
+ }, 
+ {
+  "city": "Bizeljsko", 
+  "company": "", 
+  "postal_code": 8259.0
+ }, 
+ {
+  "city": "Blagovica", 
+  "company": "", 
+  "postal_code": 1223.0
+ }, 
+ {
+  "city": "Blanca", 
+  "company": "", 
+  "postal_code": 8283.0
+ }, 
+ {
+  "city": "Bled", 
+  "company": "", 
+  "postal_code": 4260.0
+ }, 
+ {
+  "city": "Blejska Dobrava", 
+  "company": "", 
+  "postal_code": 4273.0
+ }, 
+ {
+  "city": "Bodonci", 
+  "company": "", 
+  "postal_code": 9265.0
+ }, 
+ {
+  "city": "Bogojina", 
+  "company": "", 
+  "postal_code": 9222.0
+ }, 
+ {
+  "city": "Bohinjska Bela", 
+  "company": "", 
+  "postal_code": 4263.0
+ }, 
+ {
+  "city": "Bohinjska Bistrica", 
+  "company": "", 
+  "postal_code": 4264.0
+ }, 
+ {
+  "city": "Bohinjsko jezero", 
+  "company": "", 
+  "postal_code": 4265.0
+ }, 
+ {
+  "city": "Borovnica", 
+  "company": "", 
+  "postal_code": 1353.0
+ }, 
+ {
+  "city": "Bo\u0161tanj", 
+  "company": "", 
+  "postal_code": 8294.0
+ }, 
+ {
+  "city": "Bovec", 
+  "company": "", 
+  "postal_code": 5230.0
+ }, 
+ {
+  "city": "Branik", 
+  "company": "", 
+  "postal_code": 5295.0
+ }, 
+ {
+  "city": "Braslov\u010de", 
+  "company": "", 
+  "postal_code": 3314.0
+ }, 
+ {
+  "city": "Breginj", 
+  "company": "", 
+  "postal_code": 5223.0
+ }, 
+ {
+  "city": "Brestanica", 
+  "company": "", 
+  "postal_code": 8280.0
+ }, 
+ {
+  "city": "Bresternica", 
+  "company": "", 
+  "postal_code": 2354.0
+ }, 
+ {
+  "city": "Brezje", 
+  "company": "", 
+  "postal_code": 4243.0
+ }, 
+ {
+  "city": "Brezovica pri Ljubljani", 
+  "company": "", 
+  "postal_code": 1351.0
+ }, 
+ {
+  "city": "Bre\u017eice", 
+  "company": "", 
+  "postal_code": 8250.0
+ }, 
+ {
+  "city": "Brnik - Aerodrom", 
+  "company": "", 
+  "postal_code": 4210.0
+ }, 
+ {
+  "city": "Brusnice", 
+  "company": "", 
+  "postal_code": 8321.0
+ }, 
+ {
+  "city": "Bu\u010de", 
+  "company": "", 
+  "postal_code": 3255.0
+ }, 
+ {
+  "city": "Bu\u010dka ", 
+  "company": "", 
+  "postal_code": 8276.0
+ }, 
+ {
+  "city": "Cankova", 
+  "company": "", 
+  "postal_code": 9261.0
+ }, 
+ {
+  "city": "Celje ", 
+  "company": "", 
+  "postal_code": 3000.0
+ }, 
+ {
+  "city": "Celje - po\u0161tni predali", 
+  "company": "", 
+  "postal_code": 3001.0
+ }, 
+ {
+  "city": "Cerklje na Gorenjskem", 
+  "company": "", 
+  "postal_code": 4207.0
+ }, 
+ {
+  "city": "Cerklje ob Krki", 
+  "company": "", 
+  "postal_code": 8263.0
+ }, 
+ {
+  "city": "Cerknica", 
+  "company": "", 
+  "postal_code": 1380.0
+ }, 
+ {
+  "city": "Cerkno", 
+  "company": "", 
+  "postal_code": 5282.0
+ }, 
+ {
+  "city": "Cerkvenjak", 
+  "company": "", 
+  "postal_code": 2236.0
+ }, 
+ {
+  "city": "Cer\u0161ak", 
+  "company": "", 
+  "postal_code": 2215.0
+ }, 
+ {
+  "city": "Cirkovce", 
+  "company": "", 
+  "postal_code": 2326.0
+ }, 
+ {
+  "city": "Cirkulane", 
+  "company": "", 
+  "postal_code": 2282.0
+ }, 
+ {
+  "city": "Col", 
+  "company": "", 
+  "postal_code": 5273.0
+ }, 
+ {
+  "city": "\u010cate\u017e ob Savi", 
+  "company": "", 
+  "postal_code": 8251.0
+ }, 
+ {
+  "city": "\u010cem\u0161enik", 
+  "company": "", 
+  "postal_code": 1413.0
+ }, 
+ {
+  "city": "\u010cepovan", 
+  "company": "", 
+  "postal_code": 5253.0
+ }, 
+ {
+  "city": "\u010cren\u0161ovci", 
+  "company": "", 
+  "postal_code": 9232.0
+ }, 
+ {
+  "city": "\u010crna na Koro\u0161kem", 
+  "company": "", 
+  "postal_code": 2393.0
+ }, 
+ {
+  "city": "\u010crni Kal", 
+  "company": "", 
+  "postal_code": 6275.0
+ }, 
+ {
+  "city": "\u010crni Vrh nad Idrijo", 
+  "company": "", 
+  "postal_code": 5274.0
+ }, 
+ {
+  "city": "\u010crni\u010de", 
+  "company": "", 
+  "postal_code": 5262.0
+ }, 
+ {
+  "city": "\u010crnomelj", 
+  "company": "", 
+  "postal_code": 8340.0
+ }, 
+ {
+  "city": "Dekani", 
+  "company": "", 
+  "postal_code": 6271.0
+ }, 
+ {
+  "city": "Deskle", 
+  "company": "", 
+  "postal_code": 5210.0
+ }, 
+ {
+  "city": "Destrnik", 
+  "company": "", 
+  "postal_code": 2253.0
+ }, 
+ {
+  "city": "Diva\u010da", 
+  "company": "", 
+  "postal_code": 6215.0
+ }, 
+ {
+  "city": "Dob", 
+  "company": "", 
+  "postal_code": 1233.0
+ }, 
+ {
+  "city": "Dobje pri Planini", 
+  "company": "", 
+  "postal_code": 3224.0
+ }, 
+ {
+  "city": "Dobova", 
+  "company": "", 
+  "postal_code": 8257.0
+ }, 
+ {
+  "city": "Dobovec", 
+  "company": "", 
+  "postal_code": 1423.0
+ }, 
+ {
+  "city": "Dobravlje", 
+  "company": "", 
+  "postal_code": 5263.0
+ }, 
+ {
+  "city": "Dobrna", 
+  "company": "", 
+  "postal_code": 3204.0
+ }, 
+ {
+  "city": "Dobrni\u010d", 
+  "company": "", 
+  "postal_code": 8211.0
+ }, 
+ {
+  "city": "Dobrova", 
+  "company": "", 
+  "postal_code": 1356.0
+ }, 
+ {
+  "city": "Dobrovnik/Dobronak ", 
+  "company": "", 
+  "postal_code": 9223.0
+ }, 
+ {
+  "city": "Dobrovo v Brdih", 
+  "company": "", 
+  "postal_code": 5212.0
+ }, 
+ {
+  "city": "Dol pri Hrastniku", 
+  "company": "", 
+  "postal_code": 1431.0
+ }, 
+ {
+  "city": "Dol pri Ljubljani", 
+  "company": "", 
+  "postal_code": 1262.0
+ }, 
+ {
+  "city": "Dole pri Litiji", 
+  "company": "", 
+  "postal_code": 1273.0
+ }, 
+ {
+  "city": "Dolenja vas", 
+  "company": "", 
+  "postal_code": 1331.0
+ }, 
+ {
+  "city": "Dolenjske Toplice", 
+  "company": "", 
+  "postal_code": 8350.0
+ }, 
+ {
+  "city": "Dom\u017eale", 
+  "company": "", 
+  "postal_code": 1230.0
+ }, 
+ {
+  "city": "Dornava", 
+  "company": "", 
+  "postal_code": 2252.0
+ }, 
+ {
+  "city": "Dornberk", 
+  "company": "", 
+  "postal_code": 5294.0
+ }, 
+ {
+  "city": "Draga", 
+  "company": "", 
+  "postal_code": 1319.0
+ }, 
+ {
+  "city": "Dragatu\u0161", 
+  "company": "", 
+  "postal_code": 8343.0
+ }, 
+ {
+  "city": "Dramlje", 
+  "company": "", 
+  "postal_code": 3222.0
+ }, 
+ {
+  "city": "Dravograd", 
+  "company": "", 
+  "postal_code": 2370.0
+ }, 
+ {
+  "city": "Duplje", 
+  "company": "", 
+  "postal_code": 4203.0
+ }, 
+ {
+  "city": "Dutovlje", 
+  "company": "", 
+  "postal_code": 6221.0
+ }, 
+ {
+  "city": "Dvor", 
+  "company": "", 
+  "postal_code": 8361.0
+ }, 
+ {
+  "city": "Fala", 
+  "company": "", 
+  "postal_code": 2343.0
+ }, 
+ {
+  "city": "Fokovci", 
+  "company": "", 
+  "postal_code": 9208.0
+ }, 
+ {
+  "city": "Fram", 
+  "company": "", 
+  "postal_code": 2313.0
+ }, 
+ {
+  "city": "Frankolovo", 
+  "company": "", 
+  "postal_code": 3213.0
+ }, 
+ {
+  "city": "Gabrovka", 
+  "company": "", 
+  "postal_code": 1274.0
+ }, 
+ {
+  "city": "Globoko", 
+  "company": "", 
+  "postal_code": 8254.0
+ }, 
+ {
+  "city": "Godovi\u010d", 
+  "company": "", 
+  "postal_code": 5275.0
+ }, 
+ {
+  "city": "Golnik", 
+  "company": "", 
+  "postal_code": 4204.0
+ }, 
+ {
+  "city": "Gomilsko", 
+  "company": "", 
+  "postal_code": 3303.0
+ }, 
+ {
+  "city": "Gorenja vas", 
+  "company": "", 
+  "postal_code": 4224.0
+ }, 
+ {
+  "city": "Gorica pri Slivnici", 
+  "company": "", 
+  "postal_code": 3263.0
+ }, 
+ {
+  "city": "Gori\u0161nica", 
+  "company": "", 
+  "postal_code": 2272.0
+ }, 
+ {
+  "city": "Gornja Radgona", 
+  "company": "", 
+  "postal_code": 9250.0
+ }, 
+ {
+  "city": "Gornji Grad", 
+  "company": "", 
+  "postal_code": 3342.0
+ }, 
+ {
+  "city": "Gozd Martuljek", 
+  "company": "", 
+  "postal_code": 4282.0
+ }, 
+ {
+  "city": "Gra\u010di\u0161\u010de", 
+  "company": "", 
+  "postal_code": 6272.0
+ }, 
+ {
+  "city": "Grad", 
+  "company": "", 
+  "postal_code": 9264.0
+ }, 
+ {
+  "city": "Gradac", 
+  "company": "", 
+  "postal_code": 8332.0
+ }, 
+ {
+  "city": "Grahovo", 
+  "company": "", 
+  "postal_code": 1384.0
+ }, 
+ {
+  "city": "Grahovo ob Ba\u010di", 
+  "company": "", 
+  "postal_code": 5242.0
+ }, 
+ {
+  "city": "Grgar", 
+  "company": "", 
+  "postal_code": 5251.0
+ }, 
+ {
+  "city": "Gri\u017ee", 
+  "company": "", 
+  "postal_code": 3302.0
+ }, 
+ {
+  "city": "Grobelno", 
+  "company": "", 
+  "postal_code": 3231.0
+ }, 
+ {
+  "city": "Grosuplje", 
+  "company": "", 
+  "postal_code": 1290.0
+ }, 
+ {
+  "city": "Hajdina", 
+  "company": "", 
+  "postal_code": 2288.0
+ }, 
+ {
+  "city": "Hinje", 
+  "company": "", 
+  "postal_code": 8362.0
+ }, 
+ {
+  "city": "Ho\u010de", 
+  "company": "", 
+  "postal_code": 2311.0
+ }, 
+ {
+  "city": "Hodo\u0161/Hodos", 
+  "company": "", 
+  "postal_code": 9205.0
+ }, 
+ {
+  "city": "Horjul", 
+  "company": "", 
+  "postal_code": 1354.0
+ }, 
+ {
+  "city": "Hotedr\u0161ica", 
+  "company": "", 
+  "postal_code": 1372.0
+ }, 
+ {
+  "city": "Hrastnik", 
+  "company": "", 
+  "postal_code": 1430.0
+ }, 
+ {
+  "city": "Hru\u0161evje", 
+  "company": "", 
+  "postal_code": 6225.0
+ }, 
+ {
+  "city": "Hru\u0161ica", 
+  "company": "", 
+  "postal_code": 4276.0
+ }, 
+ {
+  "city": "Idrija", 
+  "company": "", 
+  "postal_code": 5280.0
+ }, 
+ {
+  "city": "Ig", 
+  "company": "", 
+  "postal_code": 1292.0
+ }, 
+ {
+  "city": "Ilirska Bistrica", 
+  "company": "", 
+  "postal_code": 6250.0
+ }, 
+ {
+  "city": "Ilirska Bistrica-Trnovo", 
+  "company": "", 
+  "postal_code": 6251.0
+ }, 
+ {
+  "city": "Ivan\u010dna Gorica", 
+  "company": "", 
+  "postal_code": 1295.0
+ }, 
+ {
+  "city": "Ivanjkovci", 
+  "company": "", 
+  "postal_code": 2259.0
+ }, 
+ {
+  "city": "Izlake", 
+  "company": "", 
+  "postal_code": 1411.0
+ }, 
+ {
+  "city": "Izola/Isola", 
+  "company": "", 
+  "postal_code": 6310.0
+ }, 
+ {
+  "city": "Jakobski Dol", 
+  "company": "", 
+  "postal_code": 2222.0
+ }, 
+ {
+  "city": "Jarenina", 
+  "company": "", 
+  "postal_code": 2221.0
+ }, 
+ {
+  "city": "Jel\u0161ane", 
+  "company": "", 
+  "postal_code": 6254.0
+ }, 
+ {
+  "city": "Jesenice", 
+  "company": "", 
+  "postal_code": 4270.0
+ }, 
+ {
+  "city": "Jesenice na Dolenjskem", 
+  "company": "", 
+  "postal_code": 8261.0
+ }, 
+ {
+  "city": "Jurklo\u0161ter", 
+  "company": "", 
+  "postal_code": 3273.0
+ }, 
+ {
+  "city": "Jurovski Dol", 
+  "company": "", 
+  "postal_code": 2223.0
+ }, 
+ {
+  "city": "Jur\u0161inci", 
+  "company": "", 
+  "postal_code": 2256.0
+ }, 
+ {
+  "city": "Kal nad Kanalom", 
+  "company": "", 
+  "postal_code": 5214.0
+ }, 
+ {
+  "city": "Kalobje", 
+  "company": "", 
+  "postal_code": 3233.0
+ }, 
+ {
+  "city": "Kamna Gorica", 
+  "company": "", 
+  "postal_code": 4246.0
+ }, 
+ {
+  "city": "Kamnica", 
+  "company": "", 
+  "postal_code": 2351.0
+ }, 
+ {
+  "city": "Kamnik", 
+  "company": "", 
+  "postal_code": 1241.0
+ }, 
+ {
+  "city": "Kanal", 
+  "company": "", 
+  "postal_code": 5213.0
+ }, 
+ {
+  "city": "Kapele", 
+  "company": "", 
+  "postal_code": 8258.0
+ }, 
+ {
+  "city": "Kapla", 
+  "company": "", 
+  "postal_code": 2362.0
+ }, 
+ {
+  "city": "Kidri\u010devo", 
+  "company": "", 
+  "postal_code": 2325.0
+ }, 
+ {
+  "city": "Kisovec", 
+  "company": "", 
+  "postal_code": 1412.0
+ }, 
+ {
+  "city": "Kne\u017eak", 
+  "company": "", 
+  "postal_code": 6253.0
+ }, 
+ {
+  "city": "Kobarid", 
+  "company": "", 
+  "postal_code": 5222.0
+ }, 
+ {
+  "city": "Kobilje", 
+  "company": "", 
+  "postal_code": 9227.0
+ }, 
+ {
+  "city": "Ko\u010devje", 
+  "company": "", 
+  "postal_code": 1330.0
+ }, 
+ {
+  "city": "Ko\u010devska Reka", 
+  "company": "", 
+  "postal_code": 1338.0
+ }, 
+ {
+  "city": "Kog", 
+  "company": "", 
+  "postal_code": 2276.0
+ }, 
+ {
+  "city": "Kojsko", 
+  "company": "", 
+  "postal_code": 5211.0
+ }, 
+ {
+  "city": "Komen", 
+  "company": "", 
+  "postal_code": 6223.0
+ }, 
+ {
+  "city": "Komenda", 
+  "company": "", 
+  "postal_code": 1218.0
+ }, 
+ {
+  "city": "Koper/Capodistria ", 
+  "company": "", 
+  "postal_code": 6000.0
+ }, 
+ {
+  "city": "Koper/Capodistria - po\u0161tni predali", 
+  "company": "", 
+  "postal_code": 6001.0
+ }, 
+ {
+  "city": "Koprivnica", 
+  "company": "", 
+  "postal_code": 8282.0
+ }, 
+ {
+  "city": "Kostanjevica na Krasu", 
+  "company": "", 
+  "postal_code": 5296.0
+ }, 
+ {
+  "city": "Kostanjevica na Krki", 
+  "company": "", 
+  "postal_code": 8311.0
+ }, 
+ {
+  "city": "Kostel", 
+  "company": "", 
+  "postal_code": 1336.0
+ }, 
+ {
+  "city": "Ko\u0161ana", 
+  "company": "", 
+  "postal_code": 6256.0
+ }, 
+ {
+  "city": "Kotlje", 
+  "company": "", 
+  "postal_code": 2394.0
+ }, 
+ {
+  "city": "Kozina", 
+  "company": "", 
+  "postal_code": 6240.0
+ }, 
+ {
+  "city": "Kozje", 
+  "company": "", 
+  "postal_code": 3260.0
+ }, 
+ {
+  "city": "Kranj ", 
+  "company": "", 
+  "postal_code": 4000.0
+ }, 
+ {
+  "city": "Kranj - po\u0161tni predali", 
+  "company": "", 
+  "postal_code": 4001.0
+ }, 
+ {
+  "city": "Kranjska Gora", 
+  "company": "", 
+  "postal_code": 4280.0
+ }, 
+ {
+  "city": "Kresnice", 
+  "company": "", 
+  "postal_code": 1281.0
+ }, 
+ {
+  "city": "Kri\u017ee", 
+  "company": "", 
+  "postal_code": 4294.0
+ }, 
+ {
+  "city": "Kri\u017eevci", 
+  "company": "", 
+  "postal_code": 9206.0
+ }, 
+ {
+  "city": "Kri\u017eevci pri Ljutomeru", 
+  "company": "", 
+  "postal_code": 9242.0
+ }, 
+ {
+  "city": "Krka", 
+  "company": "", 
+  "postal_code": 1301.0
+ }, 
+ {
+  "city": "Krmelj", 
+  "company": "", 
+  "postal_code": 8296.0
+ }, 
+ {
+  "city": "Kropa", 
+  "company": "", 
+  "postal_code": 4245.0
+ }, 
+ {
+  "city": "Kr\u0161ka vas", 
+  "company": "", 
+  "postal_code": 8262.0
+ }, 
+ {
+  "city": "Kr\u0161ko", 
+  "company": "", 
+  "postal_code": 8270.0
+ }, 
+ {
+  "city": "Kuzma", 
+  "company": "", 
+  "postal_code": 9263.0
+ }, 
+ {
+  "city": "Laporje", 
+  "company": "", 
+  "postal_code": 2318.0
+ }, 
+ {
+  "city": "La\u0161ko", 
+  "company": "", 
+  "postal_code": 3270.0
+ }, 
+ {
+  "city": "Laze v Tuhinju", 
+  "company": "", 
+  "postal_code": 1219.0
+ }, 
+ {
+  "city": "Lenart v Slovenskih goricah", 
+  "company": "", 
+  "postal_code": 2230.0
+ }, 
+ {
+  "city": "Lendava/Lendva", 
+  "company": "", 
+  "postal_code": 9220.0
+ }, 
+ {
+  "city": "Lesce", 
+  "company": "", 
+  "postal_code": 4248.0
+ }, 
+ {
+  "city": "Lesi\u010dno", 
+  "company": "", 
+  "postal_code": 3261.0
+ }, 
+ {
+  "city": "Leskovec pri Kr\u0161kem", 
+  "company": "", 
+  "postal_code": 8273.0
+ }, 
+ {
+  "city": "Libeli\u010de", 
+  "company": "", 
+  "postal_code": 2372.0
+ }, 
+ {
+  "city": "Limbu\u0161", 
+  "company": "", 
+  "postal_code": 2341.0
+ }, 
+ {
+  "city": "Litija", 
+  "company": "", 
+  "postal_code": 1270.0
+ }, 
+ {
+  "city": "Ljube\u010dna", 
+  "company": "", 
+  "postal_code": 3202.0
+ }, 
+ {
+  "city": "Ljubljana ", 
+  "company": "", 
+  "postal_code": 1000.0
+ }, 
+ {
+  "city": "Ljubljana - po\u0161tni predali", 
+  "company": "", 
+  "postal_code": 1001.0
+ }, 
+ {
+  "city": "Ljubljana - \u010crnu\u010de", 
+  "company": "", 
+  "postal_code": 1231.0
+ }, 
+ {
+  "city": "Ljubljana - Dobrunje", 
+  "company": "", 
+  "postal_code": 1261.0
+ }, 
+ {
+  "city": "Ljubljana - Polje", 
+  "company": "", 
+  "postal_code": 1260.0
+ }, 
+ {
+  "city": "Ljubljana - \u0160entvid", 
+  "company": "", 
+  "postal_code": 1210.0
+ }, 
+ {
+  "city": "Ljubljana - \u0160martno", 
+  "company": "", 
+  "postal_code": 1211.0
+ }, 
+ {
+  "city": "Ljubno ob Savinji", 
+  "company": "", 
+  "postal_code": 3333.0
+ }, 
+ {
+  "city": "Ljutomer", 
+  "company": "", 
+  "postal_code": 9240.0
+ }, 
+ {
+  "city": "Lo\u010de", 
+  "company": "", 
+  "postal_code": 3215.0
+ }, 
+ {
+  "city": "Log pod Mangartom", 
+  "company": "", 
+  "postal_code": 5231.0
+ }, 
+ {
+  "city": "Log pri Brezovici", 
+  "company": "", 
+  "postal_code": 1358.0
+ }, 
+ {
+  "city": "Logatec", 
+  "company": "", 
+  "postal_code": 1370.0
+ }, 
+ {
+  "city": "Logatec", 
+  "company": "", 
+  "postal_code": 1371.0
+ }, 
+ {
+  "city": "Loka pri Zidanem Mostu", 
+  "company": "", 
+  "postal_code": 1434.0
+ }, 
+ {
+  "city": "Loka pri \u017dusmu", 
+  "company": "", 
+  "postal_code": 3223.0
+ }, 
+ {
+  "city": "Lokev", 
+  "company": "", 
+  "postal_code": 6219.0
+ }, 
+ {
+  "city": "Lo\u0161ki Potok", 
+  "company": "", 
+  "postal_code": 1318.0
+ }, 
+ {
+  "city": "Lovrenc na Dravskem polju", 
+  "company": "", 
+  "postal_code": 2324.0
+ }, 
+ {
+  "city": "Lovrenc na Pohorju", 
+  "company": "", 
+  "postal_code": 2344.0
+ }, 
+ {
+  "city": "Lu\u010de", 
+  "company": "", 
+  "postal_code": 3334.0
+ }, 
+ {
+  "city": "Lukovica", 
+  "company": "", 
+  "postal_code": 1225.0
+ }, 
+ {
+  "city": "Ma\u010dkovci", 
+  "company": "", 
+  "postal_code": 9202.0
+ }, 
+ {
+  "city": "Maj\u0161perk", 
+  "company": "", 
+  "postal_code": 2322.0
+ }, 
+ {
+  "city": "Makole", 
+  "company": "", 
+  "postal_code": 2321.0
+ }, 
+ {
+  "city": "Mala Nedelja", 
+  "company": "", 
+  "postal_code": 9243.0
+ }, 
+ {
+  "city": "Male\u010dnik", 
+  "company": "", 
+  "postal_code": 2229.0
+ }, 
+ {
+  "city": "Marezige", 
+  "company": "", 
+  "postal_code": 6273.0
+ }, 
+ {
+  "city": "Maribor ", 
+  "company": "", 
+  "postal_code": 2000.0
+ }, 
+ {
+  "city": "Maribor - po\u0161tni predali", 
+  "company": "", 
+  "postal_code": 2001.0
+ }, 
+ {
+  "city": "Marjeta na Dravskem polju", 
+  "company": "", 
+  "postal_code": 2206.0
+ }, 
+ {
+  "city": "Markovci", 
+  "company": "", 
+  "postal_code": 2281.0
+ }, 
+ {
+  "city": "Martjanci", 
+  "company": "", 
+  "postal_code": 9221.0
+ }, 
+ {
+  "city": "Materija", 
+  "company": "", 
+  "postal_code": 6242.0
+ }, 
+ {
+  "city": "Mav\u010di\u010de", 
+  "company": "", 
+  "postal_code": 4211.0
+ }, 
+ {
+  "city": "Medvode", 
+  "company": "", 
+  "postal_code": 1215.0
+ }, 
+ {
+  "city": "Menge\u0161", 
+  "company": "", 
+  "postal_code": 1234.0
+ }, 
+ {
+  "city": "Metlika", 
+  "company": "", 
+  "postal_code": 8330.0
+ }, 
+ {
+  "city": "Me\u017eica", 
+  "company": "", 
+  "postal_code": 2392.0
+ }, 
+ {
+  "city": "Miklav\u017e na Dravskem polju", 
+  "company": "", 
+  "postal_code": 2204.0
+ }, 
+ {
+  "city": "Miklav\u017e pri Ormo\u017eu", 
+  "company": "", 
+  "postal_code": 2275.0
+ }, 
+ {
+  "city": "Miren", 
+  "company": "", 
+  "postal_code": 5291.0
+ }, 
+ {
+  "city": "Mirna", 
+  "company": "", 
+  "postal_code": 8233.0
+ }, 
+ {
+  "city": "Mirna Pe\u010d", 
+  "company": "", 
+  "postal_code": 8216.0
+ }, 
+ {
+  "city": "Mislinja", 
+  "company": "", 
+  "postal_code": 2382.0
+ }, 
+ {
+  "city": "Mojstrana", 
+  "company": "", 
+  "postal_code": 4281.0
+ }, 
+ {
+  "city": "Mokronog", 
+  "company": "", 
+  "postal_code": 8230.0
+ }, 
+ {
+  "city": "Morav\u010de", 
+  "company": "", 
+  "postal_code": 1251.0
+ }, 
+ {
+  "city": "Moravske Toplice", 
+  "company": "", 
+  "postal_code": 9226.0
+ }, 
+ {
+  "city": "Most na So\u010di", 
+  "company": "", 
+  "postal_code": 5216.0
+ }, 
+ {
+  "city": "Motnik", 
+  "company": "", 
+  "postal_code": 1221.0
+ }, 
+ {
+  "city": "Mozirje", 
+  "company": "", 
+  "postal_code": 3330.0
+ }, 
+ {
+  "city": "Murska Sobota ", 
+  "company": "", 
+  "postal_code": 9000.0
+ }, 
+ {
+  "city": "Murska Sobota - po\u0161tni predali", 
+  "company": "", 
+  "postal_code": 9001.0
+ }, 
+ {
+  "city": "Muta", 
+  "company": "", 
+  "postal_code": 2366.0
+ }, 
+ {
+  "city": "Naklo", 
+  "company": "", 
+  "postal_code": 4202.0
+ }, 
+ {
+  "city": "Nazarje", 
+  "company": "", 
+  "postal_code": 3331.0
+ }, 
+ {
+  "city": "Notranje Gorice", 
+  "company": "", 
+  "postal_code": 1357.0
+ }, 
+ {
+  "city": "Nova Cerkev", 
+  "company": "", 
+  "postal_code": 3203.0
+ }, 
+ {
+  "city": "Nova Gorica ", 
+  "company": "", 
+  "postal_code": 5000.0
+ }, 
+ {
+  "city": "Nova Gorica - po\u0161tni predali", 
+  "company": "", 
+  "postal_code": 5001.0
+ }, 
+ {
+  "city": "Nova vas", 
+  "company": "", 
+  "postal_code": 1385.0
+ }, 
+ {
+  "city": "Novo mesto", 
+  "company": "", 
+  "postal_code": 8000.0
+ }, 
+ {
+  "city": "Novo mesto - po\u0161tni predali", 
+  "company": "", 
+  "postal_code": 8001.0
+ }, 
+ {
+  "city": "Obrov", 
+  "company": "", 
+  "postal_code": 6243.0
+ }, 
+ {
+  "city": "Odranci", 
+  "company": "", 
+  "postal_code": 9233.0
+ }, 
+ {
+  "city": "Oplotnica", 
+  "company": "", 
+  "postal_code": 2317.0
+ }, 
+ {
+  "city": "Orehova vas", 
+  "company": "", 
+  "postal_code": 2312.0
+ }, 
+ {
+  "city": "Ormo\u017e", 
+  "company": "", 
+  "postal_code": 2270.0
+ }, 
+ {
+  "city": "Ortnek", 
+  "company": "", 
+  "postal_code": 1316.0
+ }, 
+ {
+  "city": "Osilnica", 
+  "company": "", 
+  "postal_code": 1337.0
+ }, 
+ {
+  "city": "Oto\u010dec", 
+  "company": "", 
+  "postal_code": 8222.0
+ }, 
+ {
+  "city": "O\u017ebalt", 
+  "company": "", 
+  "postal_code": 2361.0
+ }, 
+ {
+  "city": "Pernica", 
+  "company": "", 
+  "postal_code": 2231.0
+ }, 
+ {
+  "city": "Pesnica pri Mariboru", 
+  "company": "", 
+  "postal_code": 2211.0
+ }, 
+ {
+  "city": "Petrovci", 
+  "company": "", 
+  "postal_code": 9203.0
+ }, 
+ {
+  "city": "Petrov\u010de", 
+  "company": "", 
+  "postal_code": 3301.0
+ }, 
+ {
+  "city": "Piran/Pirano", 
+  "company": "", 
+  "postal_code": 6330.0
+ }, 
+ {
+  "city": "Pi\u0161ece", 
+  "company": "", 
+  "postal_code": 8255.0
+ }, 
+ {
+  "city": "Pivka", 
+  "company": "", 
+  "postal_code": 6257.0
+ }, 
+ {
+  "city": "Planina", 
+  "company": "", 
+  "postal_code": 6232.0
+ }, 
+ {
+  "city": "Planina pri Sevnici", 
+  "company": "", 
+  "postal_code": 3225.0
+ }, 
+ {
+  "city": "Pobegi", 
+  "company": "", 
+  "postal_code": 6276.0
+ }, 
+ {
+  "city": "Podbo\u010dje", 
+  "company": "", 
+  "postal_code": 8312.0
+ }, 
+ {
+  "city": "Podbrdo", 
+  "company": "", 
+  "postal_code": 5243.0
+ }, 
+ {
+  "city": "Pod\u010detrtek", 
+  "company": "", 
+  "postal_code": 3254.0
+ }, 
+ {
+  "city": "Podgorci", 
+  "company": "", 
+  "postal_code": 2273.0
+ }, 
+ {
+  "city": "Podgorje", 
+  "company": "", 
+  "postal_code": 6216.0
+ }, 
+ {
+  "city": "Podgorje pri Slovenj Gradcu", 
+  "company": "", 
+  "postal_code": 2381.0
+ }, 
+ {
+  "city": "Podgrad", 
+  "company": "", 
+  "postal_code": 6244.0
+ }, 
+ {
+  "city": "Podkum", 
+  "company": "", 
+  "postal_code": 1414.0
+ }, 
+ {
+  "city": "Podlehnik", 
+  "company": "", 
+  "postal_code": 2286.0
+ }, 
+ {
+  "city": "Podnanos", 
+  "company": "", 
+  "postal_code": 5272.0
+ }, 
+ {
+  "city": "Podnart", 
+  "company": "", 
+  "postal_code": 4244.0
+ }, 
+ {
+  "city": "Podplat", 
+  "company": "", 
+  "postal_code": 3241.0
+ }, 
+ {
+  "city": "Podsreda", 
+  "company": "", 
+  "postal_code": 3257.0
+ }, 
+ {
+  "city": "Podvelka", 
+  "company": "", 
+  "postal_code": 2363.0
+ }, 
+ {
+  "city": "Pohorje", 
+  "company": "", 
+  "postal_code": 2208.0
+ }, 
+ {
+  "city": "Polen\u0161ak", 
+  "company": "", 
+  "postal_code": 2257.0
+ }, 
+ {
+  "city": "Polhov Gradec", 
+  "company": "", 
+  "postal_code": 1355.0
+ }, 
+ {
+  "city": "Poljane nad \u0160kofjo Loko", 
+  "company": "", 
+  "postal_code": 4223.0
+ }, 
+ {
+  "city": "Polj\u010dane", 
+  "company": "", 
+  "postal_code": 2319.0
+ }, 
+ {
+  "city": "Pol\u0161nik", 
+  "company": "", 
+  "postal_code": 1272.0
+ }, 
+ {
+  "city": "Polzela", 
+  "company": "", 
+  "postal_code": 3313.0
+ }, 
+ {
+  "city": "Ponikva", 
+  "company": "", 
+  "postal_code": 3232.0
+ }, 
+ {
+  "city": "Portoro\u017e/Portorose", 
+  "company": "", 
+  "postal_code": 6320.0
+ }, 
+ {
+  "city": "Postojna", 
+  "company": "", 
+  "postal_code": 6230.0
+ }, 
+ {
+  "city": "Pragersko", 
+  "company": "", 
+  "postal_code": 2331.0
+ }, 
+ {
+  "city": "Prebold", 
+  "company": "", 
+  "postal_code": 3312.0
+ }, 
+ {
+  "city": "Preddvor", 
+  "company": "", 
+  "postal_code": 4205.0
+ }, 
+ {
+  "city": "Prem", 
+  "company": "", 
+  "postal_code": 6255.0
+ }, 
+ {
+  "city": "Preserje", 
+  "company": "", 
+  "postal_code": 1352.0
+ }, 
+ {
+  "city": "Prestranek", 
+  "company": "", 
+  "postal_code": 6258.0
+ }, 
+ {
+  "city": "Prevalje", 
+  "company": "", 
+  "postal_code": 2391.0
+ }, 
+ {
+  "city": "Prevorje", 
+  "company": "", 
+  "postal_code": 3262.0
+ }, 
+ {
+  "city": "Primskovo ", 
+  "company": "", 
+  "postal_code": 1276.0
+ }, 
+ {
+  "city": "Pristava pri Mestinju", 
+  "company": "", 
+  "postal_code": 3253.0
+ }, 
+ {
+  "city": "Prosenjakovci/Partosfalva", 
+  "company": "", 
+  "postal_code": 9207.0
+ }, 
+ {
+  "city": "Prva\u010dina", 
+  "company": "", 
+  "postal_code": 5297.0
+ }, 
+ {
+  "city": "Ptuj", 
+  "company": "", 
+  "postal_code": 2250.0
+ }, 
+ {
+  "city": "Ptujska Gora", 
+  "company": "", 
+  "postal_code": 2323.0
+ }, 
+ {
+  "city": "Puconci", 
+  "company": "", 
+  "postal_code": 9201.0
+ }, 
+ {
+  "city": "Ra\u010de", 
+  "company": "", 
+  "postal_code": 2327.0
+ }, 
+ {
+  "city": "Rade\u010de", 
+  "company": "", 
+  "postal_code": 1433.0
+ }, 
+ {
+  "city": "Radenci", 
+  "company": "", 
+  "postal_code": 9252.0
+ }, 
+ {
+  "city": "Radlje ob Dravi", 
+  "company": "", 
+  "postal_code": 2360.0
+ }, 
+ {
+  "city": "Radomlje", 
+  "company": "", 
+  "postal_code": 1235.0
+ }, 
+ {
+  "city": "Radovljica", 
+  "company": "", 
+  "postal_code": 4240.0
+ }, 
+ {
+  "city": "Raka", 
+  "company": "", 
+  "postal_code": 8274.0
+ }, 
+ {
+  "city": "Rakek", 
+  "company": "", 
+  "postal_code": 1381.0
+ }, 
+ {
+  "city": "Rate\u010de - Planica", 
+  "company": "", 
+  "postal_code": 4283.0
+ }, 
+ {
+  "city": "Ravne na Koro\u0161kem", 
+  "company": "", 
+  "postal_code": 2390.0
+ }, 
+ {
+  "city": "Razkri\u017eje", 
+  "company": "", 
+  "postal_code": 9246.0
+ }, 
+ {
+  "city": "Re\u010dica ob Savinji", 
+  "company": "", 
+  "postal_code": 3332.0
+ }, 
+ {
+  "city": "Ren\u010de", 
+  "company": "", 
+  "postal_code": 5292.0
+ }, 
+ {
+  "city": "Ribnica", 
+  "company": "", 
+  "postal_code": 1310.0
+ }, 
+ {
+  "city": "Ribnica na Pohorju", 
+  "company": "", 
+  "postal_code": 2364.0
+ }, 
+ {
+  "city": "Rimske Toplice", 
+  "company": "", 
+  "postal_code": 3272.0
+ }, 
+ {
+  "city": "Rob", 
+  "company": "", 
+  "postal_code": 1314.0
+ }, 
+ {
+  "city": "Ro\u010dinj", 
+  "company": "", 
+  "postal_code": 5215.0
+ }, 
+ {
+  "city": "Roga\u0161ka Slatina", 
+  "company": "", 
+  "postal_code": 3250.0
+ }, 
+ {
+  "city": "Roga\u0161ovci", 
+  "company": "", 
+  "postal_code": 9262.0
+ }, 
+ {
+  "city": "Rogatec", 
+  "company": "", 
+  "postal_code": 3252.0
+ }, 
+ {
+  "city": "Rovte", 
+  "company": "", 
+  "postal_code": 1373.0
+ }, 
+ {
+  "city": "Ru\u0161e", 
+  "company": "", 
+  "postal_code": 2342.0
+ }, 
+ {
+  "city": "Sava", 
+  "company": "", 
+  "postal_code": 1282.0
+ }, 
+ {
+  "city": "Se\u010dovlje/Sicciole", 
+  "company": "", 
+  "postal_code": 6333.0
+ }, 
+ {
+  "city": "Selca", 
+  "company": "", 
+  "postal_code": 4227.0
+ }, 
+ {
+  "city": "Selnica ob Dravi", 
+  "company": "", 
+  "postal_code": 2352.0
+ }, 
+ {
+  "city": "Semi\u010d", 
+  "company": "", 
+  "postal_code": 8333.0
+ }, 
+ {
+  "city": "Senovo", 
+  "company": "", 
+  "postal_code": 8281.0
+ }, 
+ {
+  "city": "Seno\u017ee\u010de", 
+  "company": "", 
+  "postal_code": 6224.0
+ }, 
+ {
+  "city": "Sevnica", 
+  "company": "", 
+  "postal_code": 8290.0
+ }, 
+ {
+  "city": "Se\u017eana", 
+  "company": "", 
+  "postal_code": 6210.0
+ }, 
+ {
+  "city": "Sladki Vrh", 
+  "company": "", 
+  "postal_code": 2214.0
+ }, 
+ {
+  "city": "Slap ob Idrijci", 
+  "company": "", 
+  "postal_code": 5283.0
+ }, 
+ {
+  "city": "Slovenj Gradec", 
+  "company": "", 
+  "postal_code": 2380.0
+ }, 
+ {
+  "city": "Slovenska Bistrica", 
+  "company": "", 
+  "postal_code": 2310.0
+ }, 
+ {
+  "city": "Slovenske Konjice", 
+  "company": "", 
+  "postal_code": 3210.0
+ }, 
+ {
+  "city": "Smlednik", 
+  "company": "", 
+  "postal_code": 1216.0
+ }, 
+ {
+  "city": "So\u010da", 
+  "company": "", 
+  "postal_code": 5232.0
+ }, 
+ {
+  "city": "Sodra\u017eica", 
+  "company": "", 
+  "postal_code": 1317.0
+ }, 
+ {
+  "city": "Sol\u010dava", 
+  "company": "", 
+  "postal_code": 3335.0
+ }, 
+ {
+  "city": "Solkan", 
+  "company": "", 
+  "postal_code": 5250.0
+ }, 
+ {
+  "city": "Sorica", 
+  "company": "", 
+  "postal_code": 4229.0
+ }, 
+ {
+  "city": "Sovodenj", 
+  "company": "", 
+  "postal_code": 4225.0
+ }, 
+ {
+  "city": "Spodnja Idrija", 
+  "company": "", 
+  "postal_code": 5281.0
+ }, 
+ {
+  "city": "Spodnji Duplek", 
+  "company": "", 
+  "postal_code": 2241.0
+ }, 
+ {
+  "city": "Spodnji Ivanjci", 
+  "company": "", 
+  "postal_code": 9245.0
+ }, 
+ {
+  "city": "Sredi\u0161\u010de ob Dravi", 
+  "company": "", 
+  "postal_code": 2277.0
+ }, 
+ {
+  "city": "Srednja vas v Bohinju", 
+  "company": "", 
+  "postal_code": 4267.0
+ }, 
+ {
+  "city": "Sromlje ", 
+  "company": "", 
+  "postal_code": 8256.0
+ }, 
+ {
+  "city": "Srpenica", 
+  "company": "", 
+  "postal_code": 5224.0
+ }, 
+ {
+  "city": "Stahovica", 
+  "company": "", 
+  "postal_code": 1242.0
+ }, 
+ {
+  "city": "Stara Cerkev", 
+  "company": "", 
+  "postal_code": 1332.0
+ }, 
+ {
+  "city": "Stari trg ob Kolpi", 
+  "company": "", 
+  "postal_code": 8342.0
+ }, 
+ {
+  "city": "Stari trg pri Lo\u017eu", 
+  "company": "", 
+  "postal_code": 1386.0
+ }, 
+ {
+  "city": "Star\u0161e", 
+  "company": "", 
+  "postal_code": 2205.0
+ }, 
+ {
+  "city": "Stoperce", 
+  "company": "", 
+  "postal_code": 2289.0
+ }, 
+ {
+  "city": "Stopi\u010de", 
+  "company": "", 
+  "postal_code": 8322.0
+ }, 
+ {
+  "city": "Stranice", 
+  "company": "", 
+  "postal_code": 3206.0
+ }, 
+ {
+  "city": "Stra\u017ea", 
+  "company": "", 
+  "postal_code": 8351.0
+ }, 
+ {
+  "city": "Struge", 
+  "company": "", 
+  "postal_code": 1313.0
+ }, 
+ {
+  "city": "Studenec", 
+  "company": "", 
+  "postal_code": 8293.0
+ }, 
+ {
+  "city": "Suhor", 
+  "company": "", 
+  "postal_code": 8331.0
+ }, 
+ {
+  "city": "Sv. Ana v Slovenskih goricah", 
+  "company": "", 
+  "postal_code": 2233.0
+ }, 
+ {
+  "city": "Sv. Trojica v Slovenskih goricah", 
+  "company": "", 
+  "postal_code": 2235.0
+ }, 
+ {
+  "city": "Sveti Duh na Ostrem Vrhu", 
+  "company": "", 
+  "postal_code": 2353.0
+ }, 
+ {
+  "city": "Sveti Jurij ob \u0160\u010davnici", 
+  "company": "", 
+  "postal_code": 9244.0
+ }, 
+ {
+  "city": "Sveti \u0160tefan", 
+  "company": "", 
+  "postal_code": 3264.0
+ }, 
+ {
+  "city": "Sveti Toma\u017e", 
+  "company": "", 
+  "postal_code": 2258.0
+ }, 
+ {
+  "city": "\u0160alovci", 
+  "company": "", 
+  "postal_code": 9204.0
+ }, 
+ {
+  "city": "\u0160empas", 
+  "company": "", 
+  "postal_code": 5261.0
+ }, 
+ {
+  "city": "\u0160empeter pri Gorici", 
+  "company": "", 
+  "postal_code": 5290.0
+ }, 
+ {
+  "city": "\u0160empeter v Savinjski dolini", 
+  "company": "", 
+  "postal_code": 3311.0
+ }, 
+ {
+  "city": "\u0160en\u010dur", 
+  "company": "", 
+  "postal_code": 4208.0
+ }, 
+ {
+  "city": "\u0160entilj v Slovenskih goricah", 
+  "company": "", 
+  "postal_code": 2212.0
+ }, 
+ {
+  "city": "\u0160entjan\u017e", 
+  "company": "", 
+  "postal_code": 8297.0
+ }, 
+ {
+  "city": "\u0160entjan\u017e pri Dravogradu", 
+  "company": "", 
+  "postal_code": 2373.0
+ }, 
+ {
+  "city": "\u0160entjernej", 
+  "company": "", 
+  "postal_code": 8310.0
+ }, 
+ {
+  "city": "\u0160entjur", 
+  "company": "", 
+  "postal_code": 3230.0
+ }, 
+ {
+  "city": "\u0160entrupert", 
+  "company": "", 
+  "postal_code": 3271.0
+ }, 
+ {
+  "city": "\u0160entrupert", 
+  "company": "", 
+  "postal_code": 8232.0
+ }, 
+ {
+  "city": "\u0160entvid pri Sti\u010dni", 
+  "company": "", 
+  "postal_code": 1296.0
+ }, 
+ {
+  "city": "\u0160kocjan", 
+  "company": "", 
+  "postal_code": 8275.0
+ }, 
+ {
+  "city": "\u0160kofije", 
+  "company": "", 
+  "postal_code": 6281.0
+ }, 
+ {
+  "city": "\u0160kofja Loka", 
+  "company": "", 
+  "postal_code": 4220.0
+ }, 
+ {
+  "city": "\u0160kofja vas", 
+  "company": "", 
+  "postal_code": 3211.0
+ }, 
+ {
+  "city": "\u0160kofljica", 
+  "company": "", 
+  "postal_code": 1291.0
+ }, 
+ {
+  "city": "\u0160marje", 
+  "company": "", 
+  "postal_code": 6274.0
+ }, 
+ {
+  "city": "\u0160marje - Sap", 
+  "company": "", 
+  "postal_code": 1293.0
+ }, 
+ {
+  "city": "\u0160marje pri Jel\u0161ah", 
+  "company": "", 
+  "postal_code": 3240.0
+ }, 
+ {
+  "city": "\u0160marje\u0161ke Toplice", 
+  "company": "", 
+  "postal_code": 8220.0
+ }, 
+ {
+  "city": "\u0160martno na Pohorju", 
+  "company": "", 
+  "postal_code": 2315.0
+ }, 
+ {
+  "city": "\u0160martno ob Dreti", 
+  "company": "", 
+  "postal_code": 3341.0
+ }, 
+ {
+  "city": "\u0160martno ob Paki", 
+  "company": "", 
+  "postal_code": 3327.0
+ }, 
+ {
+  "city": "\u0160martno pri Litiji", 
+  "company": "", 
+  "postal_code": 1275.0
+ }, 
+ {
+  "city": "\u0160martno pri Slovenj Gradcu", 
+  "company": "", 
+  "postal_code": 2383.0
+ }, 
+ {
+  "city": "\u0160martno v Ro\u017eni dolini", 
+  "company": "", 
+  "postal_code": 3201.0
+ }, 
+ {
+  "city": "\u0160o\u0161tanj", 
+  "company": "", 
+  "postal_code": 3325.0
+ }, 
+ {
+  "city": "\u0160tanjel", 
+  "company": "", 
+  "postal_code": 6222.0
+ }, 
+ {
+  "city": "\u0160tore", 
+  "company": "", 
+  "postal_code": 3220.0
+ }, 
+ {
+  "city": "Tabor", 
+  "company": "", 
+  "postal_code": 3304.0
+ }, 
+ {
+  "city": "Teharje", 
+  "company": "", 
+  "postal_code": 3221.0
+ }, 
+ {
+  "city": "Ti\u0161ina", 
+  "company": "", 
+  "postal_code": 9251.0
+ }, 
+ {
+  "city": "Tolmin", 
+  "company": "", 
+  "postal_code": 5220.0
+ }, 
+ {
+  "city": "Topol\u0161ica", 
+  "company": "", 
+  "postal_code": 3326.0
+ }, 
+ {
+  "city": "Trbonje", 
+  "company": "", 
+  "postal_code": 2371.0
+ }, 
+ {
+  "city": "Trbovlje", 
+  "company": "", 
+  "postal_code": 1420.0
+ }, 
+ {
+  "city": "Trebelno ", 
+  "company": "", 
+  "postal_code": 8231.0
+ }, 
+ {
+  "city": "Trebnje", 
+  "company": "", 
+  "postal_code": 8210.0
+ }, 
+ {
+  "city": "Trnovo pri Gorici", 
+  "company": "", 
+  "postal_code": 5252.0
+ }, 
+ {
+  "city": "Trnovska vas", 
+  "company": "", 
+  "postal_code": 2254.0
+ }, 
+ {
+  "city": "Trojane", 
+  "company": "", 
+  "postal_code": 1222.0
+ }, 
+ {
+  "city": "Trzin", 
+  "company": "", 
+  "postal_code": 1236.0
+ }, 
+ {
+  "city": "Tr\u017ei\u010d", 
+  "company": "", 
+  "postal_code": 4290.0
+ }, 
+ {
+  "city": "Tr\u017ei\u0161\u010de", 
+  "company": "", 
+  "postal_code": 8295.0
+ }, 
+ {
+  "city": "Turjak", 
+  "company": "", 
+  "postal_code": 1311.0
+ }, 
+ {
+  "city": "Turni\u0161\u010de", 
+  "company": "", 
+  "postal_code": 9224.0
+ }, 
+ {
+  "city": "Ur\u0161na sela", 
+  "company": "", 
+  "postal_code": 8323.0
+ }, 
+ {
+  "city": "Va\u010de", 
+  "company": "", 
+  "postal_code": 1252.0
+ }, 
+ {
+  "city": "Velenje ", 
+  "company": "", 
+  "postal_code": 3320.0
+ }, 
+ {
+  "city": "Velenje - po\u0161tni predali", 
+  "company": "", 
+  "postal_code": 3322.0
+ }, 
+ {
+  "city": "Velika Loka", 
+  "company": "", 
+  "postal_code": 8212.0
+ }, 
+ {
+  "city": "Velika Nedelja", 
+  "company": "", 
+  "postal_code": 2274.0
+ }, 
+ {
+  "city": "Velika Polana", 
+  "company": "", 
+  "postal_code": 9225.0
+ }, 
+ {
+  "city": "Velike La\u0161\u010de", 
+  "company": "", 
+  "postal_code": 1315.0
+ }, 
+ {
+  "city": "Veliki Gaber", 
+  "company": "", 
+  "postal_code": 8213.0
+ }, 
+ {
+  "city": "Ver\u017eej", 
+  "company": "", 
+  "postal_code": 9241.0
+ }, 
+ {
+  "city": "Videm - Dobrepolje", 
+  "company": "", 
+  "postal_code": 1312.0
+ }, 
+ {
+  "city": "Videm pri Ptuju", 
+  "company": "", 
+  "postal_code": 2284.0
+ }, 
+ {
+  "city": "Vinica", 
+  "company": "", 
+  "postal_code": 8344.0
+ }, 
+ {
+  "city": "Vipava", 
+  "company": "", 
+  "postal_code": 5271.0
+ }, 
+ {
+  "city": "Visoko", 
+  "company": "", 
+  "postal_code": 4212.0
+ }, 
+ {
+  "city": "Vi\u0161nja Gora", 
+  "company": "", 
+  "postal_code": 1294.0
+ }, 
+ {
+  "city": "Vitanje", 
+  "company": "", 
+  "postal_code": 3205.0
+ }, 
+ {
+  "city": "Vitomarci", 
+  "company": "", 
+  "postal_code": 2255.0
+ }, 
+ {
+  "city": "Vodice", 
+  "company": "", 
+  "postal_code": 1217.0
+ }, 
+ {
+  "city": "Vojnik", 
+  "company": "", 
+  "postal_code": 3212.0
+ }, 
+ {
+  "city": "Vol\u010dja Draga", 
+  "company": "", 
+  "postal_code": 5293.0
+ }, 
+ {
+  "city": "Voli\u010dina", 
+  "company": "", 
+  "postal_code": 2232.0
+ }, 
+ {
+  "city": "Vransko", 
+  "company": "", 
+  "postal_code": 3305.0
+ }, 
+ {
+  "city": "Vremski Britof", 
+  "company": "", 
+  "postal_code": 6217.0
+ }, 
+ {
+  "city": "Vrhnika", 
+  "company": "", 
+  "postal_code": 1360.0
+ }, 
+ {
+  "city": "Vuhred", 
+  "company": "", 
+  "postal_code": 2365.0
+ }, 
+ {
+  "city": "Vuzenica", 
+  "company": "", 
+  "postal_code": 2367.0
+ }, 
+ {
+  "city": "Zabukovje ", 
+  "company": "", 
+  "postal_code": 8292.0
+ }, 
+ {
+  "city": "Zagorje ob Savi", 
+  "company": "", 
+  "postal_code": 1410.0
+ }, 
+ {
+  "city": "Zagradec", 
+  "company": "", 
+  "postal_code": 1303.0
+ }, 
+ {
+  "city": "Zavr\u010d", 
+  "company": "", 
+  "postal_code": 2283.0
+ }, 
+ {
+  "city": "Zdole ", 
+  "company": "", 
+  "postal_code": 8272.0
+ }, 
+ {
+  "city": "Zgornja Besnica", 
+  "company": "", 
+  "postal_code": 4201.0
+ }, 
+ {
+  "city": "Zgornja Korena", 
+  "company": "", 
+  "postal_code": 2242.0
+ }, 
+ {
+  "city": "Zgornja Kungota", 
+  "company": "", 
+  "postal_code": 2201.0
+ }, 
+ {
+  "city": "Zgornja Lo\u017enica", 
+  "company": "", 
+  "postal_code": 2316.0
+ }, 
+ {
+  "city": "Zgornja Polskava", 
+  "company": "", 
+  "postal_code": 2314.0
+ }, 
+ {
+  "city": "Zgornja Velka", 
+  "company": "", 
+  "postal_code": 2213.0
+ }, 
+ {
+  "city": "Zgornje Gorje", 
+  "company": "", 
+  "postal_code": 4247.0
+ }, 
+ {
+  "city": "Zgornje Jezersko", 
+  "company": "", 
+  "postal_code": 4206.0
+ }, 
+ {
+  "city": "Zgornji Leskovec", 
+  "company": "", 
+  "postal_code": 2285.0
+ }, 
+ {
+  "city": "Zidani Most", 
+  "company": "", 
+  "postal_code": 1432.0
+ }, 
+ {
+  "city": "Zre\u010de", 
+  "company": "", 
+  "postal_code": 3214.0
+ }, 
+ {
+  "city": "\u017dabnica", 
+  "company": "", 
+  "postal_code": 4209.0
+ }, 
+ {
+  "city": "\u017dalec", 
+  "company": "", 
+  "postal_code": 3310.0
+ }, 
+ {
+  "city": "\u017delezniki", 
+  "company": "", 
+  "postal_code": 4228.0
+ }, 
+ {
+  "city": "\u017detale", 
+  "company": "", 
+  "postal_code": 2287.0
+ }, 
+ {
+  "city": "\u017diri", 
+  "company": "", 
+  "postal_code": 4226.0
+ }, 
+ {
+  "city": "\u017dirovnica", 
+  "company": "", 
+  "postal_code": 4274.0
+ }, 
+ {
+  "city": "\u017du\u017eemberk", 
+  "company": "", 
+  "postal_code": 8360.0
+ }, 
+ {
+  "city": "Celje", 
+  "company": "Merkur", 
+  "postal_code": 3505.0
+ }, 
+ {
+  "city": "Celje", 
+  "company": "Po\u0161ta Slovenije, PE Celje", 
+  "postal_code": 3600.0
+ }, 
+ {
+  "city": "Koper", 
+  "company": "Adriatic Slovenica, Zavarovalna dru\u017eba", 
+  "postal_code": 6503.0
+ }, 
+ {
+  "city": "Koper", 
+  "company": "Banka Koper", 
+  "postal_code": 6502.0
+ }, 
+ {
+  "city": "Koper", 
+  "company": "Intereuropa ", 
+  "postal_code": 6504.0
+ }, 
+ {
+  "city": "Koper", 
+  "company": "Luka Koper", 
+  "postal_code": 6501.0
+ }, 
+ {
+  "city": "Koper", 
+  "company": "Po\u0161ta Slovenije, PE Koper", 
+  "postal_code": 6600.0
+ }, 
+ {
+  "city": "Koper", 
+  "company": "Po\u0161ta Slovenije, PPP Koper", 
+  "postal_code": 6200.0
+ }, 
+ {
+  "city": "Kranj", 
+  "company": "Po\u0161ta Slovenije, PPP \u0160en\u010dur", 
+  "postal_code": 4200.0
+ }, 
+ {
+  "city": "Kranj", 
+  "company": "Sava", 
+  "postal_code": 4502.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Po\u0161ta Slovenije, PE PLC, PLC Ljubljana", 
+  "postal_code": 1002.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Abanka Vipa", 
+  "postal_code": 1517.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Banka Slovenije", 
+  "postal_code": 1505.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "BTC", 
+  "postal_code": 1533.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Cankarjeva zalo\u017eba ", 
+  "postal_code": 1512.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Carinarnica Ljubljana", 
+  "postal_code": 1524.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Carinska uprava Republike Slovenije ", 
+  "postal_code": 1523.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Chemo", 
+  "postal_code": 1522.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Dnevnik ", 
+  "postal_code": 1510.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Delo ", 
+  "postal_code": 1509.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "DZS ", 
+  "postal_code": 1538.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Elektro Ljubljana", 
+  "postal_code": 1516.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Emona ", 
+  "postal_code": 1528.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "EPPS - Elektronsko pismo Po\u0161te Slovenije", 
+  "postal_code": 1540.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Gospodarska zbornica Slovenije", 
+  "postal_code": 1504.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Iskra Invest", 
+  "postal_code": 1521.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Kanal A", 
+  "postal_code": 1545.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "KDD - Centralna klirin\u0161ko depotna dru\u017eba", 
+  "postal_code": 1542.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Klini\u010dni center Ljubljana", 
+  "postal_code": 1525.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Droga Kolinska", 
+  "postal_code": 1544.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Kompas", 
+  "postal_code": 1514.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Lek", 
+  "postal_code": 1526.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Ministrstvo za finance", 
+  "postal_code": 1502.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Ministrstvo za notranje zadeve", 
+  "postal_code": 1501.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Ministrstvo za promet ", 
+  "postal_code": 1535.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Mladinska knjiga Zalo\u017eba", 
+  "postal_code": 1536.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Mobitel", 
+  "postal_code": 1537.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Nova Ljubljanska banka", 
+  "postal_code": 1520.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Okrajno sodi\u0161\u010de v Ljubljani", 
+  "postal_code": 1534.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Okro\u017eno sodi\u0161\u010de v Ljubljani", 
+  "postal_code": 1503.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Petrol", 
+  "postal_code": 1527.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Po\u0161ta Slovenije, PE Ljubljana", 
+  "postal_code": 1600.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "RTV Slovenija", 
+  "postal_code": 1550.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Salamonov oglasnik", 
+  "postal_code": 1532.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "SKB banka", 
+  "postal_code": 1513.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Slovenijales", 
+  "postal_code": 1511.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Slovenske \u017eeleznice", 
+  "postal_code": 1506.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "SPL Ljubljana", 
+  "postal_code": 1519.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "\u0160portna loterija", 
+  "postal_code": 1543.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Telekom Slovenije ", 
+  "postal_code": 1546.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "Telekom Slovenije, PE Ljubljana", 
+  "postal_code": 1547.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "ZPIZ, Zavod za pokoj. in inval. zav. Slov.", 
+  "postal_code": 1518.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "ZZZS, Zavod za zdrav. zav. Slov.", 
+  "postal_code": 1507.0
+ }, 
+ {
+  "city": "Ljubljana", 
+  "company": "\u017dito", 
+  "postal_code": 1529.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "Po\u0161ta Slovenije, PE PLC, PLC Maribor", 
+  "postal_code": 2002.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "DURS, Dav\u010dni urad Maribor", 
+  "postal_code": 2502.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "Elektro Maribor", 
+  "postal_code": 2509.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "Henkel Slovenija", 
+  "postal_code": 2506.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "Nova Kreditna banka Maribor", 
+  "postal_code": 2505.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "Okro\u017eno sodi\u0161\u010de v Mariboru", 
+  "postal_code": 2503.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "Okrajno sodi\u0161\u010de v Mariboru", 
+  "postal_code": 2508.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "Po\u0161ta Slovenije, uprava", 
+  "postal_code": 2500.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "Po\u0161ta Slovenije, PE Maribor", 
+  "postal_code": 2600.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "Po\u0161ta Slovenije, Center za digitalizacijo", 
+  "postal_code": 2607.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "Po\u0161ta Slovenije, PE PLC Maribor, Skladi\u0161\u010dna logistika", 
+  "postal_code": 2609.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "Po\u0161ta Slovenije, Centralna RA pisarna", 
+  "postal_code": 2610.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "Upravna enota Maribor ", 
+  "postal_code": 2501.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "Ve\u010der", 
+  "postal_code": 2504.0
+ }, 
+ {
+  "city": "Maribor", 
+  "company": "Zavarovalnica Maribor", 
+  "postal_code": 2507.0
+ }, 
+ {
+  "city": "Murska Sobota", 
+  "company": "Mura", 
+  "postal_code": 9501.0
+ }, 
+ {
+  "city": "Naklo", 
+  "company": "Merkur ", 
+  "postal_code": 4501.0
+ }, 
+ {
+  "city": "Novo mesto", 
+  "company": "Krka", 
+  "postal_code": 8501.0
+ }, 
+ {
+  "city": "Radenci", 
+  "company": "Radenska d.d.", 
+  "postal_code": 9502.0
+ }, 
+ {
+  "city": "Velenje", 
+  "company": "Gorenje", 
+  "postal_code": 3503.0
+ }, 
+ {
+  "city": "Velenje", 
+  "company": "ERA", 
+  "postal_code": 3504.0
+ }
+]

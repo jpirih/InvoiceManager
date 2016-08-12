@@ -12,8 +12,9 @@
 
     <!-- jquery cdn -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/redmond/jquery-ui.css">
-
-
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    @yield('javascript')
     <!-- moj css -->
     <link rel="stylesheet" href="/css/theme.css">
 

@@ -1,5 +1,9 @@
 @extends('base')
 
+@section('javascript')
+    <script type="text/javascript" src="/js/new_invoice_logic.js"></script>
+@endsection
+
 @section('title')
     Dodaj Račun
 @endsection
@@ -37,7 +41,7 @@
                     <div class="form-group">
                         <label for="invoice_date" class="control-label col-sm-4">Datum Računa</label>
                         <div class="col-sm-8">
-                            <input type="date" name="invoice_date" id="invoice_date" class="form-control">
+                            <input type="text" name="invoice_date" id="invoice_date" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
@@ -101,3 +105,5 @@
         </div>
     </div>
 @endsection
+<!-- scipt -->
+

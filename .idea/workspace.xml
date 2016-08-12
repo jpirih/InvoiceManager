@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1be083a0-0251-46c0-97ad-f0be2c649674" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/pages/edit_item.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/edit_invoice_logic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/new_invoice_logic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/postal_codes.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ItemsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ItemsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/category_items.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/category_items.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/FilesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/FilesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/SaveCompanyRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/SaveCompanyRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/base.blade.php" afterPath="$PROJECT_DIR$/resources/views/base.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/edit_invoice.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/edit_invoice.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/invoice_details.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/invoice_details.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/items.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/items.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/edit_item.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/edit_item.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/new_company.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/new_company.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/new_invoice.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/new_invoice.blade.php" />
     </list>
     <ignored path="Invoice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,72 +40,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Item.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Item.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="new_invoice.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/new_invoice.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="33" column="102" selection-start-line="33" selection-start-column="102" selection-end-line="33" selection-end-column="102" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemsController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ItemsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/items.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit_item.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/edit_item.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="44" column="63" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2016_04_25_123138_create_items_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2016_04_25_123138_create_items_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="37" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category_items.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/category_items.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="38" column="93" selection-start-line="38" selection-start-column="93" selection-end-line="38" selection-end-column="93" />
+              <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/dashboard.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1054">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="8" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_invoice_logic.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/new_invoice_logic.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="10" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#44#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilesController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FilesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="642">
+              <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvoicesController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompaniesController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+              <folding>
+                <element signature="e#40#56#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit_invoice_logic.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/edit_invoice_logic.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#44#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,30 +119,28 @@
       <file leaf-file-name="edit_invoice.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/edit_invoice.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+            <state relative-caret-position="204">
+              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <file leaf-file-name="new_company.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/new_company.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="38" column="96" selection-start-line="38" selection-start-column="96" selection-end-line="38" selection-end-column="96" />
-              <folding>
-                <element signature="e#7#392#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="242">
+              <caret line="63" column="50" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invoice_details.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/invoice_details.blade.php">
+      <file leaf-file-name="SaveCompanyRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/SaveCompanyRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="147" column="107" selection-start-line="147" selection-start-column="107" selection-end-line="147" selection-end-column="107" />
+            <state relative-caret-position="476">
+              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -156,14 +167,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Unit.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/instructions.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_04_25_123138_create_items_table.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/dashboard.balde.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/SaveCategoryRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/SavePaymentInstrumentRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/SaveCompanyRequest.php" />
         <option value="$PROJECT_DIR$/app/Company.php" />
         <option value="$PROJECT_DIR$/app/PaymentInstrument.php" />
         <option value="$PROJECT_DIR$/app/Category.php" />
@@ -171,7 +179,6 @@
         <option value="$PROJECT_DIR$/app/Item.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/company_details.blade.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_04_151911_create_files_invoices_table.php" />
         <option value="$PROJECT_DIR$/app/Invoice.php" />
         <option value="$PROJECT_DIR$/app/Attachment.php" />
@@ -181,32 +188,36 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/File.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/FilesController.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/files.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_07_15_150459_add_delted_col_invoices.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/deleted_items.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RecycleBinController.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/invoices.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php" />
-        <option value="$PROJECT_DIR$/resources/views/base.blade.php" />
         <option value="$PROJECT_DIR$/public/js/dashboard_logic.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
         <option value="$PROJECT_DIR$/public/css/theme.css" />
         <option value="$PROJECT_DIR$/resources/views/pages/new_file.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/companies.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/edit_company.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/new_company.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/invoice_items.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/new_invoice.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/invoice_details.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/edit_invoice.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/edit_item.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ItemsController.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/items.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/category_items.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/FilesController.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/new_company.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/edit_item.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/new_invoice_logic.js" />
+        <option value="$PROJECT_DIR$/resources/views/base.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/new_invoice.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/SaveCompanyRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" />
+        <option value="$PROJECT_DIR$/public/js/edit_invoice_logic.js" />
+        <option value="$PROJECT_DIR$/resources/views/pages/edit_invoice.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php" />
       </list>
     </option>
   </component>
@@ -269,18 +280,67 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/xampp/htdocs/FpAdmin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Blog" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="cat&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/category_items.blade.php&#10;invoic&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoice_items.blade.php&#10;items&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/items.blade.php&#10;routes&#9;FILE&#9;file://F:/Code/Invoice/app/Http/routes.php&#10;Item&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/ItemsController.php&#10;invo&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoice_details.blade.php&#10;create_&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_04_25_123138_create_items_table.php&#10;item &#9;null&#9;null&#10;ItemsCo&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/ItemsController.php&#10;rout&#9;FILE&#9;file://F:/Code/Invoice/app/Http/routes.php&#10;new_in&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/new_invoice.blade.php&#10;edit_in&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/edit_invoice.blade.php&#10;route&#9;FILE&#9;file://F:/Code/Invoice/app/Http/routes.php&#10;new_co&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/new_company.blade.php&#10;edit&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/edit_invoice.blade.php&#10;invoice&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/new_invoice.blade.php&#10;compa&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/companies.blade.php&#10;fi&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/new_file.blade.php&#10;theme&#9;FILE&#9;file://F:/Code/Invoice/public/css/theme.css&#10;rou&#9;FILE&#9;file://F:/Code/Invoice/app/Http/routes.php&#10;categor&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/category_items.blade.php&#10;ro&#9;FILE&#9;file://F:/Code/Invoice/app/Http/routes.php&#10;dash&#9;FILE&#9;file://F:/Code/Invoice/public/js/dashboard_logic.js&#10;ba&#9;FILE&#9;file://F:/Code/Invoice/resources/views/base.blade.php&#10;Dash&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/DashboardController.php&#10;items_&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_04_25_123138_create_items_table.php&#10;Items&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/ItemsController.php&#10;create_item&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_04_25_123138_create_items_table.php&#10;Invo&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;create_in&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_04_24_085149_create_invoices_table.php&#10;das&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/dashboard.blade.php&#10;base&#9;FILE&#9;file://F:/Code/Invoice/resources/views/base.blade.php&#10;Recy&#9;null&#9;null&#10;Files&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/FilesController.php&#10;ite&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/items.blade.php&#10;companies&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/CompaniesController.php&#10;file&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/files.blade.php&#10;in&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoices.blade.php&#10;Invoice&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;invoices&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoices.blade.php&#10;Invoices&#9;null&#9;null&#10;add_de&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_07_15_150459_add_delted_col_invoices.php&#10;create_files&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_06_04_151220_create_files_table.php&#10;invoice_de&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoice_details.blade.php&#10;Fi&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/FilesController.php&#10;File&#9;FILE&#9;file://F:/Code/Invoice/app/File.php&#10;create_fi&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_06_04_151220_create_files_table.php&#10;bas&#9;FILE&#9;file://F:/Code/Invoice/resources/views/base.blade.php&#10;new&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/new_file.blade.php&#10;ho&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/HomeController.php" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="SearchEverywhereHistoryKey" value=" I&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;edi&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/edit_invoice.blade.php&#10;new_co&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/new_company.blade.php&#10;save&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Requests/SaveCompanyRequest.php&#10;Compa&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/CompaniesController.php&#10;files&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/FilesController.php&#10;rou&#9;FILE&#9;file://F:/Code/Invoice/app/Http/routes.php&#10;Invoices&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;dash&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/dashboard.blade.php&#10;new_i&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/new_invoice.blade.php&#10;SaveComp&#9;null&#9;null&#10;FilesCo&#9;null&#9;null&#10;postal&#9;FILE&#9;file://F:/Code/Invoice/public/data/postal_codes.json&#10;Companies&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/CompaniesController.php&#10;base&#9;FILE&#9;file://F:/Code/Invoice/resources/views/base.blade.php&#10;da&#9;FILE&#9;file://F:/Code/Invoice/public/js/dashboard_logic.js&#10;cat&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/category_items.blade.php&#10;invoic&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoice_items.blade.php&#10;items&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/items.blade.php&#10;routes&#9;FILE&#9;file://F:/Code/Invoice/app/Http/routes.php&#10;Item&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/ItemsController.php&#10;invo&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoice_details.blade.php&#10;create_&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_04_25_123138_create_items_table.php&#10;item &#9;null&#9;null&#10;ItemsCo&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/ItemsController.php&#10;rout&#9;FILE&#9;file://F:/Code/Invoice/app/Http/routes.php&#10;new_in&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/new_invoice.blade.php&#10;edit_in&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/edit_invoice.blade.php&#10;route&#9;FILE&#9;file://F:/Code/Invoice/app/Http/routes.php&#10;edit&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/edit_invoice.blade.php&#10;invoice&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/new_invoice.blade.php&#10;compa&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/companies.blade.php&#10;fi&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/new_file.blade.php&#10;theme&#9;FILE&#9;file://F:/Code/Invoice/public/css/theme.css&#10;categor&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/category_items.blade.php&#10;ro&#9;FILE&#9;file://F:/Code/Invoice/app/Http/routes.php&#10;ba&#9;FILE&#9;file://F:/Code/Invoice/resources/views/base.blade.php&#10;Dash&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/DashboardController.php&#10;items_&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_04_25_123138_create_items_table.php&#10;Items&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/ItemsController.php&#10;create_item&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_04_25_123138_create_items_table.php&#10;Invo&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;create_in&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_04_24_085149_create_invoices_table.php&#10;das&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/dashboard.blade.php&#10;Recy&#9;null&#9;null&#10;Files&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/FilesController.php&#10;ite&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/items.blade.php&#10;companies&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/CompaniesController.php&#10;file&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/files.blade.php&#10;in&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoices.blade.php" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -288,6 +348,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Code\Invoice\public" />
       <recent name="E:\Learning\Php\Laravel\Code\Invoice\resources\views" />
       <recent name="E:\Learning\Php\Laravel\Code\Invoice\resources\lang" />
       <recent name="E:\Learning\Php\Laravel\Code\Invoice" />
@@ -393,19 +454,23 @@
       <workItem from="1470829279974" duration="19973000" />
       <workItem from="1470853253558" duration="1478000" />
       <workItem from="1470885213321" duration="10284000" />
-      <workItem from="1470895549154" duration="17670000" />
+      <workItem from="1470895549154" duration="19726000" />
+      <workItem from="1470934023112" duration="5603000" />
+      <workItem from="1470977097233" duration="2955000" />
+      <workItem from="1470983662755" duration="2373000" />
+      <workItem from="1470986045788" duration="2144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271159000" />
+    <option name="totallyTimeSpent" value="286290000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1672" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2607143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26190478" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -450,62 +515,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/PaymentInstrument.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Company.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/company_details.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="79" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Invoice.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -598,13 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
@@ -616,13 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FilesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -657,27 +652,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dashboard_logic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2390">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294">
-          <caret line="26" column="73" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/new_file.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,7 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,33 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
           <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/new_company.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2080">
-          <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#59#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,31 +692,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
           <caret line="64" column="11" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/new_invoice.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="102" selection-start-line="33" selection-start-column="102" selection-end-line="33" selection-end-column="102" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="102">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/invoice_details.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
+        <state relative-caret-position="2499">
           <caret line="147" column="107" selection-start-line="147" selection-start-column="107" selection-end-line="147" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ItemsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/invoice_items.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/items.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -779,60 +739,166 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/postal_codes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/data/postal_codes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="102" column="30" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/category_items.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="38" column="93" selection-start-line="38" selection-start-column="93" selection-end-line="38" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/dashboard_logic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/edit_item.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1756">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1059">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="38" column="96" selection-start-line="38" selection-start-column="96" selection-end-line="38" selection-end-column="96" />
+        <state relative-caret-position="34">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
           <folding>
             <element signature="e#7#392#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/edit_item.blade.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="44" column="63" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="63" />
+        <state relative-caret-position="119">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ItemsController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FilesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+        <state relative-caret-position="642">
+          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/items.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="-1054">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="8" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/invoice_items.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/SaveCompanyRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+        <state relative-caret-position="476">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/new_invoice.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/new_company.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="63" column="50" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/new_invoice_logic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/edit_invoice_logic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/edit_invoice.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="204">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/category_items.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="38" column="93" selection-start-line="38" selection-start-column="93" selection-end-line="38" selection-end-column="93" />
+        <state relative-caret-position="667">
+          <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
           <folding />
         </state>
       </provider>

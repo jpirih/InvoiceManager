@@ -25,21 +25,29 @@ class CompaniesController extends Controller
         return view('pages.companies', ['companies' => $companies]);
     }
     
-    // dodaj novo podjetje 
+    // dodaj novo podjetje
     public function addCompany()
     {
-        return view('pages.new_company');
+
+        $postalCodes = file_get_contents( public_path('postal_codes.json'));
+        $zipCodes = json_decode($postalCodes, true);
+
+
+        return view('pages.new_company', ['zipCodes' => $zipCodes]);
     }
     
     // shrani podatke o podjetju
     public function saveCompany(SaveCompanyRequest $request)
     {
+        $zipCodes = $request->get('zip_codes');
+        $postalCode = $zipCodes[0];
+
         $company = new Company;
         
         $company->name = $request->get('name');
         $company->full_name = $request->get('full_name');
         $company->address = $request->get('address');
-        $company->postal_code = $request->get('postal_code');
+        $company->postal_code = $postalCode;
         $company->city = $request->get('city');
         $company->country = $request->get('country');
         $company->url = $request->get('url');
@@ -80,6 +88,7 @@ class CompaniesController extends Controller
         $company->name = $request->get('name');
         $company->full_name = $request->get('full_name');
         $company->address = $request->get('address');
+        $company->postal_code = $request->get('postal_code');
         $company->city = $request->get('city');
         $company->country = $request->get('country');
         $company->url = $request->get('url');

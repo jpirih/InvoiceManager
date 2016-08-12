@@ -53,9 +53,18 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="postal_code" class="control-label col-sm-4">Poštna številka</label>
+                        <label for="zip_codes" class="control-label col-sm-4">Poštna številka</label>
                         <div class="col-sm-8">
-                            <input type="text" name="postal_code" id="postal_code" class="form-control">
+                            <select name="zip_codes[]" id="zip_codes" class="form-control">
+                                @foreach($zipCodes as $code)
+                                        <option value="{{ $code['postal_code'] }}">
+                                            {{ $code['postal_code']}} {{$code['city']}}
+                                            @if($code['company'] !== "")
+                                                ({{$code['company']}})
+                                            @endif
+                                        </option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                     <div class="form-group">

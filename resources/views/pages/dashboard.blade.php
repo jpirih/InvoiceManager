@@ -1,5 +1,9 @@
 @extends('base')
 
+@section('javascript')
+    <script src="/js/dashboard_logic.js" type="text/javascript"></script>
+@endsection
+
 @section('title')
     Dashboard Pregled
 @endsection
@@ -229,6 +233,3 @@
     </div>
 @endsection
 
-<!-- javascript -->
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="/js/dashboard_logic.js" type="text/javascript"></script>

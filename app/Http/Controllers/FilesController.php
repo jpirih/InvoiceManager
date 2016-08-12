@@ -97,4 +97,6 @@ class FilesController extends Controller
             'Content-Disposition' => 'inline; filename="'.$data->file_name.'"'
         ]);
     }
+
+
 }
