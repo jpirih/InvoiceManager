@@ -19,6 +19,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('instructions', ['uses' => 'HomeController@instructions', 'as' => 'instructions']);
     Route::get('files/get/{id}', ['uses' =>'FilesController@getFile', 'as' => 'get_file']);
     Route::get('files/open/{id}', ['uses' => 'FilesController@openFile', 'as' => 'open_file']);
+    Route::get('files/{id}/delete', ['uses' => 'RecycleBinController@deleteUnlinkedFile', 'as' => 'delete_file']);
     Route::get('files', ['uses' => 'FilesController@filesList', 'as' => 'files_list']);
     Route::get('invoices', ['uses' => 'InvoicesController@invoices', 'as' => 'invoices']);
     Route::get('invoices/new', ['uses' => 'InvoicesController@addInvoice', 'as' => 'new_invoice']);
@@ -26,6 +27,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('invoices/{id}', ['uses' => 'InvoicesController@invoiceDetails', 'as' => 'invoice_details']);
     Route::get('invoices/{id}/add-file', ['uses' => 'FilesController@addFile', 'as' => 'add_file']);
     Route::post('invoices/{id}/add-file', ['uses' => 'FilesController@saveFile']);
+    Route::post('invoices/{invoiceId}/remove-file/{fileId}', ['uses' => 'FilesController@removeFile', 'as' => 'remove_file']);
     Route::get('invoices/{id}/edit', ['uses' => 'InvoicesController@editInvoiceDetails', 'as' => 'edit_invoice']);
     Route::post('invoices/{id}/to-trash', ['uses' => 'InvoicesController@deleteInvoice', 'as' => 'invoice_to_trash']);
     Route::post('invoice/{id}/delete', ['uses' => 'RecycleBinController@deleteInvoice', 'as' => 'delete_invoice']);

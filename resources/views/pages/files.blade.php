@@ -30,10 +30,20 @@
                             <td><a href="{{ route('open_file', ['id' => $file->id]) }}" target="_blank">{{ $file->file_name }}</a></td>
                             <td>{{ $file->attachment->name }}</td>
                             <td>{{ $file->attachment->label }}</td>
-                            @foreach($file->invoices as $invoice)
-                                <td>{{ $invoice->invoice_nr }}</td>
-                                <td>{{ $invoice->invoice_date->format('d.m.Y') }}</td>
-                            @endforeach
+                            @if(count($file->invoices)> 0)
+                                @foreach($file->invoices as $invoice)
+                                        <td>{{ $invoice->invoice_nr }}</td>
+                                        <td>{{ $invoice->invoice_date->format('d.m.Y') }}</td>
+                                @endforeach
+                            @else
+                                <td>Burek</td>
+                                <td>
+                                    <a href="{{ route('delete_file', ['id' => $file->id])}}" class="btn btn-danger">
+                                        <span class="glyphicon glyphicon-trash"></span>
+                                        Izbriši
+                                    </a>
+                                </td>
+                            @endif
                             <td>{{ $file->created_at->format('d.m.Y H:i:s') }}</td>
 
                         </tr>

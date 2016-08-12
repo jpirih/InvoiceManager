@@ -94,6 +94,13 @@
                                         <span class="glyphicon glyphicon-save"></span>
                                         Shrani
                                     </a>
+                                    <br>
+                                    <form action="{{route('remove_file', ['invoiceId' => $invoice->id, 'fileId' => $file->id])}}" method="post" class="form-inline">
+                                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                        <button type="submit" class="btn btn-danger">
+                                            <span class="glyphicon glyphicon-trash"></span>
+                                            Odstrani
+                                        </button>
                                 </div>
                             </div>
                         </div>

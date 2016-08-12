@@ -73,6 +73,8 @@
             </div>
         </div>
     </div>
+
+
 @endsection
 
 @foreach($deletedInvoices as $invoice)

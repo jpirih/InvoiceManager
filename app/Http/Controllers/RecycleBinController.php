@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\File;
 use App\Invoice;
 use App\Item;
 use Carbon\Carbon;
@@ -16,13 +17,13 @@ class RecycleBinController extends Controller
     public function overview()
     {
         $deletedInvoices = Invoice::where('deleted', '=', true)->get();
-
+        $files = File::all();
         foreach ($deletedInvoices as $invoice)
         {
             $invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice_date));
         }
 
-        return view('pages.deleted_items', ['deletedInvoices' => $deletedInvoices]);
+        return view('pages.deleted_items', ['deletedInvoices' => $deletedInvoices, 'files' => $files]);
     }
 
     //restore invoice
@@ -50,5 +51,17 @@ class RecycleBinController extends Controller
 
         return redirect(route('deleted_items'));
     }
+
+    // delete unlinked flies
+    public function deleteUnlinkedFile($fileId)
+    {
+        $file = File::find($fileId);
+        unlink(public_path('/uploads/'.$file->file_name));
+        $file->delete();
+
+        return redirect()->back();
+
+    }
+
 
 }

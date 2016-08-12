@@ -91,7 +91,6 @@ class InvoicesController extends Controller
     {
         $invoice = Invoice::find($id);
         // slovenian date format for nicer look
-        // slovenian date format for nicer look 
         $invoice->invoice_date = date('d.m.Y', strtotime($invoice->invoice_date));
         
         return view('pages.edit_invoice', ['invoice' => $invoice]);

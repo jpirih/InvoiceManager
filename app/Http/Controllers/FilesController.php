@@ -72,6 +72,20 @@ class FilesController extends Controller
         
     }
 
+    // remove attachent from invoice,
+    // removes from files_invoices, files and uploads folder on server
+    public function removeFile($invoiceId, $fileId)
+    {
+        $invoice = Invoice::find($invoiceId);
+        $file = File::find($fileId);
+        $invoice->files()->detach($file->id);
+        unlink(public_path('/uploads/'.$file->file_name));
+        $file->delete();
+
+        return redirect()->back();
+    }
+
+
     //prenos in shranjevanje PDF priponk
     public function getFile($fileId)
     {
