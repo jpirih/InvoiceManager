@@ -24,7 +24,7 @@
                 <tbody class="bg-info">
                 @foreach($searchItems as $item)
                     <tr>
-                        <td>{{$item->name}}</td>
+                        <td><a href="{{route('edit_item', ['id' => $item->id])}}">{{$item->name}}</a></td>
                         <td>{{ $item->unit->name }}</td>
                         <td>{{ $item->unit_price }}</td>
                         <td>{{ $item->invoice->invoice_date }}</td>

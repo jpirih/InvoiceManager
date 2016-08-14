@@ -127,8 +127,12 @@ class ItemsController extends Controller
 
         $searchItems = new Collection();
         foreach ($items as $item) {
+
+            $d = strtotime($item->invoice->invoice_date);
+            $item->invoice->invoice_date = date('d.m.Y', $d);
             if (Str::contains(Str::lower($item->name), Str::lower($keywords))) {
                 $searchItems->add($item);
+
             }
         }
 
