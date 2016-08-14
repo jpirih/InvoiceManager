@@ -119,11 +119,21 @@ class InvoicesController extends Controller
     public function deleteInvoice($invoiceId)
     {
         $invoice = Invoice::find($invoiceId);
+        if(count($invoice->files) > 0)
+        {
+            return redirect(route('invoice_details', ['id' =>  $invoice->id]));
 
-        $invoice->deleted = true;
-        $invoice->save();
+        }
+        else
+        {
+            $invoice->deleted = true;
+            $invoice->save();
 
-        return redirect(route('invoices'));
+            return redirect(route('invoices'));
+
+        }
+
+
     }
 
     

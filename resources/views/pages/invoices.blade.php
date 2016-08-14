@@ -1,5 +1,9 @@
 @extends('base')
 
+@section('javascript')
+    <script src="/js/invoices-logic.js" type="text/javascript"></script>
+@endsection
+
 @section('title')
     Pregled Računov
 @endsection
@@ -9,6 +13,14 @@
 @endsection
 
 @section('content')
+
+    <!-- messages errors success messages other -->
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+                <div id="infoMessage"></div>
+
+        </div>
+    </div>
     <div class="row">
         <!-- vsebina sezam vseh računov -->
         <div class="col-sm-9">
@@ -80,6 +92,13 @@
                         <span class="krepko"> Izdajaltelj: </span> {{ $invoice->company->name }} <br>
                         <span class="krepko">Znesek: </span> {{ $invoice->total }}
                     </p>
+                    <hr>
+                    <div class="well">
+                        <span class="glyphicon glyphicon-alert"></span>
+                        Preden lahko izbirišeš račun moraš izbiristati vse pripete datoteke.
+                        Če je računu pripeta kakšna datoteka boš prevserjen na podrobnosti računa,
+                        kjer lahko izbrišeš priponke. potem se vrni nazaj in izbriši račun. 
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <form action="{{ route('invoice_to_trash', ['id' => $invoice->id]) }}" method="post">
