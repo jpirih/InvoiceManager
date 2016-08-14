@@ -8,7 +8,11 @@ use App\Invoice;
 use App\Item;
 use App\Unit;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\View;
+use Illuminate\Support\Str;
 
 class ItemsController extends Controller
 {
@@ -113,4 +117,22 @@ class ItemsController extends Controller
         return view('pages.category_items', ['category' => $category, 'categories' => $categories, 'categoryTotal' => $categoryTotal]);
     }
 
+    public function searchItems()
+    {
+
+
+        $keywords = Input::get('search_input');
+
+        $items = Item::all();
+
+        $searchItems = new Collection();
+        foreach ($items as $item) {
+            if (Str::contains(Str::lower($item->name), Str::lower($keywords))) {
+                $searchItems->add($item);
+            }
+        }
+
+        return View::make('pages.searchedItems') ->with('searchItems', $searchItems);
+
+    }
 }

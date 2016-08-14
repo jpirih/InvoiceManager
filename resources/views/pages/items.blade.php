@@ -1,5 +1,6 @@
 @extends('base')
 
+
 @section('title')
     Izdelki in Storitve
 @endsection
@@ -19,6 +20,22 @@
                     @endforeach
                 </div>
                 <hr>
+                <!-- search -->
+                <div class="col-sm-6">
+                    <form action="{{route('item_search')}}"  method="get" id="search_items" class="form-inline">
+                        <input type="hidden" name="_token" value="{{csrf_token()}}">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Find item by name" name="search_input"  required="search_input">
+                            <button type="submit" class="btn btn-success" id="item_search" >
+                                <span class="glyphicon glyphicon-search"></span> Go
+                            </button>
+                        </div>
+                    </form>
+                    <!-- end of search form -->
+                    <br>
+                    <div class="col-sm-12" id="search_results"></div>
+                </div>
+                <!-- table all items  -->
                 <table class="table table-responsive table-condensed table-bordered table-striped">
                     <thead>
                     <tr class="glava-tabele">
@@ -68,4 +85,7 @@
 
         </div>
     </div>
+@endsection
+@section('script')
+    <script src="/js/items-search-logic.js" type="text/javascript"></script>
 @endsection

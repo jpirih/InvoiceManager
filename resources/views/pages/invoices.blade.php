@@ -97,7 +97,7 @@
                         <span class="glyphicon glyphicon-alert"></span>
                         Preden lahko izbirišeš račun moraš izbiristati vse pripete datoteke.
                         Če je računu pripeta kakšna datoteka boš prevserjen na podrobnosti računa,
-                        kjer lahko izbrišeš priponke. potem se vrni nazaj in izbriši račun. 
+                        kjer lahko izbrišeš priponke. potem se vrni nazaj in izbriši račun.
                     </div>
                 </div>
                 <div class="modal-footer">

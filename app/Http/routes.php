@@ -38,6 +38,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('items/{id}/edit', ['uses' => 'ItemsController@editItem', 'as' => 'edit_item']);
     Route::post('items/{id}/edit', ['uses' => 'ItemsController@updateItem']);
     Route::get('items', ['uses' => 'ItemsController@items', 'as' => 'items']);
+    Route::get('search-items/get-items', ['uses' => 'ItemsController@searchItems', 'as' => 'item_search']);
     Route::get('categories/{id}/items', ['uses' => 'ItemsController@showCategoryItems', 'as' => 'category_items']);
     Route::get('companies', ['uses' => 'CompaniesController@companies', 'as' => 'companies']);
     Route::get('companies/new', ['uses' => 'CompaniesController@addCompany', 'as' => 'new_company']);
