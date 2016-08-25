@@ -117,10 +117,9 @@ class ItemsController extends Controller
         return view('pages.category_items', ['category' => $category, 'categories' => $categories, 'categoryTotal' => $categoryTotal]);
     }
 
+    // iskanje po  izdelkov in storitev po nazivu
     public function searchItems()
     {
-
-
         $keywords = Input::get('search_input');
 
         $items = Item::all();
