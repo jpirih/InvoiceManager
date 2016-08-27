@@ -81,9 +81,9 @@
                     <span class="krepko">Kategorija:</span> Kategorije trenutno ni mogoče urejati.
                 </p>
                 <hr>
-                <a href="{{route('invoice_details', ['id' => $item->invoice_id])}}" class="btn btn-danger">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    Nazaj
+                <a href="{{route('invoice_details', ['id' => $item->invoice_id])}}" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    Podrobnosti Računa
                 </a>
             </div>
         </div>
