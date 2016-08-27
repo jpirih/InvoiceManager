@@ -146,6 +146,7 @@
                             <th>Količina</th>
                             <th>Enota Mere</th>
                             <th>Cena</th>
+                            <th>Vrednost</th>
                             <th>Kategorija</th>
                         </tr>
                     </thead>
@@ -156,6 +157,7 @@
                                 <td>{{ $item->quantity }}</td>
                                 <td>{{ $item->unit->label }}</td>
                                 <td>{{ $item->unit_price }}</td>
+                                <td>{{ $item->unit_price * $item->quantity}}</td>
                                 @foreach($item->categories as $category)
                                     <td>{{$category->name}}</td>
                                 @endforeach

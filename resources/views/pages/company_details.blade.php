@@ -40,7 +40,7 @@
                 <div class="panel-body">
                     <h3>Pregled računov <span class="pull-right"> <a href="{{route('new_invoice')}}" class="btn btn-success">
                                 <span class="glyphicon glyphicon-plus"></span>
-                                Dodaj Račun 
+                                Dodaj Račun
                             </a></span></h3> <br>
                     @if(count($company->invoices)> 0)
 
