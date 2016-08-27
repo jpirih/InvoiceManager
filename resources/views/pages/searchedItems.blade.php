@@ -16,8 +16,10 @@
                 <thead>
                     <tr class="glava-tabele">
                         <th>Izdelek Storitev</th>
+                        <th>Količina</th>
                         <th>EM</th>
                         <th>Cena</th>
+                        <th>Vrednost</th>
                         <th>Datum</th>
                     </tr>
                 </thead>
@@ -25,8 +27,10 @@
                 @foreach($searchItems as $item)
                     <tr>
                         <td><a href="{{route('edit_item', ['id' => $item->id])}}">{{$item->name}}</a></td>
+                        <td> {{ $item->quantity }}</td>
                         <td>{{ $item->unit->name }}</td>
                         <td>{{ $item->unit_price }}</td>
+                        <td> {{ $item->quantity * $item->unit_price }}</td>
                         <td>{{ $item->invoice->invoice_date }}</td>
                     </tr>
 

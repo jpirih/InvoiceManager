@@ -25,21 +25,19 @@
                         <th>Količina</th>
                         <th>Enota mere</th>
                         <th>Cena</th>
+                        <th>Vrednost</th>
                         <th>Podjetje</th>
                         <th>Datum nakupa</th>
                     </tr>
                     </thead>
-                    <tbody class="bg-re</th>
-                        <th>Cena</th>
-                        <th>Podjetje</th>
-                        <th>Datum nakupa</th>
-                    </tr>info">
+                    <tbody class="bg-info">
                         @foreach($category->items as $item)
                             <tr>
                                 <td><a href="{{ route('edit_item', ['id' => $item->id]) }}">{{ $item->name }}</a></td>
                                 <td>{{ $item->quantity }}</td>
                                 <td>{{ $item->unit->name }}</td>
                                 <td>{{ $item->unit_price }}</td>
+                                <td>{{ $item->quantity * $item->unit_price }}</td>
                                 <td>{{$item->invoice->company->name}}</td>
                                 <td>{{ $item->invoice->invoice_date }}</td>
                             </tr>

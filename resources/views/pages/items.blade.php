@@ -56,7 +56,7 @@
                                 <td>{{ $item->invoice->invoice_date->format('d.m.Y') }}</td>
                                 <td>{{ $item->quantity }}</td>
                                 <td>{{ $item->unit_price }}</td>
-                                <td>Vrednost</td>
+                                <td>{{ $item->quantity * $item->unit_price }}</td>
                                 @foreach($item->categories as $category)
                                     <td>{{ $category->name }}</td>
                                 @endforeach
