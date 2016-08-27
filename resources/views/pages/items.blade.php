@@ -42,7 +42,9 @@
                         <th>Izdelek Storitev</th>
                         <th>Enota mere</th>
                         <th>Datum nakupa</th>
+                        <th>Količina</th>
                         <th>Cena</th>
+                        <th>Vrednost</th>
                         <th>Kategorija</th>
                     </tr>
                     </thead>
@@ -52,7 +54,9 @@
                                 <td><a href="{{ route('edit_item', ['id' => $item->id]) }}">{{ $item->name }}</a></td>
                                 <td>{{ $item->unit->label }}</td>
                                 <td>{{ $item->invoice->invoice_date->format('d.m.Y') }}</td>
+                                <td>{{ $item->quantity }}</td>
                                 <td>{{ $item->unit_price }}</td>
+                                <td>Vrednost</td>
                                 @foreach($item->categories as $category)
                                     <td>{{ $category->name }}</td>
                                 @endforeach
