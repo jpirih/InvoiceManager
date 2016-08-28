@@ -49,11 +49,12 @@
                     </tr>
                     </thead>
                     <tbody class="bg-info">
+
                         @foreach($items as $item)
                             <tr>
                                 <td><a href="{{ route('edit_item', ['id' => $item->id]) }}">{{ $item->name }}</a></td>
                                 <td>{{ $item->unit->label }}</td>
-                                <td>{{ $item->invoice->invoice_date->format('d.m.Y') }}</td>
+                                <td>{{ $item->invoice->invoice_date->format('d.m.Y')}}</td>
                                 <td>{{ $item->quantity }}</td>
                                 <td>{{ $item->unit_price }}</td>
                                 <td>{{ $item->quantity * $item->unit_price }}</td>
