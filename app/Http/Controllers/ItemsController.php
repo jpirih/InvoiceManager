@@ -104,7 +104,7 @@ class ItemsController extends Controller
     public function showCategoryItems($categoryId)
     {
         $category = Category::find($categoryId);
-        $categories = Category::all();
+        $categories = Category::orderBy('name')->get();
         $categories->sortBy('name');
 
         $categoryTotal = 0;
