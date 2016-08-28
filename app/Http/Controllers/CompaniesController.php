@@ -29,7 +29,6 @@ class CompaniesController extends Controller
     // dodaj novo podjetje
     public function addCompany()
     {
-
         $postalCodes = file_get_contents( public_path('postal_codes.json'));
         $zipCodes = json_decode($postalCodes, true);
 

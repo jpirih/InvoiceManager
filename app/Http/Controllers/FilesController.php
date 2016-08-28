@@ -16,6 +16,14 @@ use Illuminate\Support\Facades\Response;
 
 class FilesController extends Controller
 {
+    // get list of all Slovenian postal codes
+    public function getPostalCodes()
+    {
+        $postalCodes = file_get_contents( public_path('postal_codes.json'));
+        $postalCodes = json_decode($postalCodes, true);
+        return Response::json($postalCodes);
+    }
+
     // seznam vseh shranjenih datotek 
     public function filesList()
     {

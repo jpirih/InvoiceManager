@@ -21,6 +21,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('files/open/{id}', ['uses' => 'FilesController@openFile', 'as' => 'open_file']);
     Route::get('files/{id}/delete', ['uses' => 'RecycleBinController@deleteUnlinkedFile', 'as' => 'delete_file']);
     Route::get('files', ['uses' => 'FilesController@filesList', 'as' => 'files_list']);
+    Route::get('files/get-postal-codes', ['uses' => 'FilesController@getPostalCodes']);
     Route::get('invoices', ['uses' => 'InvoicesController@invoices', 'as' => 'invoices']);
     Route::get('invoices/new', ['uses' => 'InvoicesController@addInvoice', 'as' => 'new_invoice']);
     Route::post('invoices/new', ['uses' =>'InvoicesController@SaveInvoice']);

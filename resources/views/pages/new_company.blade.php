@@ -1,8 +1,13 @@
 @extends('base')
 
+@section('javascript')
+    <script src="/js/new_company_logic.js" type="text/javascript"></script>
+@endsection
+
 @section('title')
     Dodaj Podjetje
 @endsection
+
 
 @section('page-heading')
     Dodaj Podjetje - izdajatelja računa
@@ -55,7 +60,7 @@
                     <div class="form-group">
                         <label for="zip_codes" class="control-label col-sm-4">Poštna številka</label>
                         <div class="col-sm-8">
-                            <select name="zip_codes[]" id="zip_codes" class="form-control">
+                            <select name="zip_codes[]" id="post_code" class="form-control">
                                 @foreach($zipCodes as $code)
                                         <option value="{{ $code['postal_code'] }}">
                                             {{ $code['postal_code']}} {{$code['city']}}
@@ -70,7 +75,7 @@
                     <div class="form-group">
                         <label for="city" class="control-label col-sm-4">Kraj</label>
                         <div class="col-sm-8">
-                            <input type="text" name="city" id="city" class="form-control">
+                            <input type="text" name="city" id="city_input" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
