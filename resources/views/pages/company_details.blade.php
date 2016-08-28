@@ -53,7 +53,7 @@
                                 </tr>
                             </thead>
                             <tbody class="bg-info">
-                                @foreach($company->invoices as $invoice)
+                                @foreach($invoices as $invoice)
                                     <tr>
                                         <td><a href="{{route('invoice_details', ['id' => $invoice->id])}}">{{ $invoice->invoice_nr }}</a></td>
                                         <td>{{ $invoice->invoice_date->format('d.m.Y') }}</td>

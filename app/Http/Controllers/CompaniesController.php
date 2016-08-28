@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Company;
 use App\Http\Requests\SaveCompanyRequest;
+use App\Invoice;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -62,13 +63,14 @@ class CompaniesController extends Controller
     public function companyDetails($company_id)
     {
         $company = Company::find($company_id);
+        $invoices = Invoice::where('company_id', '=', $company_id)->get();
 
-        foreach ($company->invoices as $invoice)
+        foreach ($invoices as $invoice)
         {
             $invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice_date));
         }
-        $company->invoices->sortByDesc('invoice_date');
-        return view('pages.company_details', ['company' => $company]);
+        $invoices = $invoices->sortByDesc('invoice_date');
+        return view('pages.company_details', ['company' => $company, 'invoices' => $invoices]);
         
     }
     
