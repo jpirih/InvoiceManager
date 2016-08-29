@@ -16,9 +16,6 @@ $(document).ready(function () {
             console.log(result);
             $('#city_input').val(result[0].city);
             $('#country').val('Slovenija');
-
         });
-
     });
-
 });

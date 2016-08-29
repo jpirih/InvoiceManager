@@ -12,6 +12,7 @@
 */
 
 
+use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => ['web']], function () {
     Route::auth();
@@ -44,6 +45,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('companies', ['uses' => 'CompaniesController@companies', 'as' => 'companies']);
     Route::get('companies/new', ['uses' => 'CompaniesController@addCompany', 'as' => 'new_company']);
     Route::get('companies/{id}', ['uses' => 'CompaniesController@companyDetails', 'as' => 'company_details']);
+    Route::get('companies/{id}/new-invoice', ['uses' => 'CompaniesController@addCompanyInvoice', 'as' => 'new_company_invoice']);
+    Route::post('companies/{id}/new-invoice', ['uses' => 'CompaniesController@saveCompanyInvoice']);
     Route::post('companies/new', ['uses' => 'CompaniesController@saveCompany']);
     Route::get('companies/{id}/edit', ['uses' => 'CompaniesController@editCompanyDetails', 'as' => 'edit_company']);
     Route::post('companies/{id}/edit', ['uses' => 'CompaniesController@updateCompanyDetails']);

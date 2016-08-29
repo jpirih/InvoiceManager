@@ -47,7 +47,7 @@ class RecycleBinController extends Controller
         {
             $item->categories()->detach($item->category_id);
             $item->delete();
-        }
+    }
 
         return redirect(route('deleted_items'));
     }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Company;
 use App\Http\Requests\SaveCompanyRequest;
 use App\Invoice;
+use App\PaymentInstrument;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -71,6 +72,40 @@ class CompaniesController extends Controller
         $invoices = $invoices->sortByDesc('invoice_date');
         return view('pages.company_details', ['company' => $company, 'invoices' => $invoices]);
         
+    }
+
+    // vnesi racun za nakup pri posameznem podjetju
+    public function addCompanyInvoice($companyId)
+    {
+        $company = Company::find($companyId);
+        $instruments = PaymentInstrument::all();
+        return view('pages.new_company_invoice', ['company' => $company, 'instruments' => $instruments]);
+    }
+
+    //shrani podatke o novem racunu podjetja
+    public function saveCompanyInvoice($companyId, Requests\SaveInvoiceRequest $request)
+    {
+        $invoice = new Invoice;
+
+        // podatki iz obrazca
+        $dateString = $request->get('invoice_date');
+        $date = strtotime($dateString);
+        $invoiceDate = date('Y-m-d', $date);
+
+        $instrument = $request->get('instruments');
+        $instrument = $instrument[0];
+
+
+        // shranjevanje podatkov v tabelo invoices
+        $invoice->company_id = $companyId;
+        $invoice->invoice_nr = $request->get('invoice_nr');
+        $invoice->invoice_date = $invoiceDate;
+        $invoice->payment_instrument_id = $instrument;
+        $invoice->total = $request->get('total');
+
+        $invoice->save();
+
+        return redirect(route('invoice_details', ['id' => $invoice->id]));
     }
     
     // uredi podatke o podjetju 
