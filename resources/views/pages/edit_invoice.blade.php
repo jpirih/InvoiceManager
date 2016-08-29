@@ -25,7 +25,12 @@
                             Izdajatelj Računa
                         </label>
                         <div class="col-sm-8">
-                            <input type="text" disabled value="{{ $invoice->company->name }}" class="form-control">
+                            <select name="companies[]" id="companies" class="form-control">
+                                <option value="{{ $invoice->company->id }}" selected>{{ $invoice->company->name }}</option>
+                                @foreach($companies as $company)
+                                    <option value="{{ $company->id }}">{{ $company->name }}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                     <div class="form-group">
@@ -43,7 +48,12 @@
                     <div class="form-group">
                         <label for="instruments" class="control-label col-sm-4">Način Plačila</label>
                         <div class="col-sm-8">
-                            <input type="text" disabled value="{{ $invoice->payment_instrument->name }}" class="form-control" >
+                            <select name="instruments[]" id="instruments" class="form-control">
+                                <option value="{{$invoice->payment_instrument_id}}" selected>{{$invoice->payment_instrument->name}}</option>
+                                @foreach($instruments as $instrument)
+                                    <option value="{{ $instrument->id }}">{{ $instrument->name }}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                     <div class="form-group">

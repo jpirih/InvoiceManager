@@ -90,24 +90,33 @@ class InvoicesController extends Controller
     public function editInvoiceDetails($id)
     {
         $invoice = Invoice::find($id);
+        $companies = Company::orderBy('name')->get();
+        $instruments = PaymentInstrument::all();
         // slovenian date format for nicer look
         $invoice->invoice_date = date('d.m.Y', strtotime($invoice->invoice_date));
         
-        return view('pages.edit_invoice', ['invoice' => $invoice]);
+        return view('pages.edit_invoice', ['invoice' => $invoice, 'companies' => $companies, 'instruments' => $instruments]);
     }
 
     // shrani spremembe na racunu
     public function updateInvoiceDetails(SaveInvoiceRequest $request, $id)
     {
 
+        $company = $request->get('companies');
+        $selectedCompany = $company[0];
         $dateString = $request->get('invoice_date');
         $date = strtotime($dateString);
         $invoiceDate = date('Y-m-d', $date);
+        $instrument = $request->get('instruments');
+        $selectedInstrument = $instrument[0];
+        
 
         $invoice = Invoice::find($id);
 
+        $invoice->company_id = $selectedCompany;
         $invoice->invoice_nr = $request->get('invoice_nr');
         $invoice->invoice_date = $invoiceDate;
+        $invoice->payment_instrument_id = $selectedInstrument;
         $invoice->total = $request->get('total');
 
         $invoice->save();
