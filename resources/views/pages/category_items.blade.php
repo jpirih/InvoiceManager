@@ -47,7 +47,7 @@
             @endif
         </div>
         <div class="col-sm-3">
-            <div class="bg-info">
+            <div class="well">
                 <h3>Hitri pregled</h3>
                 <hr>
                 <h4> Kategorija skupaj {{ $categoryTotal }} €</h4>

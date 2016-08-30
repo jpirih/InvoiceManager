@@ -14,6 +14,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\DB;
 
 class InvoicesController extends Controller
 {
@@ -26,8 +27,10 @@ class InvoicesController extends Controller
     // seznam vseh racunov
     public function invoices()
     {
+
         $invoices = Invoice::where('deleted', '=', false)->get();
         $invoices = $invoices->sortByDesc('invoice_date');
+
         $years = [];
         foreach ($invoices as $invoice)
         {

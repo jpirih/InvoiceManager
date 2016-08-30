@@ -76,6 +76,7 @@
                             @endforeach
                             </tbody>
                         </table>
+
                     </div>
                 </div>
                 @foreach($years as $year)
@@ -108,6 +109,7 @@
                                 @endforeach
                                 </tbody>
                             </table>
+
                         </div>
                     </div>
                 @endforeach
@@ -124,6 +126,9 @@
                 </a>
                 <a href="{{route('dashboard')}}" class=" list-group-item list-group-item-danger">
                     <span class="glyphicon glyphicon-dashboard"></span> Dashboard
+                </a>
+                <a href="{{ route('items') }}" class="list-group-item list-group-item-warning">
+                    <span class=" glyphicon glyphicon-list-alt"></span> Izdelki in storitve
                 </a>
             </div>
         </div>

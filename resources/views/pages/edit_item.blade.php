@@ -46,6 +46,16 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label for="categories" class="control-label col-sm-4">Kategorija</label>
+                        <div class="col-sm-8">
+                            <select name="categories[]" id="categories" class="form-control">
+                                @foreach($categories as $category)
+                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <div class="col-sm-8 col-sm-offset-4">
                             <button type="submit" class="btn btn-success">
                                 <span class="glyphicon glyphicon-save"></span>

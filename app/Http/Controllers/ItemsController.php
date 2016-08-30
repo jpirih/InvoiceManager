@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Company;
 use App\Http\Requests;
 use App\Invoice;
 use App\Item;
@@ -84,11 +85,19 @@ class ItemsController extends Controller
     public function updateItem($itemId)
     {
         $item = Item::find($itemId);
+        $item->categories()->detach($item->category_id);
+
         $itemName = Request::get('item_name');
         $units = Request::get('units');
         $itemUnit = $units[0];
         $itemQuantity = Request::get('quantity');
         $itemPrice = Request::get('unit_price');
+        $itemCategory = Request::get('categories');
+        $selectedCategory = $itemCategory[0];
+
+        $category = Category::find($selectedCategory);
+        $category->items()->attach($item->id);
+
 
         $item->name = $itemName;
         $item->unit_id = $itemUnit;

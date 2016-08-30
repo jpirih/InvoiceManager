@@ -8,6 +8,8 @@ class Invoice extends Model
 {
     protected $table = 'invoices';
 
+
+
     // povezava one to many s tabelo payment_instruments
     public function payment_instrument()
     {
