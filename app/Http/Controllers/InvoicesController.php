@@ -28,13 +28,15 @@ class InvoicesController extends Controller
     {
         $invoices = Invoice::where('deleted', '=', false)->get();
         $invoices = $invoices->sortByDesc('invoice_date');
-        
+        $years = [];
         foreach ($invoices as $invoice)
         {
             $invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice_date));
+            array_push($years,$invoice->invoice_date->format("Y"));
         }
+        $years = array_unique($years);
 
-        return view('pages.invoices', ['invoices' => $invoices]);
+        return view('pages.invoices', ['invoices' => $invoices, 'years' => $years]);
     }
 
     // obrazec vnos racuna
@@ -109,7 +111,7 @@ class InvoicesController extends Controller
         $invoiceDate = date('Y-m-d', $date);
         $instrument = $request->get('instruments');
         $selectedInstrument = $instrument[0];
-        
+
 
         $invoice = Invoice::find($id);
 

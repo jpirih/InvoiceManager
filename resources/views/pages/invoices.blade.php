@@ -9,7 +9,7 @@
 @endsection
 
 @section('page-heading')
-    Seznam vseh računov
+    Pregled računov
 @endsection
 
 @section('content')
@@ -22,8 +22,23 @@
         </div>
     </div>
     <div class="row">
+        <div class="col-sm-12">
+            <div class="btn-group btn-group-lg">
+                <button class="btn btn-success"data-toggle="collapse" data-target="#all_invoices" data-parent="#data" aria-expanded="false">
+                    Vsi Računi
+                </button>
+                @foreach($years as $year)
+                    <button class="btn btn-success" data-toggle="collapse" data-target="#invoices{{$year}}" data-parent="#data" aria-expanded="false">
+                        Računi - {{$year}}
+                    </button>
+                @endforeach
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
         <!-- vsebina sezam vseh računov -->
-        <div class="col-sm-9">
+        <div class="col-sm-9" id="data">
             @if(count($invoices) == 0)
                 <div class="alert alert-info">
                     <p>
@@ -33,30 +48,69 @@
                     </p>
                 </div>
             @else
-                <table class="table table-responsive table-bordered table-condensed table-striped">
-                    <thead>
-                        <tr class="glava-tabele">
-                            <th>Številka računa</th>
-                            <th>Datum</th>
-                            <th>Izdajatelj</th>
-                            <th>Način plačila</th>
-                            <th>Znesek</th>
-                            <th> <span class="glyphicon glyphicon-cog"></span></th>
-                        </tr>
-                    </thead>
-                    <tbody class="bg-info">
-                        @foreach($invoices as $invoice)
-                            <tr>
-                                <td><a href="{{ route('invoice_details', ['id'=> $invoice->id]) }}">{{ $invoice->invoice_nr }}</a></td>
-                                <td>{{ $invoice->invoice_date->format('d.m.Y') }}</td>
-                                <td>{{ $invoice->company->name }}</td>
-                                <td>{{ $invoice->payment_instrument->name }}</td>
-                                <td>{{ $invoice->total }}</td>
-                                <td><a href="#" role="button" data-toggle="modal" data-target="#delModal{{ $invoice->id }}" class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span></a></td>
+                <div class="panel panel-default collapse" id="all_invoices">
+                    <div class="panel-body">
+                        <h2>Seznam vseh računov</h2>
+                        <br>
+                        <table class="table table-responsive table-bordered table-condensed table-striped">
+                            <thead>
+                            <tr class="glava-tabele">
+                                <th>Številka računa</th>
+                                <th>Datum</th>
+                                <th>Izdajatelj</th>
+                                <th>Način plačila</th>
+                                <th>Znesek</th>
+                                <th> <span class="glyphicon glyphicon-cog"></span></th>
                             </tr>
-                        @endforeach
-                    </tbody>
-                </table>
+                            </thead>
+                            <tbody class="bg-info">
+                            @foreach($invoices as $invoice)
+                                <tr>
+                                    <td><a href="{{ route('invoice_details', ['id'=> $invoice->id]) }}">{{ $invoice->invoice_nr }}</a></td>
+                                    <td>{{ $invoice->invoice_date->format('d.m.Y') }}</td>
+                                    <td>{{ $invoice->company->name }}</td>
+                                    <td>{{ $invoice->payment_instrument->name }}</td>
+                                    <td>{{ $invoice->total }}</td>
+                                    <td><a href="#" role="button" data-toggle="modal" data-target="#delModal{{ $invoice->id }}" class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span></a></td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                @foreach($years as $year)
+                    <div class="panel panel-default panel-collapse collapse-in" id="invoices{{$year}}">
+                        <div class="panel-body">
+                            <h2>Seznam računov v letu {{ $year }}</h2>
+                            <table class="table table-responsive table-bordered table-condensed table-striped">
+                                <thead>
+                                <tr class="glava-tabele">
+                                    <th>Številka računa</th>
+                                    <th>Datum</th>
+                                    <th>Izdajatelj</th>
+                                    <th>Način plačila</th>
+                                    <th>Znesek</th>
+                                    <th> <span class="glyphicon glyphicon-cog"></span></th>
+                                </tr>
+                                </thead>
+                                <tbody class="bg-info">
+                                @foreach($invoices as $invoice)
+                                    @if($invoice->invoice_date->format("Y") == $year)
+                                        <tr>
+                                            <td><a href="{{ route('invoice_details', ['id'=> $invoice->id]) }}">{{ $invoice->invoice_nr }}</a></td>
+                                            <td>{{ $invoice->invoice_date->format('d.m.Y') }}</td>
+                                            <td>{{ $invoice->company->name }}</td>
+                                            <td>{{ $invoice->payment_instrument->name }}</td>
+                                            <td>{{ $invoice->total }}</td>
+                                            <td><a href="#" role="button" data-toggle="modal" data-target="#delModal{{ $invoice->id }}" class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span></a></td>
+                                        </tr>
+                                    @endif
+                                @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                @endforeach
             @endif
         </div>
         <!-- desni stolpec navigacija  -->

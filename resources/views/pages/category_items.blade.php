@@ -51,7 +51,7 @@
                 <h3>Hitri pregled</h3>
                 <hr>
                 <h4> Kategorija skupaj {{ $categoryTotal }} €</h4>
-                <h4> Število izdelkov  <span class="badge">{{ count($category->items) }}</span></h4>
+                <h4> Število postavk  <span class="badge">{{ count($category->items) }}</span></h4>
             </div>
             <h3>Navigacija</h3>
             <br>
