@@ -23,6 +23,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('files/{id}/delete', ['uses' => 'RecycleBinController@deleteUnlinkedFile', 'as' => 'delete_file']);
     Route::get('files', ['uses' => 'FilesController@filesList', 'as' => 'files_list']);
     Route::get('files/get-postal-codes', ['uses' => 'FilesController@getPostalCodes']);
+    Route::get('files/get-world-countries', ['uses' => 'FilesController@getCountries']);
     Route::get('invoices', ['uses' => 'InvoicesController@invoices', 'as' => 'invoices']);
     Route::get('invoices/new', ['uses' => 'InvoicesController@addInvoice', 'as' => 'new_invoice']);
     Route::post('invoices/new', ['uses' =>'InvoicesController@SaveInvoice']);
@@ -43,6 +44,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('search-items/get-items', ['uses' => 'ItemsController@searchItems', 'as' => 'item_search']);
     Route::get('categories/{id}/items', ['uses' => 'ItemsController@showCategoryItems', 'as' => 'category_items']);
     Route::get('companies', ['uses' => 'CompaniesController@companies', 'as' => 'companies']);
+    Route::get('companies/foreign-companies', ['uses' => 'ForeignCompaniesController@foreignCompanies', 'as' => 'foreign_companies']);
+    Route::post('companies/foreign-companies/new-company', ['uses' => 'ForeignCompaniesController@saveForeignCompany', 'as' => 'new_fc']);
     Route::get('companies/new', ['uses' => 'CompaniesController@addCompany', 'as' => 'new_company']);
     Route::get('companies/{id}', ['uses' => 'CompaniesController@companyDetails', 'as' => 'company_details']);
     Route::get('companies/{id}/new-invoice', ['uses' => 'CompaniesController@addCompanyInvoice', 'as' => 'new_company_invoice']);

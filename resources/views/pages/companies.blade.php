@@ -22,9 +22,9 @@
                 <div class="form-bg">
                     @foreach($companies as $company)
                         <div class="media">
-                            <div class="media-left media-middle">
+                            <div class="media-left media-middle col-sm-3">
                                 <a href="{{route('company_details', ['id' => $company->id])}}">
-                                    <img src="{{$company->company_logo }}" alt="logo" class="media-object img img-rounded logo">
+                                    <img src="{{$company->company_logo }}" alt="logo" class="media-object img img-rounded img-responsive logo">
                                 </a>
                             </div>
                             <div class="media-body">
@@ -56,12 +56,16 @@
                 <a href="{{ route('new_company') }}" class="list-group-item list-group-item-success">
                     <span class="glyphicon glyphicon-plus"></span> Dodaj Podjetje
                 </a>
+                <a href="{{ route('foreign_companies') }}" class="list-group-item list-group-item-info">
+                    <span class="glyphicon glyphicon-globe"></span> Tuje spletne trgovine
+                </a>
+                <a href="{{ route('dashboard') }}" class=" list-group-item list-group-item-danger">
+                    <span class="glyphicon glyphicon-dashboard"></span> Dashboard
+                </a>
                 <a href="{{ route('invoices') }}" class="list-group-item list-group-item-info">
                     <span class="glyphicon glyphicon-list"></span> Računi Pregled
                 </a>
-                <a href="{{ route('dashboard') }}" class=" list-group-item list-group-item-danger">
-                     <span class="glyphicon glyphicon-dashboard"></span> Dashboard
-                </a>
+
                 <a href="{{ route('items') }}" class="list-group-item list-group-item-warning">
                     <span class=" glyphicon glyphicon-list-alt"></span> Izdelki in storitve
                 </a>

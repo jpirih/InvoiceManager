@@ -22,25 +22,45 @@
     <!-- company data -->
     <div class="row">
         <div class="col-sm-6">
-            <div class="form-bg">
-                <h2>Podatki o Izdajatelju</h2>
-                <hr>
-                <h3>{{$invoice->company->name}}</h3>
+            @if($invoice->company_id < 999999)
+                <div class="form-bg">
+                    <h2>Podatki o Izdajatelju</h2>
+                    <hr>
+                    <h3>{{$invoice->company->name}}</h3>
                     {{ $invoice->company->full_name }} <br>
                     {{ $invoice->company->address }}, {{ $invoice->company->postal_code }} {{ $invoice->company->city }}<br>
                     {{ $invoice->company->country }}
-                <hr>
-                <p>
-                    <a href="{{route('edit_company', ['id'=> $invoice->company->id])}}" class="btn btn-primary">
-                        <span class="glyphicon glyphicon-pencil"></span>
-                        Uredi podatke
-                    </a>
-                    <a href="{{ route('company_details', ['id'=> $invoice->company->id]) }}" class="btn btn-primary">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        Podrobnosti
-                    </a>
-                </p>
-            </div>
+                    <hr>
+                    <p>
+                        <a href="{{route('edit_company', ['id'=> $invoice->company->id])}}" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                            Uredi podatke
+                        </a>
+                        <a href="{{ route('company_details', ['id'=> $invoice->company->id]) }}" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            Podrobnosti
+                        </a>
+                    </p>
+                </div>
+            @elseif($invoice->company_id == 999999)
+                <div class="form-bg col-sm-12">
+                    <h2>Nakup v tujini</h2>
+                    <hr>
+                       <div class="col-sm-8">
+                           <h3>{{ $foreignInvoice[0]->foreignCompany->name }}</h3>
+                            <span class="krepko">Država - Koda Države: </span>{{ $foreignInvoice[0]->country }} - {{ $foreignInvoice[0]->country_code }}
+                           <br>
+                           <span class="krepko">Url trgovine:</span> {{$foreignInvoice[0]->foreignCompany->url}}
+                       </div>
+                       <div class="col-sm-4">
+                           <a href="{{ $foreignInvoice[0]->foreignCompany->url }}" target="_blank">
+                               <img src="{{$foreignInvoice[0]->foreignCompany->logo}}" alt="logo" class=" img img-responsive img-rounded logo">
+                           </a>
+
+                       </div>
+
+                </div>
+            @endif
         </div>
         <!-- invoice data -->
         <div class="col-sm-6">
@@ -49,7 +69,11 @@
                <hr>
                <h3> Račun: {{ $invoice->invoice_nr }}</h3>
                <span class="krepko">Datum: </span> {{ $invoice->invoice_date->format('d.m.Y') }}<br>
-               <span class="krepko">Kraj: </span> {{ $invoice->company->city }}<br>
+               @if($invoice->company->id < 999999)
+                   <span class="krepko">Kraj: </span> {{ $invoice->company->city }}<br>
+               @else
+                   <span class="krepko">Kraj: </span> {{ $foreignInvoice[0]->country }} - {{ $foreignInvoice[0]->country_code }}<br>
+               @endif
                <br>
                <a href="{{ route('edit_invoice', ['id' => $invoice->id]) }}" class="btn btn-primary">
                    <span class="glyphicon glyphicon-pencil"></span>

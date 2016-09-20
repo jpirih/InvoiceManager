@@ -6,6 +6,8 @@ use App\Attachment;
 use App\Category;
 use App\Company;
 use App\File;
+use App\ForeignCompany;
+use App\ForeignInvoice;
 use App\Http\Requests\SaveInvoiceRequest;
 use App\Invoice;
 use App\Item;
@@ -19,7 +21,6 @@ use Illuminate\Support\Facades\DB;
 class InvoicesController extends Controller
 {
     // konstruktor - obvezna prijava
-    
     public function __construct()
     {
          return $this->middleware('auth');
@@ -39,6 +40,7 @@ class InvoicesController extends Controller
         }
         $years = array_unique($years);
 
+
         return view('pages.invoices', ['invoices' => $invoices, 'years' => $years]);
     }
 
@@ -47,8 +49,9 @@ class InvoicesController extends Controller
     {
         $companies = Company::all();
         $instruments = PaymentInstrument::all();
+        $foreignCompanies = ForeignCompany::all();
         
-        return view('pages.new_invoice', ['companies' => $companies, 'instruments' => $instruments]);
+        return view('pages.new_invoice', ['companies' => $companies, 'instruments' => $instruments, 'foreignCompanies' => $foreignCompanies]);
     }
 
     // shrani nov racun
@@ -59,6 +62,7 @@ class InvoicesController extends Controller
         // podatki iz obrazca
         $company = $request->get('companies');
         $company = $company[0];
+        dd($company);
 
         $dateString = $request->get('invoice_date');
         $date = strtotime($dateString);
@@ -67,7 +71,6 @@ class InvoicesController extends Controller
         $instrument = $request->get('instruments');
         $instrument = $instrument[0];
 
-        
         // shranjevanje podatkov v tabelo invoices
         $invoice->company_id = $company;
         $invoice->invoice_nr = $request->get('invoice_nr');
@@ -76,7 +79,23 @@ class InvoicesController extends Controller
         $invoice->total = $request->get('total');
 
         $invoice->save();
-        
+        //  foreign invoices logic
+        if($company == 999999)
+        {
+            $foreignCompany = $request->get('foreignCompanies');
+            $foreignCompany = $foreignCompany[0];
+            $country = $request->get('country');
+            $countryCode = $request->get('country_code');
+
+
+            $foreignInvoice = new ForeignInvoice;
+            $foreignInvoice->invoice_id = $invoice->id;
+            $foreignInvoice->foreign_company_id = $foreignCompany;
+            $foreignInvoice->country = $country;
+            $foreignInvoice->country_code = $countryCode;
+
+            $foreignInvoice->save();
+        }
 
         return redirect(route('invoice_details', ['id' => $invoice->id]));
     }
@@ -86,9 +105,10 @@ class InvoicesController extends Controller
     {
         $items = Item::where('invoice_id', '=', $id)->get();
         $invoice = Invoice::find($id);
+        $foreignInvoice = ForeignInvoice::where('invoice_id', '=', $id)->get();
         $invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice_date));
 
-        return view('pages.invoice_details', ['invoice' => $invoice, 'items' => $items]);
+        return view('pages.invoice_details', ['invoice' => $invoice, 'items' => $items, 'foreignInvoice' => $foreignInvoice]);
     }
     
     // urejanje podatkov racuna

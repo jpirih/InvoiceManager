@@ -33,5 +33,11 @@ class Invoice extends Model
     {
         return $this->belongsToMany('App\File', 'files_invoices');
     }
+
+    // povezava one-to-many with table foreign invoices
+    public function foreignInvoices()
+    {
+        return $this->hasMany('App\ForeignInvoice');
+    }
     
 }

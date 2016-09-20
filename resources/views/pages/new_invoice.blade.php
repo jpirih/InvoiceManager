@@ -14,6 +14,22 @@
 
 @section('content')
     <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div id="fcSelectErr"></div>
+        </div>
+    </div>
+    @if (count($errors) > 0)
+        <div class="row col-sm-6 col-sm-offset-3">
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        </div>
+    @endif
+    <div class="row">
         <div class="col-sm-6">
             <div class="form-bg">
                 <h2>Vnesi podatke o računu </h2>
@@ -29,7 +45,30 @@
                                 @foreach($companies as $company)
                                     <option value="{{ $company->id }}">{{ $company->name }}</option>
                                 @endforeach
+
                             </select>
+                        </div>
+                    </div>
+                    <div id="foreign_invoice">
+                        <div class="form-group">
+                            <label for="foreign_company" class="control-label col-sm-4">Spletna trgovina</label>
+                            <div class="col-sm-8">
+                                <select name="foreignCompanies[]" id="foreign_company" class="form-control">
+                                    <option value="0">Izberi spletno trgovino</option>
+                                    @foreach($foreignCompanies as $foreignCompany)
+                                        <option value="{{ $foreignCompany->id }}">{{ $foreignCompany->name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country" class="control-label col-sm-4">Država</label>
+                            <div class="col-sm-6">
+                                <input type="text" name="country" id="country" class="form-control" >
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" name="country_code" id="country_code" class="form-control">
+                            </div>
                         </div>
                     </div>
                     <div class="form-group">
@@ -63,7 +102,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-8 col-sm-offset-4">
-                            <button type="submit" class="btn btn-success">
+                            <button type="submit" id="addInvoice" class="btn btn-success">
                                 <span class="glyphicon glyphicon-plus"></span>
                                 Dodaj Račun
                             </button>

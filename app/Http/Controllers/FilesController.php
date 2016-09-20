@@ -24,6 +24,13 @@ class FilesController extends Controller
         return Response::json($postalCodes);
     }
 
+    // get all countries of the world
+    public function getCountries()
+    {
+        $worldsCountries = file_get_contents(public_path('countries.json'));
+        return $worldsCountries;
+    }
+
     // seznam vseh shranjenih datotek 
     public function filesList()
     {
