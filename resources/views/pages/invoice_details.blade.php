@@ -22,7 +22,7 @@
     <!-- company data -->
     <div class="row">
         <div class="col-sm-6">
-            @if($invoice->company_id < 999999)
+            @if($invoice->company_id != 999999)
                 <div class="form-bg">
                     <h2>Podatki o Izdajatelju</h2>
                     <hr>
@@ -69,7 +69,7 @@
                <hr>
                <h3> Račun: {{ $invoice->invoice_nr }}</h3>
                <span class="krepko">Datum: </span> {{ $invoice->invoice_date->format('d.m.Y') }}<br>
-               @if($invoice->company->id < 999999)
+               @if($invoice->company->id != 999999)
                    <span class="krepko">Kraj: </span> {{ $invoice->company->city }}<br>
                @else
                    <span class="krepko">Kraj: </span> {{ $foreignInvoice[0]->country }} - {{ $foreignInvoice[0]->country_code }}<br>
