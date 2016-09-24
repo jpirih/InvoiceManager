@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1be083a0-0251-46c0-97ad-f0be2c649674" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/invoices.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/invoices.blade.php" />
     </list>
     <ignored path="Invoice.iws" />
@@ -28,7 +26,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="InvoicesController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InvoicesController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="386">
@@ -72,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invoices.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="invoices.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/invoices.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="709">
-              <caret line="136" column="72" selection-start-line="136" selection-start-column="72" selection-end-line="136" selection-end-column="72" />
+            <state relative-caret-position="777">
+              <caret line="140" column="119" selection-start-line="140" selection-start-column="119" selection-end-line="140" selection-end-column="119" />
               <folding />
             </state>
           </provider>
@@ -203,9 +201,9 @@
         <option value="$PROJECT_DIR$/resources/views/pages/invoice_data.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/invoice_details.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ItemsController.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/invoices.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/invoices.blade.php" />
       </list>
     </option>
   </component>
@@ -550,12 +548,12 @@
       <workItem from="1474291960315" duration="16808000" />
       <workItem from="1474378818018" duration="10771000" />
       <workItem from="1474464112483" duration="8251000" />
-      <workItem from="1474689008340" duration="21346000" />
+      <workItem from="1474689008340" duration="21661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="479985000" />
+    <option name="totallyTimeSpent" value="480300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -961,14 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/invoices.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="136" column="72" selection-start-line="136" selection-start-column="72" selection-end-line="136" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -984,6 +974,14 @@
           <folding>
             <element signature="e#40#59#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/invoices.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="140" column="119" selection-start-line="140" selection-start-column="119" selection-end-line="140" selection-end-column="119" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -138,7 +138,7 @@
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                     <div class="form-group">
-                        <input type="text" name="invoice_nr_search" id="invoiceNrSearch" class="form-control">
+                        <input type="text" name="invoice_nr_search" id="invoiceNrSearch" class="form-control" autofocus>
                     </div>
                     <br>
                     <button type="submit" class="btn btn-success">
