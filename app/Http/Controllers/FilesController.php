@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Attachment;
 use App\File;
+use App\ForeignInvoice;
 use App\Http\Requests\SaveFileRequest;
 use App\Invoice;
 use Carbon\Carbon;
@@ -53,8 +54,9 @@ class FilesController extends Controller
         $attachments = Attachment::all();
         $invoice = Invoice::find($invoiceId);
         $invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice_date));
-        
-        return view('pages.new_file', ['attachments' => $attachments, 'invoice' => $invoice]);
+        $foreignInvoices = ForeignInvoice::where('invoice_id','=',$invoiceId)->get();
+
+        return view('pages.new_file', ['attachments' => $attachments, 'invoice' => $invoice, 'foreignInvoices' => $foreignInvoices]);
     }
 
     // save file to database and conect to invoice 

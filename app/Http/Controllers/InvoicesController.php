@@ -62,7 +62,7 @@ class InvoicesController extends Controller
         // podatki iz obrazca
         $company = $request->get('companies');
         $company = $company[0];
-        
+
 
         $dateString = $request->get('invoice_date');
         $date = strtotime($dateString);

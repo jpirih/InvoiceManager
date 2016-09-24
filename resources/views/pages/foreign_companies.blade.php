@@ -78,28 +78,27 @@
                 </div>
             </div>
         @else
-            <h3>Seznam tujih spletnih trgovin</h3>
-            <table class=" table table-bordered table-responsive table-striped table-condensed">
-                <thead>
-                <tr class="glava-tabele">
-                    <th>Naziv </th>
-                    <th>Možnosti</th>
-                </tr>
-                </thead>
-                <tbody class="bg-info">
+            <div class="well">
                 @foreach($foreignCompanies as $company)
-                    <tr>
-                        <td>{{ $company->name }}</td>
-                        <td>
-                            <a href="{{ $company->url }}" class="btn btn-primary" target="_blank">
-                                <span class="glyphicon glyphicon-open"></span>
-                                Obišči Trgovino
+                    <div class="media">
+                        <div class="media-left media-middle col-sm-5">
+                            <a href="{{ $company->url }}" target="_blank">
+                                <img src="{{ $company->logo  }}" alt="logo" class="media-object img img-rounded img-responsive logo">
                             </a>
-                        </td>
-                    </tr>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">{{ $company->name }}</h4>
+                            <br>
+                            <div class="alert alert-info">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                                Trentuno še ni statistike za to Spletno <trgovino class=""></trgovino>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
                 @endforeach
-                </tbody>
-            </table>
+            </div>
+
         @endif
     </div>
 </div>

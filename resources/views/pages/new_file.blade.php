@@ -48,11 +48,19 @@
             <!-- podatki o računu  -->
             <div class="data-bg">
                 <h2>Podatki o računu </h2>
-                <p>
-                    <span class="krepko">Izdajatelj računa:</span> {{ $invoice->company->name }} <br>
-                    <span class="krepko">Kraj in datum:</span> {{ $invoice->company->city }}, {{ $invoice->invoice_date->format('d.m.Y') }}<br>
-                    <span class="krepko">Znesek:</span> {{ $invoice->total }} EUR
-                </p>
+                @if($invoice->company_id !== 999999)
+                    <p>
+                        <span class="krepko">Izdajatelj računa:</span> {{ $invoice->company->name }} <br>
+                        <span class="krepko">Kraj in datum:</span> {{ $invoice->company->city }}, {{ $invoice->invoice_date->format('d.m.Y') }}<br>
+                        <span class="krepko">Znesek:</span> {{ $invoice->total }} EUR
+                    </p>
+                @else
+                    <p>
+                        <span class="krepko">Izdajatelj računa:</span> {{ $foreignInvoices[0]->foreignCompany->name }} <br>
+                        <span class="krepko">Kraj in datum:</span> {{ $foreignInvoices[0]->country }}, {{ $invoice->invoice_date->format('d.m.Y') }}<br>
+                        <span class="krepko">Znesek:</span> {{ $invoice->total }} EUR
+                    </p>
+                @endif
             </div>
             <hr>
             <a href="{{route('invoice_details', ['id' => $invoice->id])}}" class="btn btn-danger">
