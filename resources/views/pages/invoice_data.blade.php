@@ -26,7 +26,7 @@
 
                 </p>
             @endif
-            <h4> Znesek {{ $invoice->total }} EUR  </h4>
+            <h4> Znesek {{ $invoice->total }} EUR</h4>
             <hr>
             <div class="col-sm-12">
                 <div class="panel panel-default">

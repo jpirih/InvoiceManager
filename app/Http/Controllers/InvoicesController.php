@@ -62,7 +62,7 @@ class InvoicesController extends Controller
 
         }
 
-        return redirect(route('invoices'));
+        return redirect(route('invoices'))->with('msg', 'Račun s številko: '.$searchInvoiceNr.' ne obstaja.');
 
     }
 

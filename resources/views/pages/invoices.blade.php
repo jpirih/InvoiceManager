@@ -15,12 +15,17 @@
 @section('content')
 
     <!-- messages errors success messages other -->
-    <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-                <div id="infoMessage"></div>
+    @if(session('msg'))
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="alert alert-warning">
+                    <span class="glyphicon glyphicon-warning-sign"></span>
+                    {{ session('msg') }}
+                </div>
 
+            </div>
         </div>
-    </div>
+    @endif
     <div class="row">
         <div class="col-sm-12">
             <div class="btn-group btn-group-lg">
