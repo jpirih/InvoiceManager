@@ -17,6 +17,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Illuminate\Support\Facades\DB;
+use Picqer\Barcode\BarcodeGeneratorHTML;
+use Picqer\Barcode\BarcodeGeneratorPNG;
 
 class InvoicesController extends Controller
 {
@@ -109,6 +111,20 @@ class InvoicesController extends Controller
         $invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice_date));
 
         return view('pages.invoice_details', ['invoice' => $invoice, 'items' => $items, 'foreignInvoice' => $foreignInvoice]);
+    }
+
+    // barcode generator and invoice_data
+    public function invoiceData($invoiceId)
+    {
+        $invoice = Invoice::find($invoiceId);
+        $foreignInvoices = ForeignInvoice::where('invoice_id', '=', $invoiceId)->get();
+        $generator = new BarcodeGeneratorPNG();
+        $code = $generator->getBarcode($invoice->invoice_nr, $generator::TYPE_CODE_128);
+
+        // date format
+        $invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice_date));
+
+        return view('pages.invoice_data', ['invoice' => $invoice, 'code' => $code, 'foreignInvoices' => $foreignInvoices]);
     }
     
     // urejanje podatkov racuna

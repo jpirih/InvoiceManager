@@ -14,6 +14,9 @@ use App\Http\Requests;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Response;
+use Picqer\Barcode\BarcodeGenerator;
+use Picqer\Barcode\BarcodeGeneratorHTML;
+use Picqer\Barcode\BarcodeGeneratorPNG;
 
 class FilesController extends Controller
 {
@@ -128,6 +131,9 @@ class FilesController extends Controller
             'Content-Disposition' => 'inline; filename="'.$data->file_name.'"'
         ]);
     }
+
+
+
 
 
 }

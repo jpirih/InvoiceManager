@@ -42,6 +42,7 @@
                         </a>
                     </p>
                 </div>
+                <br>
             @elseif($invoice->company_id == 999999)
                 <div class="form-bg col-sm-12">
                     <h2>Nakup v tujini</h2>
@@ -58,9 +59,14 @@
                            </a>
 
                        </div>
-
                 </div>
+                <br>
             @endif
+
+                <a href="{{ route('invoice_data', ['id' => $invoice->id]) }}" class="btn btn-success">
+                    <span class="glyphicon glyphicon-qrcode"></span>
+                    Podatki o Računu
+                </a>
         </div>
         <!-- invoice data -->
         <div class="col-sm-6">
