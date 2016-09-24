@@ -13,9 +13,7 @@ use App\Invoice;
 use App\Item;
 use App\PaymentInstrument;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\DB;
 use Picqer\Barcode\BarcodeGeneratorHTML;
 use Picqer\Barcode\BarcodeGeneratorPNG;
@@ -44,6 +42,28 @@ class InvoicesController extends Controller
 
 
         return view('pages.invoices', ['invoices' => $invoices, 'years' => $years]);
+    }
+
+    // search invoice by invoice_nr
+
+    public function searchInvoice()
+    {
+        // searched invoice nr
+        $searchInvoiceNr = Request::get('invoice_nr_search');
+
+        // get all data from database
+        $invoices = Invoice::all();
+        foreach ($invoices as $invoice)
+        {
+            if($invoice->invoice_nr == $searchInvoiceNr) {
+                $selectedInvoice = $invoice->id;
+                return redirect(route('invoice_details', ['id' => $selectedInvoice]));
+            }
+
+        }
+
+        return redirect(route('invoices'));
+
     }
 
     // obrazec vnos racuna

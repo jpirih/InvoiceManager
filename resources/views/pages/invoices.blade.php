@@ -131,6 +131,23 @@
                     <span class=" glyphicon glyphicon-list-alt"></span> Izdelki in storitve
                 </a>
             </div>
+            <br>
+            <div class="well">
+                <h3>Račun številka:</h3>
+                <form action="{{ route('search_invoice') }}" method="get" class="form-inline">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                    <div class="form-group">
+                        <input type="text" name="invoice_nr_search" id="invoiceNrSearch" class="form-control">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-success">
+                        <span class="glyphicon glyphicon-search"></span>
+                        Go
+                    </button>
+
+                </form>
+            </div>
         </div>
     </div>
 @endsection

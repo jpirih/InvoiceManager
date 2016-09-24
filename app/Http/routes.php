@@ -27,6 +27,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('invoices', ['uses' => 'InvoicesController@invoices', 'as' => 'invoices']);
     Route::get('invoices/new', ['uses' => 'InvoicesController@addInvoice', 'as' => 'new_invoice']);
     Route::post('invoices/new', ['uses' =>'InvoicesController@SaveInvoice']);
+    Route::get('invoices/search', ['uses' => 'InvoicesController@searchInvoice', 'as' => 'search_invoice']);
     Route::get('invoices/{id}', ['uses' => 'InvoicesController@invoiceDetails', 'as' => 'invoice_details']);
     Route::get('invoices/{id}/invoice-data', ['uses' => 'InvoicesController@invoiceData', 'as' => 'invoice_data']);
     Route::get('invoices/{id}/add-file', ['uses' => 'FilesController@addFile', 'as' => 'add_file']);
