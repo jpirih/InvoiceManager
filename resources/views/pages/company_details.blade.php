@@ -23,6 +23,12 @@
                         <a href="{{ $company->url }}" target="_blank">{{ $company->url }}</a>
                     </p>
                     <p>
+
+                        <h3>Statistika</h3>
+                        <span class="krepko">Število nakupov: </span> {{ count($invoices) }} <br>
+                        <span class="krepko">Vrednost nakupov: </span> {{ $companyTotal }} EUR
+                    </p>
+                    <p>
                         <a href="{{ route('edit_company', ['id' => $company->id]) }}" class="btn btn-primary">
                             <span class="glyphicon glyphicon-pencil"></span>
                             Uredi podatke

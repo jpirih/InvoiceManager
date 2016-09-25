@@ -65,12 +65,14 @@ class CompaniesController extends Controller
         $company = Company::find($company_id);
         $invoices = Invoice::where('company_id', '=', $company_id)->get();
 
+        $companyTotal = 0;
         foreach ($invoices as $invoice)
         {
             $invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice_date));
+            $companyTotal = $companyTotal + $invoice->total;
         }
         $invoices = $invoices->sortByDesc('invoice_date');
-        return view('pages.company_details', ['company' => $company, 'invoices' => $invoices]);
+        return view('pages.company_details', ['company' => $company, 'invoices' => $invoices, 'companyTotal' => $companyTotal]);
         
     }
 

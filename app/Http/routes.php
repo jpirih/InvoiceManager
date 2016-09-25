@@ -47,6 +47,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('categories/{id}/items', ['uses' => 'ItemsController@showCategoryItems', 'as' => 'category_items']);
     Route::get('companies', ['uses' => 'CompaniesController@companies', 'as' => 'companies']);
     Route::get('companies/foreign-companies', ['uses' => 'ForeignCompaniesController@foreignCompanies', 'as' => 'foreign_companies']);
+    Route::get('companies/foreign-companies/{id}', ['uses' => 'ForeignCompaniesController@foreignCompanyDetails', 'as' => 'fc_details']);
     Route::post('companies/foreign-companies/new-company', ['uses' => 'ForeignCompaniesController@saveForeignCompany', 'as' => 'new_fc']);
     Route::get('companies/new', ['uses' => 'CompaniesController@addCompany', 'as' => 'new_company']);
     Route::get('companies/{id}', ['uses' => 'CompaniesController@companyDetails', 'as' => 'company_details']);

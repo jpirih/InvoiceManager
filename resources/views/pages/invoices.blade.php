@@ -29,7 +29,7 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="btn-group btn-group-lg">
-                <button class="btn btn-success"data-toggle="collapse" data-target="#all_invoices" data-parent="#data" aria-expanded="false">
+                <button class="btn btn-success"data-toggle="collapse" data-target="#all_invoices" data-parent="#data" aria-hidden="true">
                     Vsi Računi
                 </button>
                 @foreach($years as $year)
@@ -144,12 +144,13 @@
 
                     <div class="form-group">
                         <input type="text" name="invoice_nr_search" id="invoiceNrSearch" class="form-control" autofocus>
+                        <button type="submit" class="btn btn-success">
+                            <span class="glyphicon glyphicon-search"></span>
+                            Go
+                        </button>
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-success">
-                        <span class="glyphicon glyphicon-search"></span>
-                        Go
-                    </button>
+
 
                 </form>
             </div>

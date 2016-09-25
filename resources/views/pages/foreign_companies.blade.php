@@ -89,10 +89,20 @@
                         <div class="media-body">
                             <h4 class="media-heading">{{ $company->name }}</h4>
                             <br>
-                            <div class="alert alert-info">
-                                <span class="glyphicon glyphicon-info-sign"></span>
-                                Trentuno še ni statistike za to Spletno <trgovino class=""></trgovino>
-                            </div>
+                            @if(count($company->foreignInvoices) == 0)
+                                <div class="alert alert-info">
+                                    <span class="glyphicon glyphicon-info-sign"></span>
+                                    Trentuno še ni statistike za to Spletno trgovino
+                                </div>
+                            @else
+                                <span class="krepko">Število nakupov: </span> {{ count($company->foreignInvoices) }}
+
+                            @endif
+                            <hr>
+                            <a href="{{ route('fc_details', ['id' => $company->id]) }}" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                Podrobnosti
+                            </a>
                         </div>
                     </div>
                     <hr>

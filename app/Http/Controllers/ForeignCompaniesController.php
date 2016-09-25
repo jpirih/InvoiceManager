@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\ForeignCompany;
 use App\Http\Requests\SaveForeignCompanyRequest;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -15,6 +16,7 @@ class ForeignCompaniesController extends Controller
     {
         $foreignCompanies = ForeignCompany::all();
         $foreignCompanies = $foreignCompanies->sortBy('name');
+
         return view('pages.foreign_companies', ['foreignCompanies' => $foreignCompanies]);
     }
 
@@ -38,4 +40,23 @@ class ForeignCompaniesController extends Controller
         return redirect(route('foreign_companies'));
 
     }
+
+    // foreign company details and statistics
+    public function foreignCompanyDetails($foreignCompanyId)
+    {
+        $foreignCompany = ForeignCompany::find($foreignCompanyId);
+
+        // date convesion and company total calc
+        $companyTotal = 0;
+        foreach ($foreignCompany->foreignInvoices as $invoice)
+        {
+            $invoice->invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice->invoice_date));
+            $companyTotal = $companyTotal + $invoice->invoice->total;
+        }
+
+
+        return view('pages.foreign_company_details', ['foreignCompany' => $foreignCompany, 'companyTotal' => $companyTotal]);
+    }
+
+
 }
