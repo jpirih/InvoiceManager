@@ -66,13 +66,33 @@ class CompaniesController extends Controller
         $invoices = Invoice::where('company_id', '=', $company_id)->get();
 
         $companyTotal = 0;
+        $years = [];
         foreach ($invoices as $invoice)
         {
             $invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice_date));
             $companyTotal = $companyTotal + $invoice->total;
+            array_push($years, $invoice->invoice_date->format('Y'));
         }
+        $years = array_unique($years);
+
+        $yearsTotals = array();
+        foreach ($years as $year)
+        {
+            $yearTotal = 0;
+            foreach ($invoices as $invoice)
+            {
+                if($invoice->invoice_date->format('Y') == $year)
+                {
+                    $yearTotal = $yearTotal + $invoice->total;
+                }
+            }
+            $yearsTotals[$year] = $yearTotal;
+        }
+
+
+
         $invoices = $invoices->sortByDesc('invoice_date');
-        return view('pages.company_details', ['company' => $company, 'invoices' => $invoices, 'companyTotal' => $companyTotal]);
+        return view('pages.company_details', ['company' => $company, 'invoices' => $invoices, 'companyTotal' => $companyTotal, 'yearsTotals' => $yearsTotals]);
         
     }
 
