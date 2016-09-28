@@ -10,7 +10,7 @@ $(document).ready(function () {
     $('#invoice_date').datepicker({
         dateFormat: 'dd.mm.yy',
         showOtherMonths: true,
-        showOhterYears: true
+        showOtherYears: true
     });
     
     // if foreign invoice show foreign invoice fields in form 

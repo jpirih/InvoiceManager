@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Company;
+use App\ForeignCompany;
+use App\ForeignInvoice;
 use App\Http\Requests\SaveCompanyRequest;
 use App\Invoice;
 use App\PaymentInstrument;
@@ -101,7 +103,8 @@ class CompaniesController extends Controller
     {
         $company = Company::find($companyId);
         $instruments = PaymentInstrument::all();
-        return view('pages.new_company_invoice', ['company' => $company, 'instruments' => $instruments]);
+        $foreignCompanies = ForeignCompany::all();
+        return view('pages.new_company_invoice', ['company' => $company, 'instruments' => $instruments, 'foreignCompanies' => $foreignCompanies]);
     }
 
     //shrani podatke o novem racunu podjetja
@@ -126,6 +129,24 @@ class CompaniesController extends Controller
         $invoice->total = $request->get('total');
 
         $invoice->save();
+
+        //  foreign invoices logic
+        if($companyId == 999999)
+        {
+            $foreignCompany = $request->get('foreignCompanies');
+            $foreignCompany = $foreignCompany[0];
+            $country = $request->get('country');
+            $countryCode = $request->get('country_code');
+
+
+            $foreignInvoice = new ForeignInvoice;
+            $foreignInvoice->invoice_id = $invoice->id;
+            $foreignInvoice->foreign_company_id = $foreignCompany;
+            $foreignInvoice->country = $country;
+            $foreignInvoice->country_code = $countryCode;
+
+            $foreignInvoice->save();
+        }
 
         return redirect(route('invoice_details', ['id' => $invoice->id]));
     }
