@@ -48,14 +48,33 @@ class ForeignCompaniesController extends Controller
 
         // date convesion and company total calc
         $companyTotal = 0;
+        $years = [];
         foreach ($foreignCompany->foreignInvoices as $invoice)
         {
             $invoice->invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice->invoice_date));
             $companyTotal = $companyTotal + $invoice->invoice->total;
+            array_push($years, $invoice->invoice->invoice_date->format('Y'));
+        }
+        $years = array_unique($years);
+
+        $yearsTotals = array();
+        foreach ($years as  $year)
+        {
+            $yearTotal = 0;
+            foreach ($foreignCompany->foreignInvoices as $invoice)
+            {
+                if($invoice->invoice->invoice_date->format('Y') == $year)
+                {
+                    $yearTotal = $yearTotal + $invoice->invoice->total;
+                }
+            }
+            $yearsTotals[$year] = $yearTotal;
         }
 
 
-        return view('pages.foreign_company_details', ['foreignCompany' => $foreignCompany, 'companyTotal' => $companyTotal]);
+
+
+        return view('pages.foreign_company_details', ['foreignCompany' => $foreignCompany, 'companyTotal' => $companyTotal, 'yearsTotals' => $yearsTotals]);
     }
 
 

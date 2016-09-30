@@ -34,8 +34,6 @@ $(document).ready(function () {
         });
 
 
-
-
         // countries autocomplete - get json data from controller
         $.get('/files/get-world-countries', function (countries) {
             var countries = countries;

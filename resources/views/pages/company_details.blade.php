@@ -73,12 +73,7 @@
                                 @endforeach
                             </tbody>
                         </table>
-                    @else
-                        <div class="alert alert-info">
-                            <span class="glyphicon glyphicon-info-sign"></span>
-                            Trenutno ni shranjenih računov tega podjetja
-                        </div>
-                    @endif
+
                 </div>
             </div>
             <br>
@@ -105,6 +100,13 @@
                     </div>
                 </div>
             </div>
+            @else
+                <div class="alert alert-info">
+                    <span class="glyphicon glyphicon-info-sign"></span>
+                    Trenutno ni shranjenih računov tega podjetja
+                </div>
+            @endif
+
         </div>
     </div>
 

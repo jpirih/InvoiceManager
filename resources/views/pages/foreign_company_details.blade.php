@@ -67,6 +67,32 @@
                     @endif
                 </div>
             </div>
+            <br>
+            @if(count($foreignCompany->foreignInvoices) > 0)
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Statistika</h3>
+                        <div class="col-sm-6">
+                            <table class=" table table-responsive table-condensed table-borderd table-striped">
+                                <thead>
+                                <tr class="glava-tabele">
+                                    <th>Leto</th>
+                                    <th>Vrednost nakupov</th>
+                                </tr>
+                                </thead>
+                                <tbody class="bg-info">
+                                @foreach($yearsTotals as $year => $total)
+                                    <tr>
+                                        <td>{{ $year }}</td>
+                                        <td>{{ $total }}</td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            @endif
         </div>
     </div>
 

@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-        </div>
+
     @endif
     <!-- company data -->
     <div class="row">
