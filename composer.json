@@ -8,7 +8,8 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "picqer/php-barcode-generator": "^0.2.0",
-        "picoprime/barcodegen": "@dev"
+        "picoprime/barcodegen": "@dev",
+        "laracasts/utilities": "~2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

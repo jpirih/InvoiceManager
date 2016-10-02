@@ -121,7 +121,7 @@ return [
     |
     */
 
-    'providers' => [
+    'providers' => array(
 
         /*
          * Laravel Framework Service Providers...
@@ -157,8 +157,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         PicoPrime\BarcodeGen\BarcodeGenServiceProvider::class,
 
-
-    ],
+    ),
 
     /*
     |--------------------------------------------------------------------------

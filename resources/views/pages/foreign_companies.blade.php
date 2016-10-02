@@ -4,6 +4,10 @@
     Tuje spletne trgovine
 @endsection
 
+@section('javascript')
+    <script src="/js/foreign-companies-logic.js" type="text/javascript"></script>
+@endsection
+
 @section('page-heading')
     Tuje spletne trgovine
 @endsection
@@ -22,7 +26,7 @@
     @endif
 <div class="row">
     <div class="col-sm-6">
-        <div class="form-bg">
+        <div class="form-bg" id="newForeignCompany">
             <h3>Dodaj spletno trgovino</h3>
             <br>
             <form action="{{ route('new_fc') }}" method="post" class="form-horizontal">
@@ -56,6 +60,53 @@
                         <button type="submit" class="btn btn-success btn-block">
                             <span class="glyphicon glyphicon-save"></span>
                             Shrani Podatke
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-bg" id="editForeignCompany">
+            <h3>Uredi Podatke
+                <span class="pull-right">
+                    <button type="button" id="cancel" class="btn btn-danger">
+                        <span class="glyphicon glyphicon-remove"></span>
+                        Prekliči
+                    </button>
+                </span>
+            </h3>
+            <br>
+            <form action="" method="post" class="form-horizontal" id="editForm">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <div class="form-group">
+                    <label for="fc_name" class="control-label col-sm-4">Naziv</label>
+                    <div class="col-sm-8">
+                        <input type="text" name="fc_edit_name" id="fc_edit_name" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fc_url" class="control-label col-sm-4">Url</label>
+                    <div class="col-sm-8">
+                        <input type="text" name="fc_edit_url" id="fc_edit_url" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fc_logo_url" class="control-label col-sm-4">Logo Url</label>
+                    <div class="col-sm-8">
+                        <input type="text" name="fc_edit_logo_url" id="fc_edit_logo_url" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-4">
+                        <button type="reset" class="btn btn-info">
+                            <span class="glyphicon glyphicon-refresh"></span>
+                            Izprazni Obrazec
+                        </button>
+                    </div>
+                    <div class="col-sm-8">
+                        <button type="submit" class="btn btn-success btn-block">
+                            <span class="glyphicon glyphicon-save"></span>
+                            Shrani Spremembe
                         </button>
                     </div>
                 </div>
@@ -103,6 +154,10 @@
                                 <span class="glyphicon glyphicon-chevron-right"></span>
                                 Podrobnosti
                             </a>
+                            <button type="button" class="edit btn btn-info" id="{{ $company->id }}">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                Uredi
+                            </button>
                         </div>
                     </div>
                     <hr>

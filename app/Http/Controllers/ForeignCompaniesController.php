@@ -5,9 +5,7 @@ namespace App\Http\Controllers;
 use App\ForeignCompany;
 use App\Http\Requests\SaveForeignCompanyRequest;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
+use Illuminate\Support\Facades\Request;
 
 class ForeignCompaniesController extends Controller
 {
@@ -71,10 +69,38 @@ class ForeignCompaniesController extends Controller
             $yearsTotals[$year] = $yearTotal;
         }
 
-
-
-
         return view('pages.foreign_company_details', ['foreignCompany' => $foreignCompany, 'companyTotal' => $companyTotal, 'yearsTotals' => $yearsTotals]);
+    }
+
+    // edit foreign company
+    public function editForeignCompany($foreignCompanyId)
+    {
+        $foreignCompany = ForeignCompany::find($foreignCompanyId);
+        $response = array(
+            'id' => $foreignCompany->id,
+            'name' => $foreignCompany->name,
+            'url' => $foreignCompany->url,
+            'logo' => $foreignCompany->logo
+        );
+
+        return json_encode($response);
+    }
+
+    // update foreign companies data
+    public function updateForeignCompany($foreignCompanyId)
+    {
+        $company = ForeignCompany::find($foreignCompanyId);
+        $name = Request::get('fc_edit_name');
+        $url = Request::get('fc_edit_url');
+        $logo = Request::get('fc_edit_logo_url');
+
+        $company->name = $name;
+        $company->url = $url;
+        $company->logo = $logo;
+
+        $company->save();
+
+        return redirect(route('foreign_companies'))     ->with('status', 'Spremembe shranjene OK');
     }
 
 
