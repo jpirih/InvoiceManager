@@ -12,7 +12,7 @@ $(document).ready(function () {
         newForeignCompany.hide();
         editForeignCompany.show();
         var url = '/companies/foreign-companies/'+ id + '/edit';
-        
+
         // set form action for submiting the form
         $('#editForm').attr('action', url);
         // get the current fc data from database and fill the form with them
@@ -21,13 +21,13 @@ $(document).ready(function () {
             url: url,
             dataType: 'JSON',
             success: function (response) {
-                var country = response;
-                console.log(country);
+                var company = response;
+                console.log(company);
 
                 // fill the form with current data
-                $('#fc_edit_name').val(country.name);
-                $('#fc_edit_url').val(country.url);
-                $('#fc_edit_logo_url'). val(country.logo);
+                $('#fc_edit_name').val(company.name);
+                $('#fc_edit_url').val(company.url);
+                $('#fc_edit_logo_url'). val(company.logo);
             }
         });
 

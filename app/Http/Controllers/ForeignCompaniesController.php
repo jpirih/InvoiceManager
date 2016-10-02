@@ -100,7 +100,7 @@ class ForeignCompaniesController extends Controller
 
         $company->save();
 
-        return redirect(route('foreign_companies'))     ->with('status', 'Spremembe shranjene OK');
+        return redirect(route('foreign_companies'))->with('status', 'Spremembe shranjene OK');
     }
 
 
