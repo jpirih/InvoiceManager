@@ -51,12 +51,12 @@ class InvoicesController extends Controller
         // searched invoice nr
         $searchInvoiceNr = Request::get('invoice_nr_search');
 
+
         // get all data from database
         $invoices = Invoice::all();
         foreach ($invoices as $invoice)
         {
-            $invoceNr = str_replace($invoice->invoice_nr, '-',"");
-            dd($invoceNr);
+            $invoceNr = str_replace('-',"", $invoice->invoice_nr);
             if($invoice->invoice_nr == $searchInvoiceNr) {
                 $selectedInvoice = $invoice->id;
                 return redirect(route('invoice_details', ['id' => $selectedInvoice]));
