@@ -58,7 +58,6 @@ class InvoicesController extends Controller
         foreach ($invoices as $invoice)
         {
             $invoceNr = str_replace('-',"", $invoice->invoice_nr);
-            dd($invoceNr);
             if($invoceNr == $searchInvoiceNr) {
                 $selectedInvoice = $invoice->id;
                 return redirect(route('invoice_details', ['id' => $selectedInvoice]));
