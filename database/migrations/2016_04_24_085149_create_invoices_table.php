@@ -20,6 +20,7 @@ class CreateInvoicesTable extends Migration
             $blueprint->integer('company_id');
             $blueprint->integer('payment_instrument_id');
             $blueprint->float('total');
+            $blueprint->boolean('deleted')->default(false);
             $blueprint->timestamps();
 
         });

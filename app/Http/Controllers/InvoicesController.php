@@ -23,20 +23,21 @@ class InvoicesController extends Controller
     // konstruktor - obvezna prijava
     public function __construct()
     {
-         return $this->middleware('auth');
+        return $this->middleware('auth');
     }
+
     // seznam vseh racunov
     public function invoices()
     {
 
-        $invoices = Invoice::where('deleted', '=', false)->get();
-        $invoices = $invoices->sortByDesc('invoice_date');
+        $invoices = Invoice::where('deleted', '=', false)->orderBy('invoice_date', 'desc')->paginate(15);
+
+
 
         $years = [];
-        foreach ($invoices as $invoice)
-        {
+        foreach ($invoices as $invoice) {
             $invoice->invoice_date = Carbon::createFromTimestamp(strtotime($invoice->invoice_date));
-            array_push($years,$invoice->invoice_date->format("Y"));
+            array_push($years, $invoice->invoice_date->format("Y"));
         }
         $years = array_unique($years);
 
@@ -55,17 +56,16 @@ class InvoicesController extends Controller
 
         // get all data from database
         $invoices = Invoice::all();
-        foreach ($invoices as $invoice)
-        {
-            $invoceNr = str_replace('-',"", $invoice->invoice_nr);
-            if($invoceNr == $searchInvoiceNr) {
+        foreach ($invoices as $invoice) {
+            $invoceNr = str_replace('-', "", $invoice->invoice_nr);
+            if ($invoceNr == $searchInvoiceNr) {
                 $selectedInvoice = $invoice->id;
                 return redirect(route('invoice_details', ['id' => $selectedInvoice]));
             }
 
         }
 
-        return redirect(route('invoices'))->with('msg', 'Račun s številko: '.$searchInvoiceNr.' ne obstaja.');
+        return redirect(route('invoices'))->with('msg', 'Račun s številko: ' . $searchInvoiceNr . ' ne obstaja.');
 
     }
 
@@ -75,15 +75,15 @@ class InvoicesController extends Controller
         $companies = Company::all();
         $instruments = PaymentInstrument::all();
         $foreignCompanies = ForeignCompany::all();
-        
+
         return view('pages.new_invoice', ['companies' => $companies, 'instruments' => $instruments, 'foreignCompanies' => $foreignCompanies]);
     }
 
     // shrani nov racun
-    public function saveInvoice( SaveInvoiceRequest $request)
+    public function saveInvoice(SaveInvoiceRequest $request)
     {
         $invoice = new Invoice;
-        
+
         // podatki iz obrazca
         $company = $request->get('companies');
         $company = $company[0];
@@ -105,8 +105,7 @@ class InvoicesController extends Controller
 
         $invoice->save();
         //  foreign invoices logic
-        if($company == 999999)
-        {
+        if ($company == 999999) {
             $foreignCompany = $request->get('foreignCompanies');
             $foreignCompany = $foreignCompany[0];
             $country = $request->get('country');
@@ -126,7 +125,7 @@ class InvoicesController extends Controller
     }
 
     // podrobnosti o racunu postavke
-    public  function invoiceDetails($id)
+    public function invoiceDetails($id)
     {
         $items = Item::where('invoice_id', '=', $id)->get();
         $invoice = Invoice::find($id);
@@ -149,7 +148,7 @@ class InvoicesController extends Controller
 
         return view('pages.invoice_data', ['invoice' => $invoice, 'code' => $code, 'foreignInvoices' => $foreignInvoices]);
     }
-    
+
     // urejanje podatkov racuna
     public function editInvoiceDetails($id)
     {
@@ -158,7 +157,7 @@ class InvoicesController extends Controller
         $instruments = PaymentInstrument::all();
         // slovenian date format for nicer look
         $invoice->invoice_date = date('d.m.Y', strtotime($invoice->invoice_date));
-        
+
         return view('pages.edit_invoice', ['invoice' => $invoice, 'companies' => $companies, 'instruments' => $instruments]);
     }
 
@@ -192,13 +191,10 @@ class InvoicesController extends Controller
     public function deleteInvoice($invoiceId)
     {
         $invoice = Invoice::find($invoiceId);
-        if(count($invoice->files) > 0)
-        {
-            return redirect(route('invoice_details', ['id' =>  $invoice->id]));
+        if (count($invoice->files) > 0) {
+            return redirect(route('invoice_details', ['id' => $invoice->id]));
 
-        }
-        else
-        {
+        } else {
             $invoice->deleted = true;
             $invoice->save();
 
@@ -209,5 +205,5 @@ class InvoicesController extends Controller
 
     }
 
-    
+
 }

@@ -81,6 +81,7 @@
                             @endforeach
                             </tbody>
                         </table>
+                        {{ $invoices->links() }}
 
                     </div>
                 </div>
@@ -114,6 +115,7 @@
                                 @endforeach
                                 </tbody>
                             </table>
+                            {{ $invoices->links() }}
 
                         </div>
                     </div>

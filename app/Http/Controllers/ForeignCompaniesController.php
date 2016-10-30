@@ -9,7 +9,16 @@ use Illuminate\Support\Facades\Request;
 
 class ForeignCompaniesController extends Controller
 {
+
     // foreign Companies
+    /**
+     * ForeignCompaniesController constructor.
+     */
+    public function __construct()
+    {
+        return $this->middleware('auth');
+    }
+
     public function foreignCompanies()
     {
         $foreignCompanies = ForeignCompany::all();
@@ -102,6 +111,7 @@ class ForeignCompaniesController extends Controller
 
         return redirect(route('foreign_companies'))->with('status', 'Spremembe shranjene OK');
     }
+
 
 
 }
