@@ -139,6 +139,7 @@
                 </a>
             </div>
             <br>
+            <!-- invoice nr search -->
             <div class="well">
                 <h3>Račun številka:</h3>
                 <form action="{{ route('search_invoice') }}" method="get" class="form-inline">

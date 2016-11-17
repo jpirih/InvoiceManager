@@ -4,7 +4,13 @@
     <bookmark url="file://$PROJECT_DIR$/app/Invoice.php" line="34" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1be083a0-0251-46c0-97ad-f0be2c649674" name="Default" comment="" />
+    <list default="true" id="1be083a0-0251-46c0-97ad-f0be2c649674" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/base.blade.php" afterPath="$PROJECT_DIR$/resources/views/base.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/invoices.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/invoices.blade.php" />
+    </list>
     <ignored path="Invoice.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -24,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="1020">
+              <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -55,9 +61,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/pages/files.blade.php" />
         <option value="$PROJECT_DIR$/app/File.php" />
-        <option value="$PROJECT_DIR$/resources/views/base.blade.php" />
         <option value="$PROJECT_DIR$/public/js/items-search-logic.js" />
         <option value="$PROJECT_DIR$/database/migrations/2016_08_27_154418_add_item_total_column.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_07_15_150459_add_delted_col_invoices.php" />
@@ -100,12 +104,14 @@
         <option value="$PROJECT_DIR$/resources/views/includes/edit_fc_form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/foreign_companies.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_04_24_085149_create_invoices_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FilesController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ForeignCompaniesController.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/invoices.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/InvoicesController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/resources/views/pages/invoices.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+        <option value="$PROJECT_DIR$/resources/views/base.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
       </list>
     </option>
   </component>
@@ -167,8 +173,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -187,6 +193,140 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invoice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Auth" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -195,7 +335,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="i&#9;FILE&#9;file://D:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;bl&#9;FILE&#9;file://D:/Code/Invoice/resources/views/pages/invoices.blade.php&#10;invoices.bl&#9;FILE&#9;file://D:/Code/Invoice/resources/views/pages/invoices.blade.php&#10;rout&#9;FILE&#9;file://D:/Code/Invoice/app/Http/routes.php&#10;IN&#9;FILE&#9;file://D:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;F&#9;FILE&#9;file://D:/Code/Invoice/app/Http/Controllers/ForeignCompaniesController.php&#10;In&#9;FILE&#9;file://D:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;FILE&#9;FILE&#9;file://D:/Code/Invoice/app/Http/Controllers/FilesController.php&#10;reforormat code&#9;null&#9;null&#10;ba&#9;FILE&#9;file://D:/Code/Invoice/resources/views/base.blade.php&#10;Invoices&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;bas&#9;FILE&#9;file://F:/Code/Invoice/resources/views/base.blade.php&#10;Fi&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/FilesController.php&#10;Dash&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/DashboardController.php&#10;foreign&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/foreign_companies.blade.php&#10;create_fo&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_09_18_135504_create_foreign_companies_table.php&#10;comp&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/company_details.blade.php&#10;fore&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/foreign_company_details.blade.php&#10;compa&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/company_details.blade.php&#10;count&#9;FILE&#9;file://F:/Code/Invoice/public/countries.json&#10;Files&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/FilesController.php&#10;invoice_de&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoice_details.blade.php&#10;new_in&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/new_invoice.blade.php&#10;companies&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/ForeignCompaniesController.php&#10;invoice&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoices.blade.php&#10;invoices&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoices.blade.php&#10;InvoicesCon&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;Compani&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/CompaniesController.php&#10;items&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/ItemsController.php&#10;Fore&#9;FILE&#9;file://F:/Code/Invoice/app/ForeignCompany.php&#10;ForeignIn&#9;FILE&#9;file://F:/Code/Invoice/app/ForeignInvoice.php&#10;company&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/company_details.blade.php&#10;foreign_COM&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/foreign_companies.blade.php&#10;Comp&#9;null&#9;null&#10;inv&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;invoi&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoices.blade.php&#10;DAS&#9;FILE&#9;file://F:/Code/Invoice/public/js/dashboard_logic.js&#10;invoice_&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoice_data.blade.php&#10;the&#9;FILE&#9;file://F:/Code/Invoice/public/css/theme.css&#10;ROUT&#9;FILE&#9;file://F:/Code/Invoice/app/Http/routes.php&#10;Invoi&#9;FILE&#9;file://F:/Code/Invoice/app/Invoice.php&#10;fil&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/new_file.blade.php&#10;create_foreign_companies&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_09_18_135504_create_foreign_companies_table.php&#10;forei&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/foreign_companies.blade.php&#10;companie&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/companies.blade.php&#10;InvoicesCo&#9;null&#9;null&#10;createFo&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_09_18_135504_create_foreign_companies_table.php&#10;crea&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_09_18_140246_create_foreign_invoices_table.php&#10;invo&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoice_details.blade.php&#10;t&#9;FILE&#9;file://F:/Code/Invoice/public/css/theme.css" />
+    <property name="SearchEverywhereHistoryKey" value="base&#9;FILE&#9;file://D:/Code/Invoice/resources/views/base.blade.php&#10;i&#9;FILE&#9;file://D:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;bl&#9;FILE&#9;file://D:/Code/Invoice/resources/views/pages/invoices.blade.php&#10;invoices.bl&#9;FILE&#9;file://D:/Code/Invoice/resources/views/pages/invoices.blade.php&#10;rout&#9;FILE&#9;file://D:/Code/Invoice/app/Http/routes.php&#10;IN&#9;FILE&#9;file://D:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;F&#9;FILE&#9;file://D:/Code/Invoice/app/Http/Controllers/ForeignCompaniesController.php&#10;In&#9;FILE&#9;file://D:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;FILE&#9;FILE&#9;file://D:/Code/Invoice/app/Http/Controllers/FilesController.php&#10;reforormat code&#9;null&#9;null&#10;ba&#9;FILE&#9;file://D:/Code/Invoice/resources/views/base.blade.php&#10;Invoices&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;bas&#9;FILE&#9;file://F:/Code/Invoice/resources/views/base.blade.php&#10;Fi&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/FilesController.php&#10;Dash&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/DashboardController.php&#10;foreign&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/foreign_companies.blade.php&#10;create_fo&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_09_18_135504_create_foreign_companies_table.php&#10;comp&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/company_details.blade.php&#10;fore&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/foreign_company_details.blade.php&#10;compa&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/company_details.blade.php&#10;count&#9;FILE&#9;file://F:/Code/Invoice/public/countries.json&#10;Files&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/FilesController.php&#10;invoice_de&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoice_details.blade.php&#10;new_in&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/new_invoice.blade.php&#10;companies&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/ForeignCompaniesController.php&#10;invoice&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoices.blade.php&#10;invoices&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoices.blade.php&#10;InvoicesCon&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;Compani&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/CompaniesController.php&#10;items&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/ItemsController.php&#10;Fore&#9;FILE&#9;file://F:/Code/Invoice/app/ForeignCompany.php&#10;ForeignIn&#9;FILE&#9;file://F:/Code/Invoice/app/ForeignInvoice.php&#10;company&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/company_details.blade.php&#10;foreign_COM&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/foreign_companies.blade.php&#10;Comp&#9;null&#9;null&#10;inv&#9;FILE&#9;file://F:/Code/Invoice/app/Http/Controllers/InvoicesController.php&#10;invoi&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoices.blade.php&#10;DAS&#9;FILE&#9;file://F:/Code/Invoice/public/js/dashboard_logic.js&#10;invoice_&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoice_data.blade.php&#10;the&#9;FILE&#9;file://F:/Code/Invoice/public/css/theme.css&#10;ROUT&#9;FILE&#9;file://F:/Code/Invoice/app/Http/routes.php&#10;Invoi&#9;FILE&#9;file://F:/Code/Invoice/app/Invoice.php&#10;fil&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/new_file.blade.php&#10;create_foreign_companies&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_09_18_135504_create_foreign_companies_table.php&#10;forei&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/foreign_companies.blade.php&#10;companie&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/companies.blade.php&#10;InvoicesCo&#9;null&#9;null&#10;createFo&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_09_18_135504_create_foreign_companies_table.php&#10;crea&#9;FILE&#9;file://F:/Code/Invoice/database/migrations/2016_09_18_140246_create_foreign_invoices_table.php&#10;invo&#9;FILE&#9;file://F:/Code/Invoice/resources/views/pages/invoice_details.blade.php" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -377,12 +517,13 @@
       <workItem from="1477744684375" duration="2581000" />
       <workItem from="1477747538944" duration="10000" />
       <workItem from="1477808419462" duration="2996000" />
-      <workItem from="1477815495174" duration="97000" />
+      <workItem from="1477815495174" duration="2944000" />
+      <workItem from="1479396871152" duration="497000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="558622000" />
+    <option name="totallyTimeSpent" value="561966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -462,27 +603,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/edit_item.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/category_items.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/edit_invoice.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/File.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -723,13 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/invoices-logic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -748,13 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="647">
           <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -783,6 +889,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1461417337370" expanded="true" signature="35:133" ph="..." />
+            <marker date="1461417337370" expanded="true" signature="169:640" ph="{...}" />
+            <marker date="1461417337370" expanded="true" signature="179:268" ph=" The Artisan commands provided by your application. ..." />
+            <marker date="1461417337370" expanded="true" signature="298:339" ph="..." />
+            <marker date="1461417337370" expanded="true" signature="350:499" ph=" Define the application's command schedule. ..." />
+            <marker date="1461417337370" expanded="true" signature="553:638" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -790,13 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="564">
           <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/invoices.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="103" column="63" selection-start-line="103" selection-start-column="63" selection-end-line="103" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -811,6 +918,94 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/invoices.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-696">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="540">
+            <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1116">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+          <folding>
+            <marker date="1479397077319" expanded="false" signature="49:221" ph="..." />
+            <marker date="1479397077319" expanded="true" signature="262:1927" ph="{...}" />
+            <marker date="1479397077319" expanded="true" signature="271:706" ph="..." />
+            <marker date="1479397077319" expanded="true" signature="775:866" ph=" Where to redirect users after login / registration. ..." />
+            <marker date="1479397077319" expanded="true" signature="910:999" ph=" Create a new authentication controller instance. ..." />
+            <marker date="1479397077319" expanded="true" signature="1035:1124" ph="{...}" />
+            <marker date="1479397077319" expanded="true" signature="1133:1293" ph=" Get a validator for an incoming registration request. ..." />
+            <marker date="1479397077319" expanded="true" signature="1341:1563" ph="{...}" />
+            <marker date="1479397077319" expanded="true" signature="1379:1555" ph="..." />
+            <marker date="1479397077319" expanded="true" signature="1387:1554" ph="..." />
+            <marker date="1479397077319" expanded="true" signature="1571:1694" ph="..." />
+            <marker date="1479397077319" expanded="true" signature="1741:1924" ph="{...}" />
+            <marker date="1479397077319" expanded="true" signature="1776:1916" ph="..." />
+            <marker date="1479397077319" expanded="true" signature="1777:1915" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="77" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
+          <folding>
+            <marker date="1479397077249" expanded="true" signature="31:3749" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="38:948" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="800:834" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="955:3741" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="991:2900" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="1025:2893" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="1061:1349" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="1173:1269" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="1409:2882" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="1463:2867" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="1646:2141" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="1766:1856" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="1919:2115" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="2334:2826" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="2432:2542" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="2605:2800" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="2975:3576" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="3051:3103" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="3194:3519" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="3245:3504" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="3295:3485" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="3319:3462" ph="..." />
+            <marker date="1479397077249" expanded="true" signature="3529:3545" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
           <folding />
         </state>
       </provider>

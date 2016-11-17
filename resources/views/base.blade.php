@@ -41,6 +41,7 @@
                         </a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="{{ url('/login') }}">Prijava</a></li>
+                            <li><a href="{{ url('/register') }}">Registracija</a></li>
                         </ul>
                     </li>
                 @else

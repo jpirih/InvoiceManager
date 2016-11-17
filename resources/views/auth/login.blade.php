@@ -61,6 +61,7 @@
                             </div>
                         </div>
                     </form>
+                    <span class="krepko">Pred prvo prijavo se <a href="{{ url('/register') }}">Registriraj</a></span>
                 </div>
             </div>
         </div>
